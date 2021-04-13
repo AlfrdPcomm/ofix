@@ -1,0 +1,64 @@
+.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround,
+.skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+  border-radius: 0;
+}
+
+.container :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 1;
+}
+
+@media screen and (max-width: 40em) {
+  .container :global(.vtex-modal-layout-0-x-triggerContainer) {
+    display: none;
+  }
+}
+
+.brandName {
+  font-weight: 600;
+  font-size: 18px;
+  color: #2e2e2e;
+}
+
+.container {
+  text-align: start;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.image {
+  border-radius: 0;
+}
+
+/* AYMARA from here to bottom */
+:global(.vtex-flex-layout-0-x-flexRow--nameAndBrand),
+.description {
+  padding-left: 1rem;
+}
+
+.nameContainer,
+.productBrandContainer {
+  justify-content: start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.productBrandContainer {
+  padding-left: 5px;
+  text-transform: uppercase;
+}
+
+/* to put the button VER PRODUCTO to the end of product card */
+:global(.vtex-product-summary-2-x-element--productCard) {
+  justify-content: space-between;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--productLinkContainer) {
+  justify-content: flex-end;
+}

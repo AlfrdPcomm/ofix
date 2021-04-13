@@ -1,0 +1,627 @@
+.notificationBarContainer {
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  max-width: 208px;
+}
+
+.infoCardContainer--info-card-home {
+  max-width: 1520px;
+  max-height: 750px;
+  height: 750px;
+  margin: 0 auto;
+  background-color: #e6f1e6;
+  padding: 0px;
+  margin-top: 60px;
+}
+
+.infoCardContainer--info-card-categorias-1 {
+  max-width: 470px;
+  max-height: 800px;
+  height: 800px;
+  margin: 0 auto;
+  background-color: #e6f1e6;
+  padding: 0px;
+  margin-top: 60px;
+}
+
+.infoCardContainer--info-card-categorias-2 {
+  max-width: 730px;
+  height: 530px;
+  margin: 0 auto;
+  background-color: #e6f1e6;
+  padding: 0px;
+  margin-top: 60px;
+}
+
+.relative.vtex-store-video-1-x-videoContainer.vtex-store-video-1-x-videoContainer--video-background {
+  margin: 60px;
+}
+
+.vtex-store-footer-2-x-footerLayout {
+  background: linear-gradient(180deg, #1f60f6 0%, #0fd3f4 100%);
+}
+
+.gray {
+  color: #fff;
+}
+
+
+
+:global(.vtex-store-components-3-x-form--news) {
+  max-width: 55rem;
+}
+
+.newsletter .container {
+  padding: 60px 10px;
+}
+
+.label {
+  color: #fff;
+  font-size: 26px;
+}
+
+.inputGroup {
+  padding-bottom: 4px;
+  display: flex;
+  color: #fff;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: #000000;
+  font-size: 16px;
+}
+
+.inputGroup :global(.vtex-button) {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  margin-right: -24px;
+}
+
+.buttonContainer {
+  padding-top: 0px;
+}
+
+.imageElement--storePrint {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+:global(.vtex-store-components-3-x-buttonContainer) {
+  padding-left: 0;
+}
+
+.skuSelectorContainer {
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width: 640px) {
+  .newsletter .container {
+    padding: 30px 140px;
+  }
+
+  .label {
+    font-size: 40px;
+  }
+
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    width: 30%;
+  }
+
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
+  }
+
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .infoCardContainer--info-card-categorias-1 {
+    max-width: 100%;
+    max-height: 115px;
+    margin: 0 auto;
+    background-color: #e6f1e6;
+    padding: 0px;
+    margin-top: 10px;
+  }
+
+  .infoCardContainer--info-card-categorias-2 {
+    max-width: 100%;
+    max-height: 115px;
+    margin: 0 auto;
+    background-color: #e6f1e6;
+    padding: 0px;
+    margin-top: 10px;
+  }
+}
+
+.productImagesContainer--quickview .carouselContainer {
+  justify-content: flex-start;
+}
+
+.productImagesContainer--quickview .productImageTag {
+  object-fit: cover !important;
+}
+
+.productImagesContainer--quickview .carouselGaleryThumbs {
+  display: none;
+}
+
+.productImagesContainer--quickview .carouselGaleryCursor {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.productNameContainer {
+  color: #3f3f40;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+
+/* CSS HOME */
+:global(.vtex-rich-text-0-x-container--notbar),
+:global(.vtex-rich-text-0-x-container--phone){
+  background-color: #ffffff;
+  color: #ff0000;
+  font-weight: 700;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--main-header),
+:global(.vtex-flex-layout-0-x-flexRow--catmensticky),
+:global(.vtex-flex-layout-0-x-flexRow--notphone){
+  background-color: #ffffff;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+:global(.vtex-category-menu-2-x-departmentLink){
+  color: #000000;
+}
+
+
+:global(.vtex-store-components-3-x-label--news){
+  color:#194681;
+  border-bottom:2px solid #194681;
+}
+
+:global(.vtex-input-prefix__group){
+  border: 2px solid #D2DBE6;
+  background-color: #d2dbe6;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--slibann){
+  padding: 15px;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--trusty){
+  background-color: #efefef;
+  padding: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--titenv){
+  margin: 0px;
+  color:#194681;
+  font-weight: 900;
+  font-size: 18px;
+}
+:global(.vtex-rich-text-0-x-paragraph--txtenv){
+  margin-bottom: 0%;
+  margin-top: 0px;
+  font-size: 14px;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--necesario){
+  color: #194681;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--txtns){
+  margin-bottom: 0%;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+:global(.vtex-rich-text-0-x-headingLevel2--titns){
+  color:#194681;
+  margin-bottom: 0px;
+  border-bottom: 2px solid #194681;
+}
+
+:global(.vtex-store-components-3-x-container--news){
+  padding-top: 0px !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--rowns){
+  margin-top: 50px;
+}
+
+:global(.vtex-store-components-3-x-buttonContainer--news) :global(.vtex-button){
+  background-color: #194681;
+}
+
+:global(.vtex-slider-layout-0-x-caretIcon){
+  color:#194681;
+}
+
+:global(.vtex-slider-layout-0-x-sliderTrackContainer--categorias), 
+:global(.vtex-flex-layout-0-x-flexRow--bann-shelf),
+:global(.vtex-flex-layout-0-x-flexRow--rowic),
+:global(.vtex-rich-text-0-x-container--necesario),
+:global(.vtex-flex-layout-0-x-flexRowContent--trusty){
+  margin-top: 35px;
+}
+
+:global(.vtex-product-highlights-2-x-productHighlightText){
+  background: #ff0000 !important;
+  color: #fff !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--check)
+:global(.vtex-button){
+  background-color: #ffffff;
+  color: #194681;
+  border: 1px solid #194681;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--check)
+:global(.vtex-button):hover{
+  background-color: #194681;
+  color: #ffffff;
+  border: 1px solid #194681;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--cart)
+:global(.vtex-button){
+  background-color:#194681;
+  font-size: 0px;
+  border: 1px solid #194681;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--cart)
+:global(.vtex-button)::before{
+  content: url('https://ofixmx.vteximg.com.br/arquivos/addcart.PNG');
+}
+
+:global(.vtex-search-result-3-x-filterMessage), 
+:global(.vtex-search-result-3-x-categoryItemName),
+:global(.vtex-search-result-3-x-filterTitle),
+:global(.vtex-search-result-3-x-filterPopupTitle),
+:global(.vtex-product-quantity-1-x-quantitySelectorTitle--cantprod),
+:global(.vtex-checkout-summary-0-x-summaryItemLabel),
+:global(.vtex-checkout-summary-0-x-price){
+  color:#194681;
+}
+
+:global(.vtex-search-result-3-x-categoryItemChildren){
+  color: #000000;
+}
+
+:global(.vtex-search-result-3-x-filter__container){
+  border-bottom: 1px solid #194681;
+}
+
+
+:global(.vtex-breadcrumb-1-x-link ),
+:global(.vtex-breadcrumb-1-x-arrow--1),
+:global(.vtex-breadcrumb-1-x-arrow--2),
+:global(.vtex-search-result-3-x-totalProductsMessage),
+:global(.vtex-search-result-3-x-totalProducts--layout),
+:global(.vtex-search-result-3-x-orderByText){
+  color: #8f8f8f;
+}
+
+:global(.vtex-search-result-3-x-galleryTitle--layout){
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--notphone ){
+  padding-bottom:5px;
+  background: /* gradient can be an image */
+    linear-gradient(
+      to right, 
+      rgba(253, 1, 2,1) 12%,
+      rgba(130, 74, 125,1) 47%,
+      rgba(1, 151, 254,1) 100%
+    )
+    left 
+    bottom
+    #777    
+    no-repeat; 
+  background-size:100% 5px ;/* if linear-gradient, we need to resize it */ 
+    
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--productmain){
+  border-radius: 2%;
+  border: 1px solid #d3d3d3;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--colinfo),
+:global(.vtex-flex-layout-0-x-flexCol--colbenef){
+  border: 1px solid #d3d3d3;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--colinfo){
+  border-top-left-radius: 2%;
+  border-bottom-left-radius: 2%;
+  padding: 3%;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--colbenef){
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
+  padding: 3%;
+}
+
+
+
+:global(.vtex-tab-layout-0-x-container--home){
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+:global(.vtex-tab-layout-0-x-container--home)
+  :global(.vtex-tab-layout-0-x-listContainer){
+    justify-content: left;
+    margin-left: 2%;
+  }
+
+
+:global(.vtex-tab-layout-0-x-listItemActive){
+  border-bottom: 2px solid #194681;
+}
+
+
+:global(.vtex-tab-layout-0-x-container--home)
+    :global(.vtex-button){
+      background-color: #ffffff;
+      color: #000000;
+      border: 0px;
+    }
+ 
+:global(.vtex-tab-layout-0-x-listItemActive)
+  :global(.vtex-button){
+    border: 0px;
+  }
+
+
+
+
+:global(.vtex-flex-layout-0-x-flexColChild--preciolista)
+  :global(.vtex-product-price-1-x-currencyCode),
+:global(.vtex-flex-layout-0-x-flexColChild--preciolista)
+  :global(.vtex-product-price-1-x-currencyInteger),
+:global(.vtex-flex-layout-0-x-flexColChild--preciolista)
+  :global(.vtex-product-price-1-x-currencyDecimal),
+:global(.vtex-flex-layout-0-x-flexColChild--preciolista)
+  :global(.vtex-product-price-1-x-currencyFraction){
+    color:#FD0102;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-summaryContainer){
+  margin-bottom: 7px;
+}
+
+:global(.vtex-product-identifier-0-x-product-identifier__label){
+  font-size: 0;
+}
+:global(.vtex-product-identifier-0-x-product-identifier__label)::before{
+  font-size: 16px;
+  content: "Código";
+  color:#000000;
+}
+
+:global(.vtex-product-identifier-0-x-product-identifier__separator),
+:global(.vtex-product-identifier-0-x-product-identifier__value),
+:global(.vtex-product-list-0-x-unitPriceContainer)
+  :global(.vtex-product-list-0-x-unitPricePerUnitCurrency),
+:global(.vtex-product-list-0-x-unitPriceContainer)
+  :global(.vtex-product-list-0-x-unitPriceMeasurementUnit){
+  color: #000000;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--colid){
+  padding-top: 16px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--txtshare){
+  margin-top: 13px;
+  margin-bottom: 0px;
+  color:#194681;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--txtshare)::before{
+  content: url("https://ofixmx.myvtex.com/arquivos/share.png");
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--btnagregar),
+:global(.vtex-flex-layout-0-x-flexColChild--btnahora){
+  margin-top: 22px;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--btnagregar)
+  :global(.vtex-button){
+    background-color: #194681;
+    border: 1px solid #194681; 
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--btnahora)
+  :global(.vtex-button){
+    background-color: #ffffff;
+    border: 1px solid #194681;
+    color:#194681;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexColChild--btnagregar)
+    :global(.vtex-button)
+      :global(.vtex-button__label)::before{
+        content: url('https://ofixmx.vteximg.com.br/arquivos/addcartprd.png');
+  }
+
+:global(.vtex-store-components-3-x-shippingContainer)
+    :global(.vtex-address-form__postalCode)
+      :global(.vtex-input__label){
+        font-size: 0px;
+}
+
+:global(.vtex-store-components-3-x-shippingContainer)
+  :global(.vtex-address-form__postalCode)
+    :global(.vtex-input__label)::after{
+      content: "Calcula tu costo de envío";
+      color: #194681;
+      font-size: 14px;
+}
+
+:global(.vtex-store-components-3-x-shippingContainer)
+    :global(.vtex-address-form__postalCode)
+      :global(.vtex-input__label)::before{
+        content: url('https://ofixmx.vteximg.com.br/arquivos/shipp.png');
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--rowprod)
+  :global(.vtex-flex-layout-0-x-flexRowContent){
+    margin-bottom: 0%;
+  }
+
+:global(.vtex-minicart-2-x-minicartCheckoutButton)
+  :global(.vtex-button){
+  background-color: #194681;
+  border: 1px solid #194681;
+}
+
+:global(.vtex-minicart-2-x-closeIconButton){
+  color:#FD0102;
+}
+
+:global(.vtex-minicart-2-x-minicartTitle){
+  color:#194681;
+  border-bottom: 1px solid #194681;
+}
+
+:global(.vtex-product-list-0-x-productPrice){
+  color: #194681;
+  font-weight: 600;
+}
+
+:global(.vtex-product-list-0-x-productPriceCurrency){
+  color: #8f8f8f;
+}
+
+:global(.vtex-product-price-1-x-savings--summary){
+  color: #ffffff;
+  padding: 5px;
+  font-size: 13px;
+}
+
+:global(.vtex-store-components-3-x-inputGroup--news)
+  :global(.vtex-input-prefix__group)
+    :global(.vtex-styleguide-9-x-input){
+      background-color: transparent;
+}
+
+:global(.vtex-store-components-3-x-inputGroup--news)
+  :global(.vtex-input-prefix__group){
+    background-color: #efefef;
+  }
+
+  :global(.vtex-store-components-3-x-inputGroup--news)
+  :global(.vtex-input-prefix__group)
+    :global(.vtex-styleguide-9-x-input)::-webkit-input-placeholder{
+      color: #194681;
+      font-weight: 600;
+}
+
+
+:global(.vtex-store-components-3-x-searchBarInnerContainer)
+  :global(.vtex-input-prefix__group){
+    width: 600px;
+    height: 55px;
+    border-radius: 15px;
+}
+
+:global(.vtex-store-components-3-x-searchBarInnerContainer)
+  :global(.vtex-input-prefix__group)
+    :global(.vtex-styleguide-9-x-input),
+:global(.vtex-store-components-3-x-searchBarInnerContainer)
+  :global(.vtex-input-prefix__group)
+    :global(.vtex-input__suffix){
+    max-width: 550px;
+    background-color: transparent;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--ubicacion){
+  margin-left: 40px;
+  margin-right: 60px;
+}
+
+:global(.vtex-store-components-3-x-imageElement--ubimg){
+  padding-top: 12px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--necesitas){
+  padding-top: 12px;
+}
+
+
+:global(.vtex-store-components-3-x-searchBarInnerContainer)
+  :global(.vtex-input-prefix__group){
+    background-color: #efefef;
+}
+
+:global(.vtex-store-components-3-x-searchIcon){
+  color: #c1c1c1;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--mencompartir){
+  color:#194681 !important;
+  padding-top: 11px;  
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--mencompartir)::before{
+  content: url('https://ofixmx.vteximg.com.br/arquivos/share.png');
+}
+
+
+:global(.vtex-menu-2-x-styledLinkContainer--mencompartir){
+    margin-right: 5.5rem;
+
+}
+
+
+:global(.vtex-account_menu-link),
+:global(.vtex-my-account-1-x-dataEntryChildren),
+:global(.vtex-my-account-1-x-newsletterContainerMessage),
+:global(.vtex-my-account-1-x-boxContainerBody) .address-summary{
+    color: #000000 !important;
+}
+
+:global(.vtex-menu-2-x-accordionIcon--mencompartir),
+:global(.vtex-menu-2-x-accordionIcon--titfoo){
+  color:#ffffff;
+}
+
+  

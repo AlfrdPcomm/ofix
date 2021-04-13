@@ -1,0 +1,11 @@
+:global(.vtex-category-menu-2-x-container) {
+    background-color: transparent;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+:global(.vtex-category-menu-2-x-departmentLink) {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+}
