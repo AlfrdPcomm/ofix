@@ -103,12 +103,18 @@
   }
 }
 
-:global(.vtex-rich-text-0-x-paragraph--ahorra){
+:global(.vtex-rich-text-0-x-paragraph--ahorra),
+:global(.vtex-category-menu-2-x-closeIcon){
   color: #ff0000;
+  font-weight: 500;
 }
 
-:global(.vtex-rich-text-0-x-paragraph--club){
+:global(.vtex-rich-text-0-x-paragraph--club),
+:global(.vtex-store-drawer-0-x-menuIcon),
+:global(.vtex-category-menu-2-x-plusIcon),
+:global(.vtex-category-menu-2-x-menuIcon){
   color: #194681;
+  font-weight: 500;
 }
 
 :global(.vtex-minicart-2-x-cartIcon),
@@ -122,6 +128,7 @@
 
 :global(.vtex-minicart-2-x-openIconContainer):hover::before{
   content: url('https://ofixmx.myvtex.com/arquivos/carritoh.PNG');
+  
 }
 
 :global(.vtex-login-2-x-container)
@@ -132,4 +139,67 @@
 :global(.vtex-login-2-x-container)
   :global(.vtex-button):hover::before{
   content: url('https://ofixmx.myvtex.com/arquivos/usuarioh.PNG');
+}
+
+:global(.vtex-minicart-2-x-minicartQuantityBadge){
+  right: 1px;
+}
+
+:global(.vtex-menu-2-x-styledLinkContainer--itemcatgs):hover,
+:global(.vtex-menu-2-x-styledLinkContainer--itemservicios):hover,
+:global(.vtex-menu-2-x-styledLinkContainer--itemescucha):hover{
+  border-bottom: 2px solid #194681;
+}
+
+:global(.vtex-menu-2-x-styledLinkContainer--itemofers):hover{
+  border-bottom: 2px solid #ff0000;
+}
+:global(.vtex-menu-2-x-styledLinkContent--itemcatgs),
+:global(.vtex-menu-2-x-styledLinkContent--itemservicios),
+:global(.vtex-menu-2-x-styledLinkContent--itemescucha){
+  color: black;
+  font-weight: 500;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--itemofers){
+  color: #ff0000;
+  font-weight: 500;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--catmen){
+  padding-left: 5%;
+}
+
+
+:global(.vtex-menu-2-x-styledLink--itemcatgs)
+:global(.vtex-menu-2-x-styledLinkContent--itemcatgs)::before{
+  content: url(assets/hamenu16x16.png);
+  position: relative;
+  right: 2px;
+  top: 1px
+}
+
+:global(.vtex-menu-2-x-styledLink--itemescucha)
+:global(.vtex-menu-2-x-styledLinkContent--itemescucha)::before{
+  content: url(assets/audio16x16.png);
+  position: relative;
+  right: 2px;
+}
+
+:global(.vtex-menu-2-x-styledLink--itemservicios)
+:global(.vtex-menu-2-x-styledLinkContent--itemservicios)::before{
+  content: url(assets/star16x16.png);
+  position: relative;
+  right: 2px;
+}
+
+:global(.vtex-menu-2-x-styledLink--itemofers)
+:global(.vtex-menu-2-x-styledLinkContent--itemofers)::before{
+  content: url(assets/offer16x16.png);
+  position: relative;
+  right: 2px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--club){
+  padding-left: 3px;
 }

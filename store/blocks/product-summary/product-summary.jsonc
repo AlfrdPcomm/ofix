@@ -4,10 +4,12 @@
       "flex-layout.col#wish",
       "stack-layout#prodsum",
       "product-summary-name",
-      //"flex-layout.col#productRating",
+      "flex-layout.col#productRating",
       "product-summary-space",
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
+      
+      "product-summary-description",
       "flex-layout.row#botonscompra"
     ]
   },"flex-layout.col#wish":{
@@ -59,8 +61,8 @@
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image#shelf",
-      "vtex.product-highlights@2.x:product-highlights#collection",
-      "modal-trigger#quickview" // Check quickview.jsonc
+      "vtex.product-highlights@2.x:product-highlights#collection"
+      //"modal-trigger#quickview" // Check quickview.jsonc
     ]
   },
 

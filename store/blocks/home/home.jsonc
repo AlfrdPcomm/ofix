@@ -16,7 +16,7 @@
       "flex-layout.col#slider",
       "flex-layout.col#banner"
     ], "props":{
-      "fullWidth": "true",
+      "fullWidth": false,
       "blockClass":"slibann",
       "title": "Slider-Banner"
     }
@@ -25,22 +25,44 @@
       "list-context.image-list#demo"
     ],
     "props":{
-      "width":"70%"
+      "width":"75%"
     }    
   },"flex-layout.col#banner":{
     "children":[
-      "image#banner"
+      "list-context.image-list#banner"
     ],
     "props":{
       "horizontalAlign": "center",
-      "blockClass":"banner"
+      "blockClass":"banner",
+      "width":"25%"
     }
-  },"image#banner":{
-     "props":{
-        "src":"https://ofixmx.vteximg.com.br/arquivos/banner.png",
-        "link": "/"
-     }   
   },
+
+  "list-context.image-list#banner": {
+    "children": ["slider-layout#bannerder"],
+    "props": {
+      "height": 505,
+      "images": [
+        {
+          "image": "https://ofixmx.vteximg.com.br/arquivos/banner.png",
+          "mobileImage": "https://ofixmx.vteximg.com.br/arquivos/banner.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#bannerder": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "banner"
+    }
+  },
+
+
 
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
@@ -144,7 +166,7 @@
     "props": {
       "itemsPerPage": {
         "desktop": 2,
-        "tablet": 2,
+        "tablet": 1,
         "phone": 1
       },
       "infinite": true,
@@ -166,7 +188,9 @@
   },"flex-layout.col#infocdizquierda":{
     "children":[
       "info-card#izquierda"
-    ]    
+    ],"props":{
+      "blockClass":"izq"
+    }
   },"info-card#izquierda":{
       "props":{
         "id": "infocizquierda",
@@ -185,7 +209,9 @@
     "flex-layout.col#infocderecha":{
       "children":[
         "info-card#derecha"
-      ]    
+      ],"props":{
+        "blockClass":"der"
+      }    
   },"info-card#derecha":{
     "props":{
       "id": "infocderecha",
@@ -351,7 +377,7 @@
     "children":[
       "list-context.product-list#hoffice"
     ],"props":{
-      "fullWidth":true
+      "fullWidth":false
     }
   },"list-context.product-list#hoffice": {
     "blocks": ["product-summary.shelf"],
@@ -364,7 +390,7 @@
     "props": {
       "itemsPerPage": {
         "desktop": 5,
-        "tablet": 3,
+        "tablet": 2,
         "phone": 1
       },
       "infinite": true,

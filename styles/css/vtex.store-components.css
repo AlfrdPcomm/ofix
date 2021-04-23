@@ -177,12 +177,18 @@
 
 
 /* CSS HOME */
+
+
 :global(.vtex-rich-text-0-x-container--notbar),
 :global(.vtex-rich-text-0-x-container--phone){
   background-color: #ffffff;
   color: #ff0000;
   font-weight: 700;
 }
+:global(.vtex-rich-text-0-x-container--phone){  
+  padding-right: 10%;
+}
+
 
 :global(.vtex-flex-layout-0-x-flexRow--main-header),
 :global(.vtex-flex-layout-0-x-flexRow--catmensticky),
@@ -279,6 +285,7 @@
   background-color: #ffffff;
   color: #194681;
   border: 1px solid #194681;
+  text-transform: capitalize;
 }
 
 :global(.vtex-flex-layout-0-x-flexColChild--check)
@@ -286,6 +293,7 @@
   background-color: #194681;
   color: #ffffff;
   border: 1px solid #194681;
+  text-transform: capitalize;
 }
 
 :global(.vtex-flex-layout-0-x-flexColChild--cart)
@@ -594,6 +602,8 @@
 
 :global(.vtex-store-components-3-x-searchIcon){
   color: #c1c1c1;
+  width: 24px;
+  height: 24px;
 }
 
 :global(.vtex-menu-2-x-styledLinkContent--mencompartir){
@@ -615,7 +625,8 @@
 :global(.vtex-account_menu-link),
 :global(.vtex-my-account-1-x-dataEntryChildren),
 :global(.vtex-my-account-1-x-newsletterContainerMessage),
-:global(.vtex-my-account-1-x-boxContainerBody) .address-summary{
+:global(.vtex-my-account-1-x-boxContainerBody) .address-summary,
+:global(.vtex-store-components-3-x-content){
     color: #000000 !important;
 }
 
@@ -624,4 +635,179 @@
   color:#ffffff;
 }
 
+:global(.vtex-my-account-1-x-menuLink){
+  color: #000000;
+}
+
+
+:global(.vtex-slider-layout-0-x-imageElementLink--carwl){
+  padding-top: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+:global(.vtex-store-components-3-x-imageElementLink--carwl)
+  :global(.vtex-slider-layout-0-x-imageElement):hover{
+    content: url("https://ofixmx.myvtex.com/arquivos/wishlisth.png");
+  }
   
+
+:global(.vtex-store-components-3-x-shareLabel){
+  display: none;
+}
+
+@media (max-width: 1024px){
+
+  :global(.vtex-flex-layout-0-x-flexColChild--cart){
+    padding-top: 5px;
+  }
+
+  :global(.vtex-login-2-x-container){
+    padding-bottom: 3px;
+  }
+
+  :global(.vtex-rich-text-0-x-heading--necesario),
+  :global(.vtex-rich-text-0-x-heading--titns) {
+    text-align: center;
+  }
+  :global(.vtex-rich-text-0-x-container--titenv),
+  :global(.vtex-rich-text-0-x-container--txtenv){
+    padding-left: 45px;
+  } 
+
+  :global(.vtex-flex-layout-0-x-flexColChild--check)
+    :global(.vtex-button){
+      margin-top: 6px;
+  }
+
+  :global(.vtex-slider-layout-0-x-slide--banner)
+    :global(.vtex-slider-layout-0-x-slideChildrenContainer--banner){
+    padding-left: 0%;
+    padding-top: 15px;
+  }
+
+  :global(.vtex-store-components-3-x-infoCardContainer--meses){
+    margin-top: 25px;
+  }
+
+}
+
+
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--banner){
+    padding-left: 0px;
+} 
+
+
+
+:global(.vtex-product-summary-2-x-description){
+  padding-top: 3px;
+  padding-bottom: 7px !important;
+  padding-left:0%;
+}
+
+:global(.vtex-search-result-3-x-galleryItem--normal){
+  flex-basis: 33% !important;
+  max-width: 33% !important;
+}
+
+
+:global(.vtex-slider__right-value),
+:global(.vtex-slider__left-value){
+  color: #194681;
+}
+
+:global(.vtex-slider__selector),
+:global(.vtex-slider__base-internal){
+  background-color: #194681;
+}
+
+:global(.vtex-store-components-3-x-shippingContainer)
+  :global(.vtex-button){
+    background-color: #ffffff;
+    border-color: #194681;
+    color: #194681;
+  }
+
+:global(.vtex-slider-layout-0-x-paginationDot--isActive){
+  background-color: #194681;
+}
+
+
+:global(.vtex-address-form-4-x-input)
+  :global(.vtex-input__suffix)::-webkit-input-placeholder{
+  content: "Introduce tu código postal";
+  color:#8f8f8f;
+  font-size: 14px;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--banner){
+  padding-left: 25px;
+}
+:global(.vtex-wish-list-1-x-wishlistIconContainer)
+:global(.vtex-button){
+  position: absolute;
+    z-index: 2;
+    top: 8px;
+    right: 10px;
+}
+
+:global(.vtex-wish-list-1-x-wishlistIconContainer)
+:global(.vtex-button)
+:global(.vtex-button__label){
+  display: none;  
+}
+
+:global(.vtex-wish-list-1-x-wishlistIconContainer)
+:global(.vtex-button)::before{
+  content: url(assets/wishlist16x16.png);
+}
+
+:global(.vtex-reviews-and-ratings-2-x-inlineContainer){
+  margin-bottom: 0%;
+}
+
+
+
+
+:global(.vtex-flex-layout-0-x-flexColChild--productmain)
+:global(.vtex-store-components-3-x-shippingContainer)
+  :global(.vtex-button){
+  width: 50%;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--ahorra)::before{
+  content: url(assets/right16x16.png);
+  position: relative;
+  top:2px
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--izq),
+:global(.vtex-flex-layout-0-x-flexColChild--der){
+  padding: 5px;
+}
+
+
+:global(.vtex-store-components-3-x-caretIcon){
+  color: #194681;
+}
+
+:global(.vtex-product-summary-2-x-productNameContainer),
+:global(.vtex-product-summary-2-x-description){
+  text-align: justify;
+}
+
+:global(.vtex-product-summary-2-x-brandName){
+  font-size: 16px;
+}
+
+:global(.vtex-product-summary-2-x-description){
+  font-size: 15px;
+  color: #444444;
+}
+
+:global(.vtex-product-price-1-x-sellingPriceValue--summary){
+  font-size: 28px;
+  font-weight: 500;
+}
+

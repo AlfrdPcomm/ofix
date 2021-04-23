@@ -39,5 +39,95 @@
         "text": "visit vtex.com"
       }
     }
+  },
+
+  "vtex.menu@2.x:menu#secciones":{
+    "children":[
+      "menu-item#categorias",
+      "menu-item#ofertas",
+      "menu-item#escuchanos",
+      "menu-item#servicios"
+    ]
+  },
+
+  "menu-item#categorias": {
+    "props": {
+      "id": "menu-item-cats",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "tagTitle": "Categorías",
+        "text": "Categorías"
+      },
+      "blockClass":"itemcatgs"
+    },"blocks":[
+      "vtex.menu@2.x:submenu#cats"
+    ]
+  },"vtex.menu@2.x:submenu#cats":{
+    "children":[
+      
+      "flex-layout.row#cats"      
+    ]
+  },
+  "flex-layout.row#cats":{
+    "children":[
+    ],"props":{
+      "fullWidth":true
+    }
+  },
+
+
+  
+  "menu-item#ofertas": {
+    "props": {
+      "id": "menu-item-ofertas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Ofertas",
+        "text": "Ofertas"
+      },
+      "blockClass":"itemofers"
+    }
+  },"menu-item#escuchanos": {
+    "props": {
+      "id": "menu-item-escucha",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Escúchanos",
+        "text": "Escúchanos"
+      },
+      "blockClass":"itemescucha"
+    }
+  },"menu-item#servicios": {
+    "props": {
+      "id": "menu-item-serv",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Servicios",
+        "text": "Servicios"
+      },
+      "blockClass":"itemservicios"
+    }
   }
+
+
+
+
 }
