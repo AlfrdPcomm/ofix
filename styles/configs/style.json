@@ -108,7 +108,7 @@
         "text": {
           "action-primary": "#1F60F6",
           "action-secondary": "#eef3f7",
-          "link": "#1F60F6",
+          "link": "#1B5DB5",
           "emphasis": "#1F60F6",
           "disabled": "#adabab",
           "success": "#8bc34a",
@@ -295,7 +295,7 @@
             "letterSpacing": "0"
           },
           "body": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Inter, San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
             "fontWeight": "normal",
             "fontSize": "1rem",
             "textTransform": "initial",

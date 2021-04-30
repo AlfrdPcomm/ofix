@@ -122,22 +122,39 @@
   width: 0px;
   height: 0px;
 }
-:global(.vtex-minicart-2-x-openIconContainer)::before{
+:global(.vtex-minicart-2-x-openIconContainer)
+  :global(.vtex-button)
+    :global(.vtex-button__label)::before{
   content: url('https://ofixmx.myvtex.com/arquivos/carrito.PNG');
 }
 
-:global(.vtex-minicart-2-x-openIconContainer):hover::before{
+
+:global(.vtex-minicart-2-x-openIconContainer)
+  :global(.vtex-button)
+    :global(.vtex-button__label){
+      padding: 0%;
+}
+
+
+
+
+
+
+:global(.vtex-minicart-2-x-openIconContainer)
+  :global(.vtex-button)
+    :global(.vtex-button__label):hover::before{
   content: url('https://ofixmx.myvtex.com/arquivos/carritoh.PNG');
-  
 }
 
 :global(.vtex-login-2-x-container)
-  :global(.vtex-button)::before{
+  :global(.vtex-button)
+    :global(.vtex-button__label)::before{
   content: url('https://ofixmx.myvtex.com/arquivos/usuario.PNG');
 }
 
 :global(.vtex-login-2-x-container)
-  :global(.vtex-button):hover::before{
+  :global(.vtex-button)
+    :global(.vtex-button__label):hover::before{
   content: url('https://ofixmx.myvtex.com/arquivos/usuarioh.PNG');
 }
 
@@ -203,3 +220,24 @@
 :global(.vtex-rich-text-0-x-paragraph--club){
   padding-left: 3px;
 }
+
+:global(.vtex-store-components-3-x-imageElement--imgwish){
+  padding-top: 6px;
+  padding-left: 7px;
+  padding-right: 8px;
+}
+
+:global(.vtex-store-components-3-x-imageElement--imgwish):hover{
+  content: url(https://ofixmx.myvtex.com/arquivos/wishlisth.png);
+}
+
+:global(.vtex-store-components-3-x-imageElementLink--imgwish){
+  text-align: center;
+}
+
+:global(.vtex-minicart-2-x-minicartQuantityBadge){
+  right: -9px;
+  top: 2px;
+}
+
+

@@ -94,10 +94,37 @@
       "flex-layout.col#spacer",
       "flex-layout.col#ayuda",
       "flex-layout.col#spacer",
-      "login",
-      "flex-layout.col#wishlist",
-      "minicart.v2"
+      "flex-layout.col#accesos"      
     ]
+  },
+
+  "flex-layout.col#accesos":{
+    "children":[
+      "flex-layout.row#accesos"      
+    ],"props":{
+      "verticalAlign":"middle",
+      "blockClass":"colaccesos"
+    }    
+  },"flex-layout.row#accesos":{
+    "children":[
+      "login",
+      "image#wishlist",
+      "minicart.v2"
+    ],"props":{
+      "horizontalAlign":"center",
+      "blockClass":"rowaccesos"
+    }
+  },
+  
+  
+  
+  "image#wishlist":{
+    "props":{
+      "src": "https://ofixmx.myvtex.com/arquivos/wishlist.png",
+      "link":"/",
+      "height":28,
+      "blockClass":"imgwish"
+    }
   },
 
   "search-bar#intelligent":{
@@ -110,38 +137,6 @@
     ]
   },
   
-  "flex-layout.col#wishlist":{
-    "children":[
-      "list-context.image-list#wl"
-    ]
-  },
-  
-  "list-context.image-list#wl": {
-    "children": ["slider-layout#wl"],
-    "props": {
-      "height": 28,
-      "images": [
-        {
-          "image": "https://ofixmx.myvtex.com/arquivos/wishlist.png",
-          "link":{
-            "url":"https://dev--ofixmx.myvtex.com/account#/wishlist"
-          }
-        }
-      ]
-    }
-  },
-  "slider-layout#wl": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "blockClass": "carwl"
-    }
-  },
-
 
 
 
@@ -205,9 +200,9 @@
   },
   "flex-layout.row#1-mobile": {
     "children": [
-      "flex-layout.col#spacer",
-      "category-menu#mobile",
-      //"drawer",
+      //"flex-layout.col#spacer",
+      //"category-menu#mobile",
+      "drawer",
       "flex-layout.col#spacer",
       //"flex-layout.col#spacer",
       "logo#mobile",
@@ -228,9 +223,10 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#categorias",
+      "menu-item#ofertas",
+      "menu-item#escuchanos",
+      "menu-item#servicios"
       
     ],
     "props": {
@@ -278,7 +274,7 @@
     "children":[
       "flex-layout.row#club"
     ],"props":{
-      "width": "25%"
+      "width": "28%"
     }
   },"flex-layout.row#club":{
     "children":[
@@ -289,7 +285,7 @@
       "children":[
         "rich-text#zquierda"
       ],"props":{
-        "width":"65%"
+        "width":"62%"
       }
     },"rich-text#zquierda":{
       "props":{
@@ -301,7 +297,7 @@
       "children":[
         "rich-text#derecha"
       ],"props":{
-        "width":"35%"
+        "width":"38%"
       }
     },"rich-text#derecha":{
       "props":{

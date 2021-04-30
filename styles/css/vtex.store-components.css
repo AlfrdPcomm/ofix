@@ -388,14 +388,14 @@
 
 
 :global(.vtex-tab-layout-0-x-container--home){
-  margin-left: 10%;
-  margin-right: 10%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 :global(.vtex-tab-layout-0-x-container--home)
   :global(.vtex-tab-layout-0-x-listContainer){
     justify-content: left;
-    margin-left: 2%;
+    padding-left: 10%;
   }
 
 
@@ -471,23 +471,68 @@
   margin-top: 22px;
 }
 
+
 :global(.vtex-flex-layout-0-x-flexColChild--btnagregar)
   :global(.vtex-button){
-    background-color: #194681;
-    border: 1px solid #194681; 
+    /* background-color: #194681;*/
+    border: 1px solid transparent; 
+    background: linear-gradient(to bottom, #1980FC, #1B5DB5);
+    width: 155px;    
 }
 
+:global(.vtex-flex-layout-0-x-flexColChild--btnagr)
+  :global(.vtex-button){
+    background: linear-gradient(to bottom, #1980FC, #1B5DB5);
+    border: 1px solid transparent; 
+  }
+:global(.vtex-flex-layout-0-x-flexColChild--btnagr)
+  :global(.vtex-button)
+    :global(.vtex-button__label){
+      text-transform: capitalize;
+}
+
+:global(.vtex-toast){
+  background: linear-gradient(to bottom, #1980FC, #1B5DB5);
+}
+:global(.vtex-flex-layout-0-x-flexCol--btnahr)
+  :global(.vtex-button){
+    background-color: #ffffff;
+    border: 1px solid #194681;
+    color:#194681;
+}
 :global(.vtex-flex-layout-0-x-flexColChild--btnahora)
   :global(.vtex-button){
     background-color: #ffffff;
     border: 1px solid #194681;
     color:#194681;
+    width: 163px;
+  }
+:global(.vtex-flex-layout-0-x-flexCol--btnahr)
+  :global(.vtex-button)
+    :global(.vtex-button__label),
+:global(.vtex-flex-layout-0-x-flexColChild--btnahora)
+  :global(.vtex-button)
+    :global(.vtex-button__label){
+      text-transform: capitalize;
+    }
+
+
+    
+:global(.vtex-flex-layout-0-x-flexColChild--btnagr)
+  :global(.vtex-button)
+    :global(.vtex-button__label)::before,
+:global(.vtex-flex-layout-0-x-flexColChild--btnagregar)
+  :global(.vtex-button)
+    :global(.vtex-button__label)::before{
+      content: url(assets/addcartprd.png);
+      position: relative;
+      right: 4px;
   }
 
   :global(.vtex-flex-layout-0-x-flexColChild--btnagregar)
     :global(.vtex-button)
-      :global(.vtex-button__label)::before{
-        content: url('https://ofixmx.vteximg.com.br/arquivos/addcartprd.png');
+      :global(.vtex-button__label){
+       text-transform: capitalize;
   }
 
 :global(.vtex-store-components-3-x-shippingContainer)
@@ -508,6 +553,8 @@
     :global(.vtex-address-form__postalCode)
       :global(.vtex-input__label)::before{
         content: url('https://ofixmx.vteximg.com.br/arquivos/shipp.png');
+        position: relative;
+        top: 4px;
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--rowprod)
@@ -729,16 +776,22 @@
     color: #194681;
   }
 
-:global(.vtex-slider-layout-0-x-paginationDot--isActive){
-  background-color: #194681;
+:global(.vtex-store-components-3-x-shippingContainer)
+  :global(.vtex-button)
+    :global(.vtex-button__label){
+      font-size: 0%;
+}
+
+:global(.vtex-store-components-3-x-shippingContainer)
+  :global(.vtex-button)
+    :global(.vtex-button__label)::before{
+      content: "Calcular";
+      font-size: 14px;
 }
 
 
-:global(.vtex-address-form-4-x-input)
-  :global(.vtex-input__suffix)::-webkit-input-placeholder{
-  content: "Introduce tu código postal";
-  color:#8f8f8f;
-  font-size: 14px;
+:global(.vtex-slider-layout-0-x-paginationDot--isActive){
+  background-color: #194681;
 }
 
 :global(.vtex-slider-layout-0-x-slideChildrenContainer--banner){
@@ -771,9 +824,19 @@
 
 
 :global(.vtex-flex-layout-0-x-flexColChild--productmain)
-:global(.vtex-store-components-3-x-shippingContainer)
-  :global(.vtex-button){
-  width: 50%;
+  :global(.vtex-store-components-3-x-shippingContainer)
+    :global(.vtex-button){
+      width: 163px !important;
+      height: 32px !important;
+      margin-top: 3px ;
+      border-width: thin;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--productmain)
+  :global(.vtex-store-components-3-x-shippingContainer)
+    :global(.vtex-button)
+      :global(.vtex-button__label){
+      text-transform: capitalize;
 }
 
 :global(.vtex-rich-text-0-x-paragraph--ahorra)::before{
@@ -811,3 +874,137 @@
   font-weight: 500;
 }
 
+:global(.vtex-flex-layout-0-x-flexColChild--productmain)
+  :global(.vtex-reviews-and-ratings-2-x-summaryContainer){
+  padding-top: 15px;
+  padding-bottom: 15px;
+  }
+
+  .shippingContainer{
+    padding-top: 20px;
+  }
+
+  :global(.vtex-store-components-3-x-productImageTag--main){
+    max-height: 450px !important;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRowContent--rowprod){
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--rowaccesos){
+    padding-right: 10px;
+  }
+
+  :global(.vtex-dropdown__container){
+    height: 40px;
+    width: 90px;
+    border-color:  #1B5DB5;
+    border-width: thin;
+  }
+
+  :global(.vtex-product-quantity-1-x-quantitySelectorContainer--cantprod){
+    padding-top: 10px;
+  }
+/*--------------------- Inicio Tablet ------------------------*/
+  :global(.vtex-flex-layout-0-x-flexColChild--colTablet){
+    padding-bottom: 0px;
+    height: auto !important;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexCol--colTablet){
+    border: 1px solid #e1e1e1;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+    height: auto !important;
+  }
+ 
+
+:global(.vtex-flex-layout-0-x-flexColChild--colTablet)
+  :global(.vtex-flex-layout-0-x-flexRow--productname){
+    padding-bottom: 10px;
+  }
+
+:global(.vtex-flex-layout-0-x-flexColChild--colTablet)
+  :global(.vtex-product-quantity-1-x-quantitySelectorContainer--cantprod)
+    :global(.vtex-product-quantity-1-x-quantitySelectorDropdownMobileContainer--cantprod)
+      :global(.vtex-styleguide-9-x-dropdown)
+        :global(.vtex-styleguide-9-x-container){
+          width: 100%;
+      }
+:global(.vtex-flex-layout-0-x-flexRowContent--btnstab)
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth)
+    :global(.vtex-flex-layout-0-x-flexCol--btnahora)
+      :global(.vtex-flex-layout-0-x-flexColChild--btnahora){
+        margin-top: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--trustytab){
+  text-align: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--rowtrust){
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+:global(.vtex-flex-layout-0-x-flexCol--trustytab){
+  padding: 20px;
+  background-color: #efefef;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+ /*--------------------- Fin Tablet ------------------------*/
+
+  /*--------------------- INICIO PHONE ------------------------*/
+
+:global(.vtex-flex-layout-0-x-flexRow--rowpropsmob){
+  border-radius: 10px;
+  border: 1px solid #e1e1e1;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--menuprops){
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+
+:global(.vtex-menu-2-x-menuItemInnerDiv--menuprops){
+  background-color: #194681;
+}
+
+
+:global(.vtex-menu-2-x-accordionIcon--menuprops--isClosed),
+:global(.vtex-menu-2-x-accordionIcon--menuprops--isOpen){
+  color: #ffffff;
+}
+
+:global(.vtex-store-components-3-x-productDescriptionTitle){
+  display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--descriphone){
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: justify;
+}
+
+
+:global(.vtex-menu-2-x-styledLinkContent--menuprops){
+  padding-top: 5px;
+  padding-bottom: 5px;  
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--colcarou)
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--categorias){
+    padding-bottom: 17px;
+    padding-left: 15px;
+}
+   /*--------------------- Fin PHONE ------------------------*/

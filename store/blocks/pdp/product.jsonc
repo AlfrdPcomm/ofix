@@ -1,6 +1,351 @@
 {
   "store.product": {
+    "blocks":[
+      "responsive-layout.desktop",
+      "responsive-layout.tablet",
+      "responsive-layout.phone"
+    ],
+    
     "children": [
+      
+    ]
+  },
+
+  /*  ------------------------ INICO PHONE ----------------------------------- */
+  "responsive-layout.phone":{
+    "children":[
+      "flex-layout.row#product-main-tablet",
+      "flex-layout.row#menuprops",
+      "flex-layout.row#beneficios",
+      "flex-layout.row#carouseltitle",
+      "flex-layout.row#carousel",
+      "flex-layout.row#carouseltitle",
+      "flex-layout.row#carousel"
+    ]
+  },
+  "flex-layout.row#menuprops":{
+    "children":[
+      "vtex.menu@2.x:menu#props"
+    ],"props":{
+      "fullWidth":false,
+      "blockClass":"menuprops"
+    }
+  },
+  
+  "vtex.menu@2.x:menu#props":{
+    "props":{
+      "orientation":"vertical"
+    },"children":[
+      "menu-item#descripcion",
+      "menu-item#caracs",
+      "menu-item#ficha",
+      "menu-item#comments"
+    ]
+  },
+  
+  "menu-item#descripcion": {
+    "props": {
+      "id": "descript",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass":"menuprops",
+      "text": "DESCRIPCIÓN",
+      "itemProps": {
+        "noFollow": true,
+        "tagTitle": "Descripción"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#descrip"]
+  },
+  "vtex.menu@2.x:submenu.accordion#descrip": {
+    "children": ["vtex.menu@2.x:menu#descrip-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#descrip-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "flex-layout.row#descrip-phone"      
+      ]
+  },"flex-layout.row#descrip-phone":{
+    "children":[
+      "product-description"
+    ],"props":{
+      "blockClass":"descriphone"
+    }
+  },
+
+  "menu-item#caracs": {
+    "props": {
+      "id": "caracs",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass":"menuprops",
+      "text": "CARACTERÍSTICAS",
+      "itemProps": {
+        "noFollow": true,
+        "tagTitle": "Características"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#caracs"]
+  },
+  "vtex.menu@2.x:submenu.accordion#caracs": {
+    "children": ["vtex.menu@2.x:menu#caracs-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#caracs-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "flex-layout.row#caracsmob"
+      ]
+  },"flex-layout.row#caracsmob":{
+    "children":[
+      "product-description"
+    ],"props":{
+      "blockClass":"descriphone"
+    }
+  },
+
+  "menu-item#ficha": {
+    "props": {
+      "id": "ficha",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass":"menuprops",
+      "text": "FICHA TÉCNICA",
+      "itemProps": {
+        "noFollow": true,
+        "tagTitle": "FICHA TÉCNICA"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#ficha"]
+  },
+  "vtex.menu@2.x:submenu.accordion#ficha": {
+    "children": ["vtex.menu@2.x:menu#ficha-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#ficha-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "flex-layout.row#fichamob"
+      ]
+  },"flex-layout.row#fichamob":{
+    "children":[
+      "product-description"
+    ],"props":{
+      "blockClass":"descriphone"
+    }
+  },
+
+  "menu-item#comments": {
+    "props": {
+      "id": "comments",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass":"menuprops",
+      "text": "COMENTARIOS",
+      "itemProps": {
+        "noFollow": true,
+        "tagTitle": "COMENTARIOS"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#comms"]
+  },
+  "vtex.menu@2.x:submenu.accordion#comms": {
+    "children": ["vtex.menu@2.x:menu#comms-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#comms-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "flex-layout.row#commsmob"
+      ]
+  },"flex-layout.row#commsmob":{
+    "children":[
+      "product-reviews"
+    ],"props":{
+      "blockClass":"descriphone"
+    }
+  },
+
+  "flex-layout.row#beneficios":{
+    "children":[
+      "image#beneficios"
+    ],"props":{
+      "blockClass":"rowpropsmob"  
+    }
+  },
+  
+
+
+
+  /*  ------------------------ FIN PHONE ----------------------------------- */
+/*  ------------------------ INICO TABLET ----------------------------------- */
+  "responsive-layout.tablet":{
+    "children":[
+      "flex-layout.row#product-main-tablet",
+      "tab-layout#producto",
+      "flex-layout.row#carouseltitle",
+      "flex-layout.row#carousel",
+      "flex-layout.row#carouseltitle",
+      "flex-layout.row#carousel"
+    ]
+    
+  },"flex-layout.row#product-main-tablet": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "fullWidth":false,
+      "blockClass":"rowprod"
+    },
+    "children": [
+      "flex-layout.col#stack-tablet", "flex-layout.col#right-col-tablet"]
+  }, 
+
+  "flex-layout.col#stack-tablet":{
+    "children":[
+      "stack-layout#tablet"
+    ]
+  },
+  
+  "stack-layout#tablet": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": [
+      "flex-layout.row#product-image-tablet",
+      "product-bookmark",
+      "product-specification-badges"
+    ]
+  },
+  "flex-layout.row#product-image-tablet": {
+    "children": [
+      "flex-layout.col#imagecol-tablet"
+      ]
+  },"flex-layout.col#imagecol-tablet":{
+    "children":[
+      "flex-layout.row#btnwl",
+      "product-images#tablet"
+    ]
+  },"product-images#tablet":{
+    "props":{
+      "displayThumbnailsArrows": false,
+      "thumbnailsOrientation": "horiontal",
+      "showNavigationArrows": false
+    }
+    
+  }, 
+  
+  "flex-layout.col#right-col-tablet":{
+    "children":[
+      "flex-layout.row#product-name",
+      "flex-layout.row#preciotab",
+      "flex-layout.row#ahorro",
+      "flex-layout.row#id-share", 
+      "product-separator",  
+      "product-quantity#personalizado",
+      "flex-layout.row#btns",      
+      "availability-subscriber",
+      "shipping-simulator"   
+    ],"props":{
+      "blockClass":"colTablet"
+    }
+  },"flex-layout.row#preciotab":{
+    "children":[
+      "flex-layout.col#precio"
+    ]
+  },"flex-layout.row#ahorro":{
+    "children":[
+      "flex-layout.col#ahorro"
+    ],"props":{
+      "blockClass":"ahorroclass"
+    }
+  },
+  
+  "flex-layout.row#btns":{
+    "children":[
+      "flex-layout.col#btnagregartab",
+      "flex-layout.col#btnahoratab"
+    ],"props":{
+      "blockClass":"btnstab",
+      "fullWidth":false
+
+    }
+  },"flex-layout.col#btnagregartab":{
+    "children":[
+      "add-to-cart-button#btnagregar"
+    ],"props":{
+      "blockClass":"btnagr"
+    }
+  },
+  "flex-layout.col#btnahoratab":{
+    "children":[
+      "add-to-cart-button#btnaahora"
+    ],"props":{
+      "blockClass":"btnahr"
+    }
+  },
+
+  "flex-layout.row#simuladorenvio":{
+    "children":[
+      "vtex.menu@2.x:menu#envio"
+    ]
+  },
+  
+  "vtex.menu@2.x:menu#envio":{
+    "props":{
+      "orientation":"vertical"
+    },"children":[
+      "menu-item#envio"
+    ]
+  },"menu-item#envio": {
+    "props": {
+      "id": "envio",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass":"mencompartir",
+      "text": "Envío",
+      "itemProps": {
+        "noFollow": true,
+        "tagTitle": "Envío"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#envio"]
+  },
+  "vtex.menu@2.x:submenu.accordion#envio": {
+    "children": ["vtex.menu@2.x:menu#envio-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#envio-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "shipping-simulator"
+      ]
+  },
+/*  ------------------------ INICO TABLET ----------------------------------- */
+
+
+
+  "responsive-layout.desktop":{
+    "children":[
       //"flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
       //"flex-layout.row#description",
@@ -8,7 +353,7 @@
       "flex-layout.row#carouseltitle",
       "flex-layout.row#carousel",
       "flex-layout.row#carouseltitle",
-      "flex-layout.row#carousel"
+      "flex-layout.row#carousel"      
       //"flex-layout.row#specifications-title",
       //"product-specification-group#table",
       //"shelf.relatedProducts",
@@ -47,6 +392,7 @@
       "marginBottom": 7,
       "paddingTop": 7,
       "paddingBottom": 7,
+      "fullWidth":false,
       "blockClass":"rowprod"
     },
     "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
@@ -112,7 +458,7 @@
     },
     "children": [
       "flex-layout.row#product-name",
-      "product-rating-summary",
+      "product-rating-summary#custom",
       "flex-layout.row#precio",
       //"flex-layout.row#list-price-savings",
       //"flex-layout.row#selling-price",
@@ -128,6 +474,10 @@
       "shipping-simulator"
       
     ]
+  },"product-rating-summary#custom":{
+    "props":{
+      "blockClass":"summarycust"
+    }
   },
   "flex-layout.row#id-share":{
     "children":[
@@ -178,35 +528,29 @@
       ]
   },
 
-
-
-
-
-
-
-
-
-
-
   "flex-layout.row#precio":{
     "children":[
       "flex-layout.col#precio",
       "flex-layout.col#ahorro"
-    ]
+    ],"props":{
+      "blockClass":"precio",
+      "paddingBottom": 3
+    }
   },"flex-layout.col#precio":{
     "children":[
       "product-selling-price"
     ],"props":{
-      "width":"60%",
+      "width":"50%",
       "blockClass":"preciolista"
     }
   },"flex-layout.col#ahorro":{
     "children":[
-      "product-list-price",
-      "product-price-savings"
+      "product-list-price"
+      //"product-price-savings"
     ],"props":{
-      "width":"40%",
-      "blockClass":"ahorro"
+      "width":"50%",
+      "blockClass":"ahorro",
+      "verticalAlign":"middle"
     }
   },  
 
@@ -229,8 +573,7 @@
     "props": {
       "marginTop": 4,
       "marginBottom": 7,
-      "horizontalAlign": "CENTER",
-      "preserveLayoutOnMobile": true    
+      "horizontalAlign": "CENTER"   
     },
     "children": [
       "flex-layout.col#cantidad",
@@ -242,6 +585,7 @@
     "children":[
       "product-quantity#personalizado"
     ],"props":{
+      "verticalAlign":"middle"
     }
   },"product-quantity#personalizado":{
     "props":{
@@ -254,7 +598,8 @@
       "add-to-cart-button#btnagregar"
     ],"props":{
       "blockClass":"btnagregar",
-      "horizontalAlign":"center"
+      "horizontalAlign":"center",
+      "verticalAlign": "middle"
     }
   },"add-to-cart-button#btnagregar":{
     "props":{      
@@ -265,9 +610,9 @@
     "children":[
       "add-to-cart-button#btnaahora"
     ],"props":{
-      "width":"37%",
       "blockClass":"btnahora",
-      "horizontalAlign":"center"
+      "horizontalAlign":"center",
+      "verticalAlign": "middle"
     }
   },"add-to-cart-button#btnaahora":{
     "props":{

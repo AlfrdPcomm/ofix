@@ -1,6 +1,110 @@
 {
   "store.home": {
     "blocks": [
+      "responsive-layout.desktop#home",
+      "responsive-layout.tablet#home",
+      "responsive-layout.phone#home"     
+    ]
+  },
+/*--------------------------------Inicio PHONE ---------------------------------- */
+  "responsive-layout.tablet#home":{
+    "children":[
+      "flex-layout.row#bannerprin-tab",
+      "flex-layout.row#banner-cats",
+      "flex-layout.row#banner-shelf",
+      "flex-layout.row#infoizq",
+      "flex-layout.row#infoder",
+      "flex-layout.row#carouseltitle",
+      "flex-layout.row#carousel",
+      "flex-layout.row#trustphone"
+    ]
+  },"flex-layout.row#trustphone":{
+    "children":[
+      "flex-layout.col#enviospho",
+      "flex-layout.col#garantiapho",
+      "flex-layout.col#seguropho"
+    ],"props":{
+      "blockClass": "rowtrust"
+    }
+  },"flex-layout.col#enviospho":{
+    "children":[
+      "image#iconimg",
+      "rich-text#titenv",
+      "rich-text#txtenv"
+    ],"props":{
+      "blockClass":"trustytab"
+    }
+  },"flex-layout.col#garantiapho":{
+    "children":[
+      "image#iconimgar",
+      "rich-text#titgar",
+      "rich-text#txtgar"
+    ],"props":{
+      "blockClass":"trustytab"
+    }
+  },
+  "flex-layout.col#seguropho":{
+    "children":[
+      "image#iconimgseg",
+      "rich-text#titseg",
+      "rich-text#txtseg"
+    ],"props":{
+      "blockClass":"trustytab"
+    }
+  },
+  
+  "flex-layout.row#infoizq":{
+    "children":[
+      "flex-layout.col#infocdizquierda"
+    ]
+  },
+  "flex-layout.row#infoder":{
+    "children":[
+      "flex-layout.col#infocderecha"
+    ]
+  },
+  
+  "flex-layout.row#bannerprin-tab":{
+    "children":[
+      "list-context.image-list#demo"
+    ],"props":{
+      "fullWidth":true
+    }
+  },
+
+  "flex-layout.row#banner-cats":{
+    "children":[
+      "flex-layout.col#bannertab",
+      "flex-layout.col#catstab"
+    ]
+  },"flex-layout.col#bannertab":{
+    "children":[
+      "list-context.image-list#banner"
+    ],"props":{
+      "verticalAlign": "middle",
+      "width":"25%"
+    }
+  },
+  
+  "flex-layout.col#catstab":{
+    "children":[
+      "list-context.image-list#cats"
+    ],"props":{
+      "verticalAlign": "middle",
+      "width":"75%",
+      "blockClass":"colcarou"
+    }
+  },
+
+  
+  
+
+  
+
+/*--------------------------------Inicio PHONE ---------------------------------- */
+
+  "responsive-layout.desktop#home":{
+    "children":[
       "flex-layout.row#banners",
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#categorias",      
@@ -11,7 +115,30 @@
       "flex-layout.row#trusty",
       "flex-layout.row#newsletter"
     ]
-  },"flex-layout.row#banners":{
+  },
+
+  "responsive-layout.phone#home":{
+    "children":[
+      "flex-layout.row#banners",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#categorias",      
+      "flex-layout.row#banner-shelf", 
+      "flex-layout.row#infocards",
+      "flex-layout.row#carouseltitle",
+      "flex-layout.row#carousel",
+      "flex-layout.row#trusty",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+
+  
+  
+  
+  
+  
+  
+  "flex-layout.row#banners":{
     "children":[
       "flex-layout.col#slider",
       "flex-layout.col#banner"
@@ -128,7 +255,7 @@
     "props": {
       "itemsPerPage": {
         "desktop": 5,
-        "tablet": 3,
+        "tablet": 2,
         "phone": 2
       },
       "infinite": true,
@@ -146,7 +273,9 @@
   },"flex-layout.col#imagenarte":{
     "children":[
       "image#arte"
-    ]
+    ],"props":{
+      "verticalAlign":"middle"
+    }
   },"image#arte":{
     "props":{
       "src":"https://ofixmx.vteximg.com.br/arquivos/arte.PNG"
