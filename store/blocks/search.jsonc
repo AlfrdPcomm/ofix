@@ -302,6 +302,32 @@
   },
 
   "gallery": {
-    "blocks": ["product-summary.shelf"]
+    "blocks": ["product-summary.shelf#search"]
+  },
+
+  "product-summary.shelf#search": {
+    "children": [
+      
+      "stack-layout#prodsumsearch",      
+      "product-summary-name",
+      "flex-layout.col#productRating",
+      "product-summary-space",
+      "product-list-price#summary",
+      "flex-layout.row#selling-price-savings",
+      "product-summary-description",
+      "flex-layout.row#botonscompra"
+    ]
+  },
+  "stack-layout#prodsumsearch": {
+    "children": [        
+      "product-summary-image#shelf",
+      "vtex.product-highlights@2.x:product-highlights#collection",
+      "add-to-list-btn#search"
+      //"modal-trigger#quickview" // Check quickview.jsonc
+    ]
+  }, "add-to-list-btn#search":{
+    "props":{
+      "blockClass":"wish-search"
+    }
   }
 }

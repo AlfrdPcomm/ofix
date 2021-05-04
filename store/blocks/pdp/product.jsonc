@@ -17,9 +17,9 @@
       "flex-layout.row#product-main-tablet",
       "flex-layout.row#menuprops",
       "flex-layout.row#beneficios",
-      "flex-layout.row#carouseltitle",
+      "flex-layout.row#carouseltitle1",
       "flex-layout.row#carousel",
-      "flex-layout.row#carouseltitle",
+      "flex-layout.row#carouseltitle2",
       "flex-layout.row#carousel"
     ]
   },
@@ -196,9 +196,9 @@
     "children":[
       "flex-layout.row#product-main-tablet",
       "tab-layout#producto",
-      "flex-layout.row#carouseltitle",
+      "flex-layout.row#carouseltitle1",
       "flex-layout.row#carousel",
-      "flex-layout.row#carouseltitle",
+      "flex-layout.row#carouseltitle2",
       "flex-layout.row#carousel"
     ]
     
@@ -350,9 +350,9 @@
       "flex-layout.row#product-main",
       //"flex-layout.row#description",
       "tab-layout#producto",
-      "flex-layout.row#carouseltitle",
+      "flex-layout.row#carouseltitle1",
       "flex-layout.row#carousel",
-      "flex-layout.row#carouseltitle",
+      "flex-layout.row#carouseltitle2",
       "flex-layout.row#carousel"      
       //"flex-layout.row#specifications-title",
       //"product-specification-group#table",
@@ -783,6 +783,34 @@
     ],"props":{
       "width":"60%",
       "blockClass":"colinfo"
+    }
+  },
+
+  "flex-layout.row#carouseltitle1":{
+    "children":[
+      "rich-text#titcarousel1"
+    ],"props":{
+      "blockClass":"necesario"
+    }
+  },"rich-text#titcarousel1":{
+    "props":{
+      "text": "### Para complementar",
+      "textPosition": "CENTER",
+      "blockClass": "necesario"
+    }
+  },
+
+  "flex-layout.row#carouseltitle2":{
+    "children":[
+      "rich-text#titcarousel2"
+    ],"props":{
+      "blockClass":"necesario"
+    }
+  },"rich-text#titcarousel2":{
+    "props":{
+      "text": "### Tambíen podría interesarte",
+      "textPosition": "CENTER",
+      "blockClass": "necesario"
     }
   }
 }

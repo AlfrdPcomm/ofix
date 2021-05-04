@@ -89,13 +89,22 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#boton",
-      "search-bar#intelligent",
+      "flex-layout.col#searchdesk",
+      
       //"flex-layout.col#category-menu",
       "flex-layout.col#spacer",
       "flex-layout.col#ayuda",
       "flex-layout.col#spacer",
       "flex-layout.col#accesos"      
     ]
+  },
+
+  "flex-layout.col#searchdesk":{
+    "children":[  
+      "search-bar#intelligent"
+    ],"props":{
+      "verticalAlign":"middle"
+    }
   },
 
   "flex-layout.col#accesos":{
@@ -112,7 +121,8 @@
       "minicart.v2"
     ],"props":{
       "horizontalAlign":"center",
-      "blockClass":"rowaccesos"
+      "blockClass":"rowaccesos",
+      "preserveLayoutOnMobile":true
     }
   },
   
@@ -144,11 +154,14 @@
   "flex-layout.col#ayuda":{
     "children":[
       "rich-text#ayuda"
-    ]  
+    ],"props":{
+      "verticalAlign":"middle"
+    }
   },"rich-text#ayuda":{
     "props":{
-      "text": "¿Necesitas Ayuda?",
-      "blockClass":"necesitas"
+      "text": "[¿Necesitas Ayuda?](https://dev--ofixmx.myvtex.com)",
+      "blockClass":"necesitas",
+      "textAlignment":"CENTER"
     }
   },
   "flex-layout.col#logo-desktop": {
@@ -180,7 +193,8 @@
     "children":[
       "image#boton"
     ],"props":{
-      "blockClass":"ubicacion"
+      "blockClass":"ubicacion",
+      "verticalAlign":"middle"
     }
   },"image#boton":{
     "props":{
@@ -205,10 +219,11 @@
       "drawer",
       "flex-layout.col#spacer",
       //"flex-layout.col#spacer",
-      "logo#mobile",
-      "flex-layout.col#spacer",
-      "login",      
-      "minicart.v2"
+      "flex-layout.col#logomob",      
+      //"flex-layout.col#spacer",
+      "flex-layout.col#accesos"
+      //"login",      
+      //"minicart.v2""
     ],
     "props": {
       "blockClass": "main-header-mobile",
@@ -217,20 +232,61 @@
       "fullWidth": true
     }
   },
+
+  "flex-layout.col#logomob":{
+    "children":[
+      "logo#mobile"
+    ],"props":{
+      "blockClass":"cologo"
+    }
+  },
   "drawer": {
     "children": ["menu#drawer"]
   },
 
   "menu#drawer": {
     "children": [
+      
+      "flex-layout.row#mendraw",
+      "flex-layout.row#srchdrawe"
+      
+      //"flex-layout.col#menumob"     
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass":"menmobo"
+    }
+  },
+
+  "flex-layout.row#mendraw":{
+    "children":[
+      "vtex.menu@2.x:menu#catsmob"
+    ],"props":{
+      "fullWidth":false
+    }
+  },
+
+  "vtex.menu@2.x:menu#catsmob":{
+    "children":[
       "menu-item#categorias",
       "menu-item#ofertas",
       "menu-item#escuchanos",
       "menu-item#servicios"
       
-    ],
-    "props": {
+    ],"props":{
       "orientation": "vertical"
+    }
+  },
+  
+
+  "flex-layout.row#srchdrawe":{
+    "children":[
+      "search-bar#inteldraw"
+    ]
+  },"search-bar#inteldraw":{
+    "props":{
+      "fullWidth":false,
+      "blockClass":"srchdraw"
     }
   },
 
@@ -247,7 +303,8 @@
       "title": "Logo",
       "href": "/",
       "url": "https://ofixmx.vteximg.com.br/arquivos/ofixlogo.png",
-      "width": "150"
+      "width": "150",
+      "blockClass":"logohome"
     }
   },
 

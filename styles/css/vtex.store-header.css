@@ -81,7 +81,7 @@
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 /* resize the logo for neat effect */
@@ -126,6 +126,8 @@
   :global(.vtex-button)
     :global(.vtex-button__label)::before{
   content: url('https://ofixmx.myvtex.com/arquivos/carrito.PNG');
+  position: relative;
+  bottom: 2px;
 }
 
 
@@ -140,10 +142,25 @@
 
 
 
-:global(.vtex-minicart-2-x-openIconContainer)
+/*:global(.vtex-minicart-2-x-openIconContainer)
   :global(.vtex-button)
     :global(.vtex-button__label):hover::before{
   content: url('https://ofixmx.myvtex.com/arquivos/carritoh.PNG');
+}
+
+
+
+:global(.vtex-login-2-x-container)
+  :global(.vtex-button)
+    :global(.vtex-button__label):hover::before{
+  content: url('https://ofixmx.myvtex.com/arquivos/usuarioh.PNG');
+}
+
+
+}*/
+
+:global(.vtex-minicart-2-x-minicartQuantityBadge){
+  right: 1px;
 }
 
 :global(.vtex-login-2-x-container)
@@ -152,15 +169,7 @@
   content: url('https://ofixmx.myvtex.com/arquivos/usuario.PNG');
 }
 
-:global(.vtex-login-2-x-container)
-  :global(.vtex-button)
-    :global(.vtex-button__label):hover::before{
-  content: url('https://ofixmx.myvtex.com/arquivos/usuarioh.PNG');
-}
 
-:global(.vtex-minicart-2-x-minicartQuantityBadge){
-  right: 1px;
-}
 
 :global(.vtex-menu-2-x-styledLinkContainer--itemcatgs):hover,
 :global(.vtex-menu-2-x-styledLinkContainer--itemservicios):hover,
@@ -227,9 +236,9 @@
   padding-right: 8px;
 }
 
-:global(.vtex-store-components-3-x-imageElement--imgwish):hover{
+/*:global(.vtex-store-components-3-x-imageElement--imgwish):hover{
   content: url(https://ofixmx.myvtex.com/arquivos/wishlisth.png);
-}
+}*/
 
 :global(.vtex-store-components-3-x-imageElementLink--imgwish){
   text-align: center;
@@ -241,3 +250,25 @@
 }
 
 
+:global(.vtex-store-components-3-x-autoCompleteOuterContainer--srchdraw)
+  :global(.vtex-input)
+    :global(.vtex-input-prefix__group){
+      width: auto;
+      height: 34px;
+}
+
+:global(.vtex-store-components-3-x-autoCompleteOuterContainer--srchdraw){
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--menmob){
+  color: #000000;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--itemcatgs),
+:global(.vtex-menu-2-x-styledLinkContent--itemofers),
+:global(.vtex-menu-2-x-styledLinkContent--itemescucha),
+:global(.vtex-menu-2-x-styledLinkContent--itemservicios){
+  justify-content: flex-start;
+}

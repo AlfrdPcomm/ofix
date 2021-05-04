@@ -6,7 +6,7 @@
       "responsive-layout.phone#home"     
     ]
   },
-/*--------------------------------Inicio PHONE ---------------------------------- */
+/*--------------------------------Inicio tablet ---------------------------------- */
   "responsive-layout.tablet#home":{
     "children":[
       "flex-layout.row#bannerprin-tab",
@@ -16,41 +16,9 @@
       "flex-layout.row#infoder",
       "flex-layout.row#carouseltitle",
       "flex-layout.row#carousel",
-      "flex-layout.row#trustphone"
+      "flex-layout.row#trustytablet",
+      "flex-layout.row#newsletter"
     ]
-  },"flex-layout.row#trustphone":{
-    "children":[
-      "flex-layout.col#enviospho",
-      "flex-layout.col#garantiapho",
-      "flex-layout.col#seguropho"
-    ],"props":{
-      "blockClass": "rowtrust"
-    }
-  },"flex-layout.col#enviospho":{
-    "children":[
-      "image#iconimg",
-      "rich-text#titenv",
-      "rich-text#txtenv"
-    ],"props":{
-      "blockClass":"trustytab"
-    }
-  },"flex-layout.col#garantiapho":{
-    "children":[
-      "image#iconimgar",
-      "rich-text#titgar",
-      "rich-text#txtgar"
-    ],"props":{
-      "blockClass":"trustytab"
-    }
-  },
-  "flex-layout.col#seguropho":{
-    "children":[
-      "image#iconimgseg",
-      "rich-text#titseg",
-      "rich-text#txtseg"
-    ],"props":{
-      "blockClass":"trustytab"
-    }
   },
   
   "flex-layout.row#infoizq":{
@@ -74,8 +42,9 @@
 
   "flex-layout.row#banner-cats":{
     "children":[
-      "flex-layout.col#bannertab",
-      "flex-layout.col#catstab"
+      //"flex-layout.col#bannertab",
+      //"flex-layout.col#catstab"
+      "list-context.image-list#cats"
     ]
   },"flex-layout.col#bannertab":{
     "children":[
@@ -97,40 +66,89 @@
   },
 
   
+/*--------------------------------Fin Tablet ---------------------------------- */
   
 
   
 
+"responsive-layout.desktop#home":{
+  "children":[
+    "flex-layout.row#banners",
+    "__fold__.experimentalLazyAssets",
+    "flex-layout.row#categorias",      
+    "flex-layout.row#banner-shelf", 
+    "flex-layout.row#infocards",
+    "flex-layout.row#carouseltitle",
+    "flex-layout.row#carousel",
+    "flex-layout.row#trusty",
+    "flex-layout.row#newsletter"
+  ]
+},
 /*--------------------------------Inicio PHONE ---------------------------------- */
 
-  "responsive-layout.desktop#home":{
-    "children":[
-      "flex-layout.row#banners",
-      "__fold__.experimentalLazyAssets",
-      "flex-layout.row#categorias",      
-      "flex-layout.row#banner-shelf", 
-      "flex-layout.row#infocards",
-      "flex-layout.row#carouseltitle",
-      "flex-layout.row#carousel",
-      "flex-layout.row#trusty",
-      "flex-layout.row#newsletter"
-    ]
-  },
 
   "responsive-layout.phone#home":{
     "children":[
       "flex-layout.row#banners",
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#categorias",      
-      "flex-layout.row#banner-shelf", 
+      "flex-layout.row#categorias",   
+      "flex-layout.row#banner-shelf",     
       "flex-layout.row#infocards",
       "flex-layout.row#carouseltitle",
       "flex-layout.row#carousel",
-      "flex-layout.row#trusty",
+      "flex-layout.row#trustytablet",
       "flex-layout.row#newsletter"
     ]
   },
+  
+  "flex-layout.row#trustytablet":{
+    "children":[
+      "flex-layout.col#enviosresp",
+      "flex-layout.col#garantiaresp",
+      "flex-layout.col#seguroresp"      
+    ],"props":{
+      "horizontalAlign":"CENTER",
+      "blockClass":"trustresp"
+    }
+  },
+  "flex-layout.col#enviosresp":{
+    "children":[
+      "image#iconimg",
+      "rich-text#titenv",
+      "rich-text#txtenv"
+    ],"props":{
+      "horizontalAlign":"center",
+      "blockClass":"trustcolresp"
+    }
+  },
 
+  "flex-layout.col#garantiaresp":{
+    "children":[
+      "image#iconimgar",
+      "rich-text#titgar",
+      "rich-text#txtgar"
+    ],"props":{
+      "horizontalAlign":"center",
+      "blockClass":"trustcolresp"
+    }
+  },
+
+  "flex-layout.col#seguroresp":{
+    "children":[
+      "image#iconimgseg",
+      "rich-text#titseg",
+      "rich-text#txtseg"
+    ],"props":{
+      "horizontalAlign":"center",
+      "blockClass":"trustcolresp"
+    }
+  },
+
+ 
+
+
+
+/*--------------------------------Fin PHONE ---------------------------------- */
 
   
   
@@ -152,7 +170,8 @@
       "list-context.image-list#demo"
     ],
     "props":{
-      "width":"75%"
+      "width":"75%",
+      "verticalAlign":"middle"
     }    
   },"flex-layout.col#banner":{
     "children":[
@@ -161,7 +180,8 @@
     "props":{
       "horizontalAlign": "center",
       "blockClass":"banner",
-      "width":"25%"
+      "width":"25%",
+      "verticalAlign":"middle"
     }
   },
 
@@ -185,7 +205,8 @@
         "phone": 1
       },
       "infinite": true,
-      "blockClass": "banner"
+      "blockClass": "banner",
+      "showNavigationArrows": "desktopOnly"
     }
   },
 
@@ -215,7 +236,8 @@
         "phone": 1
       },
       "infinite": true,
-      "blockClass": "carousel"
+      "blockClass": "carousel",
+      "showNavigationArrows": "desktopOnly"
     }
   },
 
@@ -247,7 +269,7 @@
           "mobileImage": "https://ofixmx.vteximg.com.br/arquivos/muebles.PNG"
         },{
           "image": "https://ofixmx.vteximg.com.br/arquivos/oficina.PNG",
-          "mobileImage": "https://ofixmx.vteximg.com.br/arquivos/slider.PNG"
+          "mobileImage": "https://ofixmx.vteximg.com.br/arquivos/oficina.PNG"
         }
       ]
     }
@@ -255,11 +277,12 @@
     "props": {
       "itemsPerPage": {
         "desktop": 5,
-        "tablet": 2,
+        "tablet": 3,
         "phone": 2
       },
       "infinite": true,
-      "blockClass": "categorias"
+      "blockClass": "categorias",
+      "showNavigationArrows": "desktopOnly"
     }
   },
 
@@ -299,8 +322,9 @@
         "phone": 1
       },
       "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf"
+      "fullWidth": true,
+      "blockClass": "shelf",      
+      "showNavigationArrows": "desktopOnly"
     }
   },
 
@@ -524,7 +548,8 @@
       },
       "infinite": true,
       "fullWidth": true,
-      "blockClass": "shelf"
+      "blockClass": "shelf",
+      "showNavigationArrows": "desktopOnly"
     }
   },
 

@@ -1,6 +1,8 @@
 {
   "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"]
   },
   "footer-layout.desktop": {
     "children": [
@@ -138,22 +140,58 @@
 
   "footer-layout.mobile": {
     "children": [
-      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#1-footer-mobile",      
+      "flex-layout.row#socialmob",
+      "flex-layout.row#metmob",
       "flex-layout.row#3-footer-mobile"
+
     ]
   },
 
+  "flex-layout.row#socialmob":{
+    "children":[
+      "flex-layout.col#socialmobile"
+    ],"props":{
+      "horizontalAlign":"center"
+    }
+  },
+   "flex-layout.row#metmob":{
+    "children":[
+      "flex-layout.col#metpamobile"
+    ]
+   },
+
 
 "flex-layout.row#3-footer-mobile":{
-  "children":[   
-    "flex-layout.col#social",
-    "slider-layout#social",
-    "rich-text#pmethod",
-    "slider-layout#pmethod",
+  "children":[  
     "slider-layout#poweredby"
   ]
   
-  },"flex-layout.col#social":{
+  },
+
+  "flex-layout.col#socialmobile":{
+    "children":[
+      "rich-text#social",
+      "slider-layout#social"
+    ],"props":{
+      "blockClass":"socialmob"
+    }
+  },
+  "flex-layout.col#metpamobile":{
+    "children":[
+      "rich-text#pmethod",
+      "slider-layout#pmethod"
+    ],"props":{
+      "blockClass":"methpaymob"
+    }
+  },
+  
+  
+  
+  
+  
+  
+  "flex-layout.col#social":{
     "children":[
       "rich-text#social"
     ],"props":{
