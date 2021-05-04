@@ -198,7 +198,7 @@
     }
   },"image#boton":{
     "props":{
-      "src": "https://ofixmx.vteximg.com.br/arquivos/boton.png",
+      "src": "assets/localiza.png",
       "link": "/",
       "blockClass":"ubimg"
     }
