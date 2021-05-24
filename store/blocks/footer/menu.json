@@ -1,4 +1,116 @@
 {
+
+  "vtex.menu@2.x:menu#siguenos":{
+    "props":{
+        "orientation":"vertical",
+        "text": "Síguenos",
+        "blockClass": "titfoo"
+    },"children":[
+      "flex-layout.col#colsm"
+    ]
+  }, "flex-layout.col#colsm":{
+    "children":[
+      "menu-item#titsoc",
+      "flex-layout.row#sm1",
+      "flex-layout.row#sm2"
+    ]
+  },
+
+  "menu-item#titsoc":{
+    "props":{
+      "id": "social",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,        
+        "text": "Síguenos",
+        "blockClass": "titfoo"
+    }
+  },
+  "flex-layout.row#sm1":{
+    "children":[
+      "image#sm1",
+      "image#sm2",
+      "image#sm3",
+      "image#sm4"
+    ],"props":{
+      "horizontalAlign":"center",
+      "blockClass":"rowfoosm"
+    }
+  },
+  "flex-layout.row#sm2":{
+    "children":[
+      "image#sm5",
+      "image#sm6",
+      "flex-layout.col#smder"      
+    ],"props":{
+      "blockClass":"rowfoosm"
+    }
+  },
+
+  "flex-layout.col#smder":{
+    "children":[
+
+    ],"props":{
+      "width": "50%"
+    }
+  },
+
+  "image#sm1":{
+    "props":{
+      "height":"20px",
+      "src": "assets/instam.png",
+      "link":{
+        "url":"https://www.instagram.com/ofix.mx/"
+      }
+    }
+  },
+  "image#sm2":{
+    "props":{
+      "height":"20px",
+      "src": "assets/youtm.png",
+      "link":{
+        "url":"https://www.youtube.com/user/ofixenlinea"
+      }
+    }
+  },
+  "image#sm3":{
+    "props":{
+      "height":"20px",
+      "src": "assets/facem.png",
+      "link":{
+        "url":"https://www.facebook.com/ofix.sadecv.54"
+      }
+    }
+  },
+  "image#sm4":{
+    "props":{
+      "height":"20px",
+      "src": "assets/twm.png",
+      "link":{
+        "url":"https://twitter.com/ofixmx"
+      }
+    }
+  },
+  "image#sm5":{
+    "props":{
+      "height":"20px",
+      "src": "assets/spotim.png",
+      "link":{
+        "url":"https://open.spotify.com/user/nvydi8o2ueou4plefif0siary?si=P3iIqtdqS8KfdsHFqcAeJA&utm_source=Web&utm_medium=Web%2FSpotifyPerfil&utm_campaign=Julio2018&nd=1"
+      }
+    }
+  },
+  "image#sm6":{
+    "props":{
+      "height":"20px",
+      "src": "assets/linkm.png",
+      "link":{
+        "url":"https://mx.linkedin.com/company/ofix-supertiendas-de-oficinas"
+      }
+    }
+  },
+
+
   "vtex.menu@2.x:menu#Garantia":{
     "props":{
       "orientation":"vertical",
@@ -129,7 +241,8 @@
     "children": [
       "menu-item#EmpresaTitulo",
       "menu-item#Nosotros",
-      "menu-item#Noticias"
+      "menu-item#Noticias",
+      "menu-item#bolsa"
     ]
   },
 
@@ -318,6 +431,22 @@
       }
     }
   },
+
+  "menu-item#bolsa": {
+    "props": {
+      "id": "menu-item-shirts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bolsa-de-trabajo",
+        "noFollow": false,
+        "tagTitle": "Bolsa de Trabajo",
+        "text": "Bolsa de Trabajo"
+      }
+    }
+  },
               
 
   "vtex.menu@2.x:menu#footer-mobile": {
@@ -393,7 +522,8 @@
     },
     "children": [
       "menu-item#Nosotros",
-      "menu-item#Noticias"
+      "menu-item#Noticias",
+      "menu-item#bolsa"
       ]
   }, 
   

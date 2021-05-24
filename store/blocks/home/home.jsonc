@@ -17,7 +17,8 @@
       "flex-layout.row#carouseltitle",
       "flex-layout.row#carousel",
       "flex-layout.row#trustytablet",
-      "flex-layout.row#newsletter"
+      "flex-layout.row#newsletter",
+      "back-to-top-button"
     ]
   },
   
@@ -81,7 +82,8 @@
     "flex-layout.row#carouseltitle",
     "flex-layout.row#carousel",
     "flex-layout.row#trusty",
-    "flex-layout.row#newsletter"
+    "flex-layout.row#newsletter",
+    "back-to-top-button"
   ]
 },
 /*--------------------------------Inicio PHONE ---------------------------------- */
@@ -94,23 +96,54 @@
       "flex-layout.row#categorias",   
       "flex-layout.row#banner-shelf",     
       "flex-layout.row#infocards",
-      "flex-layout.row#carouseltitle",
       "flex-layout.row#carousel",
       "flex-layout.row#trustytablet",
-      "flex-layout.row#newsletter"
+      "flex-layout.row#newsletter",
+      "back-to-top-button"
     ]
+  },
+
+  "notification.bar#phone":{
+    "props":{
+      "content": "Envío a todo México",
+      "blockClass": "notifbar"
+    }
   },
   
   "flex-layout.row#trustytablet":{
     "children":[
-      "flex-layout.col#enviosresp",
-      "flex-layout.col#garantiaresp",
-      "flex-layout.col#seguroresp"      
+      "slider-layout#slidertrusty"
+        
     ],"props":{
       "horizontalAlign":"CENTER",
       "blockClass":"trustresp"
     }
   },
+
+  "slider-layout#slidertrusty": {
+    "props": {
+        "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1        
+      },
+      "infinite":true,      
+      "showNavigationArrows": "desktopOnly",
+      "autoplay":{
+        "timeout": 4000,
+        "stopOnHover": true
+      }
+    },
+    "children": [
+      "flex-layout.col#enviosresp",
+      "flex-layout.col#garantiaresp",
+      "flex-layout.col#seguroresp"    
+    ]
+  },
+
+
+
+
   "flex-layout.col#enviosresp":{
     "children":[
       "image#iconimg",
@@ -161,7 +194,7 @@
       "flex-layout.col#slider",
       "flex-layout.col#banner"
     ], "props":{
-      "fullWidth": false,
+      "fullWidth": true,
       "blockClass":"slibann",
       "title": "Slider-Banner"
     }
@@ -184,6 +217,8 @@
       "verticalAlign":"middle"
     }
   },
+
+
 
   "list-context.image-list#banner": {
     "children": ["slider-layout#bannerder"],
@@ -254,22 +289,29 @@
       "images": [
         {
           "image": "https://ofixmx.vteximg.com.br/arquivos/laptops.PNG",
-          "mobileImage": "https://ofixmx.vteximg.com.br/arquivos/laptops.PNG"
+          "mobileImage": "https://ofixmx.vteximg.com.br/arquivos/laptops.PNG",
+          "link": {
+            "url":"/laptops"
+          }
         },
         {
           "image": "https://ofixmx.vteximg.com.br/arquivos/impresion.PNG",
-          "mobileImage": "https://ofixmx.vteximg.com.br/arquivos/impresion.PNG"
+          "mobileImage": "https://ofixmx.vteximg.com.br/arquivos/impresion.PNG",
+          "link": "/impresion"
         },
         {
           "image": "https://ofixmx.vteximg.com.br/arquivos/escolar.PNG",
-          "mobileImage": "https://ofixmx.vteximg.com.br/arquivos/escolar.PNG"
+          "mobileImage": "https://ofixmx.vteximg.com.br/arquivos/escolar.PNG",
+          "link":"/escolares"
         },
         {
           "image": "https://ofixmx.vteximg.com.br/arquivos/muebles.PNG",
-          "mobileImage": "https://ofixmx.vteximg.com.br/arquivos/muebles.PNG"
+          "mobileImage": "https://ofixmx.vteximg.com.br/arquivos/muebles.PNG",
+          "link":"muebles"
         },{
           "image": "https://ofixmx.vteximg.com.br/arquivos/oficina.PNG",
-          "mobileImage": "https://ofixmx.vteximg.com.br/arquivos/oficina.PNG"
+          "mobileImage": "https://ofixmx.vteximg.com.br/arquivos/oficina.PNG",
+          "link": "oficina"
         }
       ]
     }
@@ -601,5 +643,13 @@
       "submit": "Suscribirme",
       "blockClass": "news"
     }
+  },
+
+
+  "back-to-top-button":{
+    "props":{
+      "display": "carte-iocon"
+    }
   }
+
 }

@@ -89,8 +89,7 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#boton",
-      "flex-layout.col#searchdesk",
-      
+      "flex-layout.col#searchdesk",      
       //"flex-layout.col#category-menu",
       "flex-layout.col#spacer",
       "flex-layout.col#ayuda",
@@ -117,7 +116,7 @@
   },"flex-layout.row#accesos":{
     "children":[
       "login",
-      "image#wishlist",
+      "flex-layout.col#wl",
       "minicart.v2"
     ],"props":{
       "horizontalAlign":"center",
@@ -125,13 +124,38 @@
       "preserveLayoutOnMobile":true
     }
   },
+
+  "flex-layout.col#wlm":{
+    "children":[
+      "image#wishlistmob"
+    ],"props":{
+      "verticalAlign":"middle",
+      "paddingRight":2
+    }
+  },
+  "flex-layout.col#wl":{
+    "children":[
+      "image#wishlist"
+    ]
+  },
   
-  
+  "image#wishlistmob":{
+    "props":{
+      "blockClass":"imgwlmob",
+      "height":20,
+      "src":"assets/wishlist20.png",
+      "link":{
+        "url":"/account#/wishlist"
+      }
+    }
+  },
   
   "image#wishlist":{
     "props":{
       "src": "https://ofixmx.myvtex.com/arquivos/wishlist.png",
-      "link":"/",
+      "link":{
+        "url": "/account#/wishlist"
+      },
       "height":28,
       "blockClass":"imgwish"
     }
@@ -146,6 +170,24 @@
       "autocomplete-result-list.v2"
     ]
   },
+ 
+    "autocomplete-result-list.v2": {
+      "blocks": ["product-summary.shelf#search"]
+    },
+
+    "product-summary.shelf#search":{
+      "children":[
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "flex-layout.col#productRating",
+      "product-summary-space",
+      "product-list-price#summary",
+      "flex-layout.row#selling-price-savings",
+      "product-summary-description",
+      "flex-layout.row#botonscompra"
+      ]
+    },
+  
   
 
 
@@ -185,7 +227,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://ofixmx.vteximg.com.br/arquivos/ofixlogo.png",
+      "url": "assets/logo-ofix.png",
       "width": "200"
     }
   },
@@ -194,12 +236,17 @@
       "image#boton"
     ],"props":{
       "blockClass":"ubicacion",
-      "verticalAlign":"middle"
+      "verticalAlign":"middle",
+      "paddingLeft": 7,
+      "paddingRight":7
+
     }
   },"image#boton":{
     "props":{
       "src": "assets/localiza.png",
-      "link": "/",
+      "link": {
+        "url": "/stores"
+      },
       "blockClass":"ubimg"
     }
   },
@@ -207,7 +254,7 @@
 
 
   "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
+    "children": ["notification.bar#phone","sticky-layout#1-mobile","search-bar#inteldraw"]
   },
   "sticky-layout#1-mobile": {
     "children": ["flex-layout.row#1-mobile"]
@@ -217,11 +264,12 @@
       //"flex-layout.col#spacer",
       //"category-menu#mobile",
       "drawer",
-      "flex-layout.col#spacer",
+      "flex-layout.col#ubcmob",
+      //"flex-layout.col#spacer",
       //"flex-layout.col#spacer",
       "flex-layout.col#logomob",      
       //"flex-layout.col#spacer",
-      "flex-layout.col#accesos"
+      "flex-layout.col#accesosmob"
       //"login",      
       //"minicart.v2""
     ],
@@ -233,22 +281,55 @@
     }
   },
 
+  "flex-layout.col#accesosmob":{
+    "children":[
+      "flex-layout.row#accesosmob"      
+    ]
+  },
+  "flex-layout.row#accesosmob":{
+    "children":[
+      "login",
+      "flex-layout.col#wlm",
+      "minicart.v2"
+    ],"props":{
+      "preserveLayoutOnMobile":true
+    }
+  },  
+  "flex-layout.col#ubcmob":{
+    "children":[
+      "image#icubc"
+    ]
+  },
+  "image#icubc":{
+    "props":{
+      "src":"assets/ubcmob.png",
+      "link":{
+        "url": "/stores"
+      }
+    }
+  },
+
+
   "flex-layout.col#logomob":{
     "children":[
       "logo#mobile"
     ],"props":{
-      "blockClass":"cologo"
+      "blockClass":"cologo",
+      "width":"grow",
+      "horixontalAlign":"center"
     }
   },
   "drawer": {
-    "children": ["menu#drawer"]
+    "children": ["menu#drawer"],
+    "props":{
+      "isFullWidth": true
+    }
   },
 
   "menu#drawer": {
     "children": [
       
-      "flex-layout.row#mendraw",
-      "flex-layout.row#srchdrawe"
+      "flex-layout.row#mendraw"
       
       //"flex-layout.col#menumob"     
     ],
@@ -284,9 +365,12 @@
       "search-bar#inteldraw"
     ]
   },"search-bar#inteldraw":{
+    "blocks": ["autocomplete-result-list.v2"],
     "props":{
+      "openAutocompleteOnFocus": true,
       "fullWidth":false,
-      "blockClass":"srchdraw"
+      "blockClass":"srchdraw",
+      "placeholder":"¿Qué estás buscando?"
     }
   },
 
@@ -302,8 +386,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://ofixmx.vteximg.com.br/arquivos/ofixlogo.png",
-      "width": "150",
+      "url": "assets/logo-ofix.png",
+      "width": "125",
       "blockClass":"logohome"
     }
   },
@@ -329,24 +413,26 @@
     }
   },"flex-layout.col#cluboficina":{
     "children":[
-      "flex-layout.row#club"
+      "flex-layout.col#clulbi"
+      //"flex-layout.row#club"
     ],"props":{
       "width": "28%"
     }
   },"flex-layout.row#club":{
     "children":[
-      "flex-layout.col#clulbi",
-      "flex-layout.col#clulbd"
+      "flex-layout.col#clulbi"
+      //"flex-layout.col#clulbd"
     ]    
   },"flex-layout.col#clulbi":{
       "children":[
         "rich-text#zquierda"
       ],"props":{
-        "width":"62%"
+        "verticalAlign":"middle"
+        //"width":"62%"
       }
     },"rich-text#zquierda":{
       "props":{
-        "text": "Ahorra Más",
+        "text": "[Ahorra Más](https://ofix.com) **[Club de Oficinas](https://ofix.com)**",
         "textPosition": "RIGHT",
         "blockClass":"ahorra"
       }

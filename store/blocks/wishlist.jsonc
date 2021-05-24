@@ -11,18 +11,20 @@
       "blocks": ["flex-layout.row#top", "list-context.wishlist"]
     },
     "flex-layout.row#top": {
-      "children": ["flex-layout.col#title"]
+      "children": ["flex-layout.col#titlewl"]
     },
-    "flex-layout.col#title": {
-      "children": ["rich-text#title"],
+    "flex-layout.col#titlewl": {
+      "children": ["rich-text#titlewl"],
       "props": {
         "blockClass": "titleWishlist",
         "preventVerticalStretch": true
       }
     },
-    "rich-text#title": {
+    "rich-text#titlewl": {
       "props": {
-        "text": "### Wishlist"
+        "text": "### Wishlist",
+        "textPosition": "CENTER",
+        "blockClass":"titwl"
       }
     },
     "list-context.wishlist": {

@@ -3,5 +3,9 @@
 }
 
 .containerImg .img {
-  max-width: 1520px;
+  max-width: 100%;
+}
+
+:global(.vtex-store-components-3-x-imageElementLink--carousel){
+  width: 100%;
 }

@@ -43,12 +43,605 @@
 
   "vtex.menu@2.x:menu#secciones":{
     "children":[
-      "menu-item#categorias",
+      "menu-item#categoriasdesk",
       "menu-item#ofertas",
       "menu-item#escuchanos",
       "menu-item#servicios"
     ]
   },
+
+  "menu-item#categoriasdesk": {
+    "props": {
+      "blockClass":"itemcatgs",
+      "id": "menu-item-categoriasdesk",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Categorías",
+        "text": "Categorías"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#categoriasdesk"
+    ]
+  },
+  "vtex.menu@2.x:submenu#categoriasdesk": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#categoriasdesk"
+    ]
+  },
+  "vtex.menu@2.x:menu#categoriasdesk": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "flex-layout.row#catsdesk1",
+      "flex-layout.row#catsdesk2"
+    ]
+  },
+
+  "flex-layout.row#catsdesk1":{
+    "children":[
+      "flex-layout.col#1",
+      "flex-layout.col#2",
+      "flex-layout.col#3",
+      "flex-layout.col#4"
+      
+    ],"props":{
+      "colGap": 2,
+      "blockClass":"rowmen1",
+      "horizontalAlign":"center"
+    }
+  },
+
+  "flex-layout.col#1":{
+    "children":[
+      "menu-item#cattit1",
+      "menu-item#subcat292",
+      "menu-item#subcat287",
+      "menu-item#subcat273",
+      "menu-item#subcat274",
+      "menu-item#subcat277"
+    ],"props":{
+      "preventVerticalStretch":true,
+      "paddingLeft":9
+    }
+  },
+  "menu-item#cattit1":{
+    "props":{
+      "text":"Arte",
+      "blockClass":"titcatmen"
+    }
+  },"menu-item#subcat292":{
+    "props":{
+      "type":"category",
+      "categoryId": 292,
+      "text":"Dibujo Técnico",
+      "blockClass":"catprinmen"
+    }
+  },
+  "menu-item#subcat287":{
+    "props":{
+      "type":"category",
+      "categoryId": 287,
+      "text":"Lettering",
+      "blockClass":"catprinmen"
+    }
+  },
+  "menu-item#subcat273":{
+    "props":{
+      "type":"category",
+      "categoryId": 273,
+      "text":"Manualidades y Arte",
+      "blockClass":"catprinmen"
+    }
+  },
+  "menu-item#subcat274":{
+    "props":{
+      "type":"category",
+      "categoryId": 274,
+      "text":"Papel Bastidores y Accesorios",
+      "blockClass":"catprinmen"
+    }
+  },
+  "menu-item#subcat277":{
+    "props":{
+      "type":"category",
+      "categoryId": 277,
+      "text":"Pinturas, Pigmentos y Pinceles Profesionales",
+      "blockClass":"catprinmen"
+    }
+  },
+
+  "flex-layout.col#2":{
+    "children":[
+      "menu-item#cattit2",
+      "menu-item#subcat36",
+      "menu-item#subcat179",
+      "menu-item#subcat155",
+      "menu-item#subcat107",
+      "menu-item#subcat72",
+      "menu-item#subcat207",
+      "menu-item#subcat38"
+    ],"props":{
+      "preventVerticalStretch":true,
+      "paddingLeft":9
+    }
+  },
+  "menu-item#cattit2":{
+    "props":{
+      "text":"Cómputo e Impresión",
+      "blockClass":"titcatmen"
+    }
+  },
+
+  "menu-item#subcat36":{
+    "props":{
+      "type":"category",
+      "categoryId": 274,
+      "text":"Accesorios de Cómputo",
+      "blockClass":"catprinmen"
+    }
+  },
+  "menu-item#subcat179":{
+    "props":{
+      "type":"category",
+      "categoryId": 179,
+      "text":"Almacenamiento",
+      "blockClass":"catprinmen"
+    }
+  },
+  "menu-item#subcat155":{
+    "props":{
+      "type":"category",
+      "categoryId": 155,
+      "text":"Computadoras",
+      "blockClass":"catprinmen"
+    }
+  },
+  "menu-item#subcat107":{
+    "props":{
+      "type":"category",
+      "categoryId": 107,
+      "text":"Consumibles para Impresión",
+      "blockClass":"catprinmen"
+    }
+  },
+  "menu-item#subcat72":{
+    "props":{
+      "type":"category",
+      "categoryId": 72,
+      "text":"Gaming",
+      "blockClass":"catprinmen"
+    }
+  },
+  "menu-item#subcat207":{
+    "props":{
+      "type":"category",
+      "categoryId": 207,
+      "text":"Impresión y Scanner",
+      "blockClass":"catprinmen"
+    }
+  },
+  "menu-item#subcat38":{
+    "props":{
+      "type":"category",
+      "categoryId": 38,
+      "text":"Periféricos",
+      "blockClass":"catprinmen"
+    }
+  },
+  
+
+  "flex-layout.col#3":{
+    "children":[
+      "menu-item#cattit3",
+      "menu-item#subcat133",
+      "menu-item#subcat239",
+      "menu-item#subcat117",
+      "menu-item#subcat51",
+      "menu-item#subcat67",
+      "menu-item#subcat403",
+      "menu-item#subcat83"
+    ],"props":{
+      "preventVerticalStretch":true,
+      "paddingLeft":9
+    }
+  },
+  "menu-item#cattit3":{
+    "props":{
+      "text":"Electrónica",
+      "blockClass":"titcatmen"
+    }
+  }, "menu-item#subcat133":{
+    "props":{
+      "type":"category",
+      "categoryId": 133,
+      "text":"Accesorios Eléctricos",
+      "blockClass":"catprinmen"
+    }
+  },   
+  
+  "menu-item#subcat239":{
+    "props":{
+      "type":"category",
+      "categoryId": 239,
+      "text":"Accesorios Eléctricos",
+      "blockClass":"catprinmen"
+    }
+  },
+  "menu-item#subcat117":{
+    "props":{
+      "type":"category",
+      "categoryId": 117,
+      "text":"Accesorios para Electrónica",
+      "blockClass":"catprinmen"
+    }
+  },      
+  "menu-item#subcat51":{
+    "props":{
+      "type":"category",
+      "categoryId": 51,
+      "text":"Audio",
+      "blockClass":"catprinmen"
+    }
+  },
+  "menu-item#subcat67":{
+    "props":{
+      "type":"category",
+      "categoryId": 67,
+      "text":"Equipos Electrónicos",
+      "blockClass":"catprinmen"
+    }
+  },
+  "menu-item#subcat403":{
+    "props":{
+      "type":"category",
+      "categoryId": 403,
+      "text":"Servicios Electrónicos",
+      "blockClass":"catprinmen"
+    }
+  },
+  "menu-item#subcat83":{
+    "props":{
+      "type":"category",
+      "categoryId": 83,
+      "text":"Telefonía",
+      "blockClass":"catprinmen"
+    }
+  },
+
+  "flex-layout.col#4":{
+    "children":[
+      "menu-item#cattit4",
+      "menu-item#subcat65",
+      "menu-item#subcat149",
+      "menu-item#subcat79",
+      "menu-item#subcat102",
+      "menu-item#subcat123",
+      "menu-item#subcat112"
+    ],"props":{
+      "preventVerticalStretch":true,
+      "paddingLeft":9
+    }
+  },
+  "menu-item#cattit4":{
+    "props":{
+      "text":"Equipos de Oficina",
+      "blockClass":"titcatmen"
+    }
+  },
+
+  "menu-item#subcat65":{
+    "props":{
+      "type":"category",
+      "categoryId": 65,
+      "text":"Artículos para Engargolar",
+      "blockClass":"catprinmen"
+    }
+  },
+"menu-item#subcat149":{
+  "props":{
+    "type":"category",
+    "categoryId": 149,
+    "text":"Equipos para Oficina",
+    "blockClass":"catprinmen"
+  } 
+},
+"menu-item#subcat79":{
+  "props":{
+    "type":"category",
+    "categoryId": 79,
+    "text":"Línea Blanca",
+    "blockClass":"catprinmen"
+  }
+},
+"menu-item#subcat102":{
+  "props":{
+    "type":"category",
+    "categoryId": 102,
+    "text":"Presentaciones",
+    "blockClass":"catprinmen"
+  }
+},
+"menu-item#subcat123":{
+  "props":{
+    "type":"category",
+    "categoryId": 123,
+    "text":"Puntos de Venta",
+    "blockClass":"catprinmen"
+  }
+},
+"menu-item#subcat112":{
+  "props":{
+    "type":"category",
+    "categoryId": 112,
+    "text":"Seguridad",
+    "blockClass":"catprinmen"
+  }
+},
+
+  "flex-layout.col#5":{
+    "children": [
+      "menu-item#cattit5",
+      "menu-item#subcat27",
+      "menu-item#subcat97",
+      "menu-item#subcat48",
+      "menu-item#subcat25"
+    ],"props":{
+      "preventVerticalStretch":true,
+      "paddingLeft":9
+    }
+  },
+
+  "menu-item#cattit5":{
+    "props":{
+      "text":"Escolares",
+      "blockClass":"titcatmen"
+    }
+  },
+"menu-item#subcat27":{
+  "props":{
+    "type":"category",
+    "categoryId": 27,
+    "text":"Artículos de Arte",
+    "blockClass":"catprinmen"
+  }
+},
+
+"menu-item#subcat97":{
+  "props":{
+    "type":"category",
+    "categoryId": 97,
+    "text":"Artículos de Escritura",
+    "blockClass":"catprinmen"
+  }
+},
+"menu-item#subcat48":{
+  "props":{
+    "type":"category",
+    "categoryId": 48,
+    "text":"Artículos Escolares",
+    "blockClass":"catprinmen"
+  }
+},
+"menu-item#subcat25":{
+  "props":{
+    "type":"category",
+    "categoryId": 25,
+    "text":"Artículos Preescolares",
+    "blockClass":"catprinmen"
+  }
+},
+
+  "flex-layout.row#catsdesk2":{
+    "children":[
+      "flex-layout.col#5",
+      "flex-layout.col#6",
+      "flex-layout.col#7",
+      "flex-layout.col#8"
+    ],"props":{
+      "colGap": 2,
+      "marginTop":5,
+      "horizontalAlign":"center",
+      "blockClass":"rowmen2"
+    }
+  },
+
+  "flex-layout.col#6":{
+    "children":[
+      "menu-item#cattit6",
+      "menu-item#subcat74",
+      "menu-item#subcat30",
+      "menu-item#subcat45",
+      "menu-item#subcat141",
+      "menu-item#subcat131"
+    ],"props":{
+      "preventVerticalStretch":true,
+      "paddingLeft":9
+    }
+  },
+
+  "menu-item#cattit6":{
+    "props":{
+      "text":"Higiene y Alimentos",
+      "blockClass":"titcatmen"
+    }
+  },
+
+  "menu-item#subcat74":{
+    "props":{
+      "type":"category",
+      "categoryId": 74,
+      "text":"Alimentos",
+      "blockClass":"catprinmen"
+    }
+  },
+"menu-item#subcat30":{
+  "props":{
+    "type":"category",
+    "categoryId": 30,
+    "text":"Artículos de Limpieza",
+    "blockClass":"catprinmen"
+  }
+},
+"menu-item#subcat45":{
+  "props":{
+    "type":"category",
+    "categoryId": 45,
+    "text":"Bebidas",
+    "blockClass":"catprinmen"
+  }
+},
+"menu-item#subcat141":{
+  "props":{
+    "type":"category",
+    "categoryId": 141,
+    "text":"Desechables",
+    "blockClass":"catprinmen"
+  }
+},
+"menu-item#subcat131":{
+  "props":{
+    "type":"category",
+    "categoryId": 131,
+    "text":"Higiene",
+    "blockClass":"catprinmen"
+  }
+},
+
+  "flex-layout.col#7":{
+    "children":[
+      "menu-item#cattit7",
+      "menu-item#subcat58",
+      "menu-item#subcat312",
+      "menu-item#subcat395"
+    ],"props":{
+      "preventVerticalStretch":true,
+      "paddingLeft":9
+    }
+  },
+
+  "menu-item#cattit7":{
+    "props":{
+      "text":"Muebles",
+      "blockClass":"titcatmen"
+    }
+  },
+
+  "menu-item#subcat58":{
+    "props":{
+      "type":"category",
+      "categoryId": 58,
+      "text":"Almacenamiento y Organización",
+      "blockClass":"catprinmen"
+    }
+  },
+
+"menu-item#subcat312":{
+  "props":{
+    "type":"category",
+    "categoryId": 312,
+    "text":"Mobiliario de Oficina",
+    "blockClass":"catprinmen"
+  }
+},
+"menu-item#subcat395":{
+  "props":{
+    "type":"category",
+    "categoryId": 395,
+    "text":"Sillas y Sillones",
+    "blockClass":"catprinmen"
+  }
+},
+
+  "flex-layout.col#8":{
+    "children":[
+      "menu-item#cattit8",
+      "menu-item#subcat43",
+      "menu-item#subcat55",
+      "menu-item#subcat41",
+      "menu-item#subcat62",
+      "menu-item#subcat99",
+      "menu-item#subcat88",
+      "menu-item#subcat93"
+    ],"props":{
+      "preventVerticalStretch":true,
+      "paddingLeft":9
+    }
+  },
+
+  "menu-item#cattit8":{
+    "props":{
+      "text":"Papelería",
+      "blockClass":"titcatmen"
+    }
+  },
+
+"menu-item#subcat43":{
+  "props":{
+    "type":"category",
+    "categoryId": 43,
+    "text":"Agendas y Directorios",
+    "blockClass":"catprinmen"
+  }
+},
+"menu-item#subcat55":{
+  "props":{
+    "type":"category",
+    "categoryId": 55,
+    "text":"Archivo y Organización",
+    "blockClass":"catprinmen"
+  }
+},
+"menu-item#subcat41":{
+  "props":{
+    "type":"category",
+    "categoryId": 41,
+    "text":"Artículos Adhesivos",
+    "blockClass":"catprinmen"
+  }
+},
+"menu-item#subcat62":{
+  "props":{
+    "type":"category",
+    "categoryId": 62,
+    "text":"Artículos de Escritorio",
+    "blockClass":"catprinmen"
+  }
+},
+"menu-item#subcat99":{
+  "props":{
+    "type":"category",
+    "categoryId": 99,
+    "text":"Artículos de Papelería",
+    "blockClass":"catprinmen"
+  }
+},
+"menu-item#subcat88":{
+  "props":{
+    "type":"category",
+    "categoryId": 88,
+    "text":"Blocks y Formas Impresas",
+    "blockClass":"catprinmen"
+  }
+},
+"menu-item#subcat93":{
+  "props":{
+    "type":"category",
+    "categoryId": 93,
+    "text":"Papeles",
+    "blockClass":"catprinmen"
+  }
+},
+
+
 
   "menu-item#categorias": {
     "props": {
@@ -62,21 +655,272 @@
         "text": "Categorías"
       },
       "blockClass":"itemcatgs"
-    },"blocks":[
-      "vtex.menu@2.x:submenu#cats"
-    ]
-  },"vtex.menu@2.x:submenu#cats":{
-    "children":[
-      
-      "flex-layout.row#cats"      
-    ]
+    },"blocks": ["vtex.menu@2.x:submenu.accordion#catsmobile"]
   },
-  "flex-layout.row#cats":{
-    "children":[
-    ],"props":{
-      "fullWidth":true
-    }
+  "vtex.menu@2.x:submenu.accordion#catsmobile": {
+    "children": ["vtex.menu@2.x:menu#catsmobile"]
   },
+
+  "vtex.menu@2.x:menu#catsmobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#categorias1",
+      "menu-item#categorias2",
+      "menu-item#categorias3",
+      "menu-item#categorias4",
+      "menu-item#categorias5",
+      "menu-item#categorias6",
+      "menu-item#categorias7",
+      "menu-item#categorias8"
+      ]
+  },
+
+  "menu-item#categorias1": {
+    "props": {
+      "id": "menu-item-cats1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "tagTitle": "Arte",
+        "text": "Arte"
+      },
+      "blockClass":"itemcatgsdraw"
+    },"blocks": ["vtex.menu@2.x:submenu.accordion#categorias1"]
+  },
+  "vtex.menu@2.x:submenu.accordion#categorias1": {
+    "children": ["vtex.menu@2.x:menu#categorias1"]
+  },
+
+  "vtex.menu@2.x:menu#categorias1": {
+    "props": {
+      "orientation": "vertical"
+    },"children":[
+    "menu-item#subcat292",
+    "menu-item#subcat287",
+    "menu-item#subcat273",
+    "menu-item#subcat274",
+    "menu-item#subcat277"
+  ]
+},
+
+"menu-item#categorias2": {
+  "props": {
+    "id": "menu-item-cats2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "tagTitle": "Cómputo e Impresión",
+      "text": "Cómputo e Impresión"
+    },
+    "blockClass":"itemcatgsdraw"
+  },"blocks": ["vtex.menu@2.x:submenu.accordion#categorias2"]
+},
+"vtex.menu@2.x:submenu.accordion#categorias2": {
+  "children": ["vtex.menu@2.x:menu#categorias2"]
+},
+
+"vtex.menu@2.x:menu#categorias2": {
+  "props": {
+    "orientation": "vertical"
+  },"children":[
+  "menu-item#subcat36",
+  "menu-item#subcat179",
+  "menu-item#subcat155",
+  "menu-item#subcat107",
+  "menu-item#subcat72",
+  "menu-item#subcat207",
+  "menu-item#subcat38"
+]
+},
+
+"menu-item#categorias3": {
+  "props": {
+    "id": "menu-item-cats3",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "tagTitle": "Electrónica",
+      "text": "Electrónica"
+    },
+    "blockClass":"itemcatgsdraw"
+  },"blocks": ["vtex.menu@2.x:submenu.accordion#categorias3"]
+},
+"vtex.menu@2.x:submenu.accordion#categorias3": {
+  "children": ["vtex.menu@2.x:menu#categorias3"]
+},
+
+"vtex.menu@2.x:menu#categorias3": {
+  "props": {
+    "orientation": "vertical"
+  },"children":[
+  "menu-item#subcat133",
+  "menu-item#subcat239",
+  "menu-item#subcat117",
+  "menu-item#subcat51",
+  "menu-item#subcat67",
+  "menu-item#subcat403",
+  "menu-item#subcat83"
+]
+},
+
+"menu-item#categorias4": {
+  "props": {
+    "id": "menu-item-cats4",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "tagTitle": "Equipos de Oficina",
+      "text": "Equipos de oficina"
+    },
+    "blockClass":"itemcatgsdraw"
+  },"blocks": ["vtex.menu@2.x:submenu.accordion#categorias4"]
+},
+"vtex.menu@2.x:submenu.accordion#categorias4": {
+  "children": ["vtex.menu@2.x:menu#categorias4"]
+},
+
+"vtex.menu@2.x:menu#categorias4": {
+  "props": {
+    "orientation": "vertical"
+  },"children":[
+  "menu-item#subcat65",
+  "menu-item#subcat149",
+  "menu-item#subcat79",
+  "menu-item#subcat102",
+  "menu-item#subcat123",
+  "menu-item#subcat112"
+]
+},
+
+
+"menu-item#categorias5": {
+  "props": {
+    "id": "menu-item-cats5",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "tagTitle": "Escolares",
+      "text": "Escolares"
+    },
+    "blockClass":"itemcatgsdraw"
+  },"blocks": ["vtex.menu@2.x:submenu.accordion#categorias5"]
+},
+"vtex.menu@2.x:submenu.accordion#categorias5": {
+  "children": ["vtex.menu@2.x:menu#categorias2"]
+},
+
+"vtex.menu@2.x:menu#categorias5": {
+  "props": {
+    "orientation": "vertical"
+  },"children":[
+  "menu-item#subcat27",
+  "menu-item#subcat97",
+  "menu-item#subcat48",
+  "menu-item#subcat25"
+]
+},
+
+"menu-item#categorias6": {
+  "props": {
+    "id": "menu-item-cats6",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "tagTitle": "Higiene y Alimentos",
+      "text": "Higiene y Alimentos"
+    },
+    "blockClass":"itemcatgsdraw"
+  },"blocks": ["vtex.menu@2.x:submenu.accordion#categorias6"]
+},
+"vtex.menu@2.x:submenu.accordion#categorias6": {
+  "children": ["vtex.menu@2.x:menu#categorias6"]
+},
+
+"vtex.menu@2.x:menu#categorias6": {
+  "props": {
+    "orientation": "vertical"
+  },"children":[
+  "menu-item#subcat74",
+  "menu-item#subcat30",
+  "menu-item#subcat45",
+  "menu-item#subcat141",
+  "menu-item#subcat131"
+]
+},
+
+"menu-item#categorias7": {
+  "props": {
+    "id": "menu-item-cats7",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "tagTitle": "Almacenamiento y Organización",
+      "text": "Almacenamiento y Organización"
+    },
+    "blockClass":"itemcatgsdraw"
+  },"blocks": ["vtex.menu@2.x:submenu.accordion#categorias7"]
+},
+"vtex.menu@2.x:submenu.accordion#categorias7": {
+  "children": ["vtex.menu@2.x:menu#categorias7"]
+},
+
+"vtex.menu@2.x:menu#categorias7": {
+  "props": {
+    "orientation": "vertical"
+  },"children":[
+  "menu-item#subcat58",
+  "menu-item#subcat312",
+  "menu-item#subcat395"
+]
+},
+
+"menu-item#categorias8": {
+  "props": {
+    "id": "menu-item-cats8",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "tagTitle": "Papelería",
+      "text": "Papelería"
+    },
+    "blockClass":"itemcatgsdraw"
+  },"blocks": ["vtex.menu@2.x:submenu.accordion#categorias8"]
+},
+"vtex.menu@2.x:submenu.accordion#categorias8": {
+  "children": ["vtex.menu@2.x:menu#categorias8"]
+},
+
+"vtex.menu@2.x:menu#categorias8": {
+  "props": {
+    "orientation": "vertical"
+  },"children":[
+  "menu-item#subcat43",
+  "menu-item#subcat55",
+  "menu-item#subcat41",
+  "menu-item#subcat62",
+  "menu-item#subcat99",
+  "menu-item#subcat88",
+  "menu-item#subcat93"
+]
+},
 
 
   

@@ -34,7 +34,7 @@
 
 /* main header desktop has a bigger padding when not stuck */
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
-  padding-top: 0.5rem;
+  padding-top: 0.25rem;
   padding-bottom: 0.5rem;
 }
 
@@ -107,7 +107,21 @@
 :global(.vtex-category-menu-2-x-closeIcon){
   color: #ff0000;
   font-weight: 500;
+  
 }
+
+:global(.vtex-rich-text-0-x-link--ahorra){
+  text-decoration: none;
+  color: #ff0000;
+  font-family: 'Inter Medium';
+}
+
+:global(.vtex-rich-text-0-x-strong--ahorra)
+  :global(.vtex-rich-text-0-x-link--ahorra){
+    font-family: 'Inter Medium';
+    color: #194681;
+    font-weight: 400;
+  }
 
 :global(.vtex-rich-text-0-x-paragraph--club),
 :global(.vtex-store-drawer-0-x-menuIcon),
@@ -171,6 +185,14 @@
 
 
 
+:global(.vtex-menu-2-x-styledLinkContainer--itemcatgs),
+:global(.vtex-menu-2-x-styledLinkContainer--itemservicios),
+:global(.vtex-menu-2-x-styledLinkContainer--itemescucha),
+:global(.vtex-menu-2-x-styledLinkContainer--itemofers){
+  margin-right: 43px !important;
+}
+
+
 :global(.vtex-menu-2-x-styledLinkContainer--itemcatgs):hover,
 :global(.vtex-menu-2-x-styledLinkContainer--itemservicios):hover,
 :global(.vtex-menu-2-x-styledLinkContainer--itemescucha):hover{
@@ -180,60 +202,69 @@
 :global(.vtex-menu-2-x-styledLinkContainer--itemofers):hover{
   border-bottom: 2px solid #ff0000;
 }
+
+:global(.vtex-rich-text-0-x-link--necesitas),
 :global(.vtex-menu-2-x-styledLinkContent--itemcatgs),
 :global(.vtex-menu-2-x-styledLinkContent--itemservicios),
 :global(.vtex-menu-2-x-styledLinkContent--itemescucha){
-  color: black;
-  font-weight: 500;
+  color: #7c7c7c;
+  font-family: 'Inter Medium';
 }
 
 :global(.vtex-menu-2-x-styledLinkContent--itemofers){
   color: #ff0000;
-  font-weight: 500;
+  font-family: 'Inter Medium';
 }
 
-:global(.vtex-flex-layout-0-x-flexColChild--catmen){
-  padding-left: 5%;
-}
+
 
 
 :global(.vtex-menu-2-x-styledLink--itemcatgs)
 :global(.vtex-menu-2-x-styledLinkContent--itemcatgs)::before{
   content: url(assets/hamenu16x16.png);
   position: relative;
-  right: 2px;
-  top: 1px
+  right: 9px;
+  top: 1px;
+  width: 13px;
 }
 
 :global(.vtex-menu-2-x-styledLink--itemescucha)
 :global(.vtex-menu-2-x-styledLinkContent--itemescucha)::before{
   content: url(assets/audio16x16.png);
   position: relative;
-  right: 2px;
+  right: 9px;
+  width: 13px;
 }
 
 :global(.vtex-menu-2-x-styledLink--itemservicios)
 :global(.vtex-menu-2-x-styledLinkContent--itemservicios)::before{
   content: url(assets/star16x16.png);
   position: relative;
-  right: 2px;
+  right: 9px;
+  width: 13px;
 }
 
 :global(.vtex-menu-2-x-styledLink--itemofers)
 :global(.vtex-menu-2-x-styledLinkContent--itemofers)::before{
   content: url(assets/offer16x16.png);
   position: relative;
-  right: 2px;
+  right: 9px;
+  width: 13px;
 }
 
 :global(.vtex-rich-text-0-x-paragraph--club){
   padding-left: 3px;
 }
 
+
+:global(.vtex-flex-layout-0-x-flexRowContent--rowaccesos)
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  width: auto !important;
+}
 :global(.vtex-store-components-3-x-imageElement--imgwish){
   padding-top: 6px;
-  padding-left: 7px;
-  padding-right: 8px;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 
 /*:global(.vtex-store-components-3-x-imageElement--imgwish):hover{
@@ -271,4 +302,72 @@
 :global(.vtex-menu-2-x-styledLinkContent--itemescucha),
 :global(.vtex-menu-2-x-styledLinkContent--itemservicios){
   justify-content: flex-start;
+}
+
+:global(.vtex-store-components-3-x-logoContainer){
+  padding: 0% !important;
+}
+
+/*:global(.vtex-flex-layout-0-x-flexCol--ubicacion){
+  margin-left: 40px;
+  margin-right: 60px;
+}
+
+
+:global(.vtex-flex-layout-0-x-flexCol--ubicacion){
+  margin-left: 69px !important;
+}*/
+
+
+:global(.vtex-flex-layout-0-x-flexRowContent--catmensticky){
+  height: 50px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+
+:global(.vtex-flex-layout-0-x-flexRowContent--catmensticky),
+:global(.vtex-flex-layout-0-x-flexRowContent--notphone),
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header){
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+:global(.vtex-menu-2-x-styledLinkContent--titcatmen){
+  font-family: 'Inter Medium';
+    color: #194681;
+    font-size: 16px;
+
+}
+
+:global(.vtex-menu-2-x-menuItem--catprinmen)
+:global(.vtex-menu-2-x-styledLinkContainer--catprinmen)
+:global(.vtex-menu-2-x-styledLinkContent--catprinmen){
+  color: #7c7c7c !important;
+}
+
+
+:global(.vtex-flex-layout-0-x-flexRowContent--rowfoosm){
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: .5rem;
+}
+
+:global(.vtex-menu-2-x-menuContainerNav){
+  width: 100%;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--itemcatgsdraw){
+  color: #194681;
+}
+
+:global(.vtex-store-components-3-x-notificationContent--notifbar){
+  color:#ff0000;
+}
+
+:global(.vtex-store-components-3-x-notificationBarInner--notifbar){
+  background-color: #ffffff;
+  min-height: 2.5rem !important;
 }
