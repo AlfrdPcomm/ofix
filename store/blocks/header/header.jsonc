@@ -116,7 +116,7 @@
   },"flex-layout.row#accesos":{
     "children":[
       "login",
-      "flex-layout.col#wl",
+      "image#wishlist",
       "minicart.v2"
     ],"props":{
       "horizontalAlign":"center",
@@ -124,31 +124,8 @@
       "preserveLayoutOnMobile":true
     }
   },
-
-  "flex-layout.col#wlm":{
-    "children":[
-      "image#wishlistmob"
-    ],"props":{
-      "verticalAlign":"middle",
-      "paddingRight":2
-    }
-  },
-  "flex-layout.col#wl":{
-    "children":[
-      "image#wishlist"
-    ]
-  },
   
-  "image#wishlistmob":{
-    "props":{
-      "blockClass":"imgwlmob",
-      "height":20,
-      "src":"assets/wishlist20.png",
-      "link":{
-        "url":"/account#/wishlist"
-      }
-    }
-  },
+  
   
   "image#wishlist":{
     "props":{
@@ -265,11 +242,11 @@
       //"category-menu#mobile",
       "drawer",
       "flex-layout.col#ubcmob",
-      //"flex-layout.col#spacer",
+      "flex-layout.col#spacer",
       //"flex-layout.col#spacer",
       "flex-layout.col#logomob",      
       //"flex-layout.col#spacer",
-      "flex-layout.col#accesosmob"
+      "flex-layout.col#accesos"
       //"login",      
       //"minicart.v2""
     ],
@@ -280,21 +257,6 @@
       "fullWidth": true
     }
   },
-
-  "flex-layout.col#accesosmob":{
-    "children":[
-      "flex-layout.row#accesosmob"      
-    ]
-  },
-  "flex-layout.row#accesosmob":{
-    "children":[
-      "login",
-      "flex-layout.col#wlm",
-      "minicart.v2"
-    ],"props":{
-      "preserveLayoutOnMobile":true
-    }
-  },  
   "flex-layout.col#ubcmob":{
     "children":[
       "image#icubc"
@@ -314,9 +276,7 @@
     "children":[
       "logo#mobile"
     ],"props":{
-      "blockClass":"cologo",
-      "width":"grow",
-      "horixontalAlign":"center"
+      "blockClass":"cologo"
     }
   },
   "drawer": {
@@ -365,12 +325,9 @@
       "search-bar#inteldraw"
     ]
   },"search-bar#inteldraw":{
-    "blocks": ["autocomplete-result-list.v2"],
     "props":{
-      "openAutocompleteOnFocus": true,
       "fullWidth":false,
-      "blockClass":"srchdraw",
-      "placeholder":"¿Qué estás buscando?"
+      "blockClass":"srchdraw"
     }
   },
 
@@ -387,7 +344,7 @@
       "title": "Logo",
       "href": "/",
       "url": "assets/logo-ofix.png",
-      "width": "125",
+      "width": "100",
       "blockClass":"logohome"
     }
   },

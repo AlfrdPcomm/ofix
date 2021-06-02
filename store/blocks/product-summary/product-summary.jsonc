@@ -23,7 +23,9 @@
       "flex-layout.col#rapido",
       "flex-layout.col#spacer",
       "flex-layout.col#addcart"
-    ]
+    ],"props":{
+      "preserveLayoutOnMobile":true
+    }
   },"flex-layout.col#rapido":{
     "children":[
       "add-to-cart-button#rap"

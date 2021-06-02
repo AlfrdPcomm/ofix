@@ -1,0 +1,50 @@
+{
+    "store.custom#institucionaltxt":{
+        "blocks":[
+            "flex-layout.row#tituloinst",
+            "flex-layout.row#contentinst"
+        ]
+    },
+    "flex-layout.row#tituloinst":{
+        "children":[
+            "rich-text#tituloinst"
+        ],"props":{
+            "horizontalAlign":"center",
+            "blockClass":"rowtitinst"
+        }
+    },
+    "rich-text#tituloinst":{
+        "props":{
+            "text":"# Título página institucional",
+            "textPosition":"CENTER",
+            "textAlignment": "CENTER",
+            "blockClass":"tituloinst"
+        }
+    },
+    "flex-layout.row#contentinst":{
+        "children":[
+            "flex-layout.col#contenidoinst"
+        ],"props":{
+            "blockClass":"rowcontenidoinst"
+        }
+    },
+    "flex-layout.col#contenidoinst":{
+        "children":[
+            "rich-text#contenidoinst"
+        ],"props":{
+            "paddingLeft": 7,
+            "paddingRight": 7
+        }
+    },
+    "rich-text#contenidoinst":{
+        "props":{
+            "text":"Contenido Página Institucional",
+            "blockClass":"contenidoinst"
+        }
+    }
+
+
+
+
+    
+}

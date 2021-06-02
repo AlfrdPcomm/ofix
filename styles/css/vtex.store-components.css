@@ -108,6 +108,8 @@
 }
 
 @media only screen and (min-width: 640px) {
+
+
   .newsletter .container {
     padding: 30px 140px;
   }
@@ -162,9 +164,47 @@
     padding-right: 34px !important;
   }
   
- 
+  :global(.vtex-product-summary-2-x-brandName),
+  :global(.vtex-add-to-cart-button-0-x-buttonText){
+    font-size: 12px !important;
+  }
+
+  
+
+  :global(.vtex-product-summary-2-x-description){
+    font-size: 12px !important;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexColChild--cart)
+    :global(.vtex-button)::before{
+      content: url(assets/addcartprd.png) !important;
+    }
+    :global(.vtex-wish-list-1-x-wishlistIconContainer)
+      :global(.vtex-button)::before{
+        content: url(assets/wishlist20.png) !important;
+      }
+
+  :global(.vtex-product-price-1-x-listPriceValue--summary)
+      :global(.vtex-product-price-1-x-listPriceValue--summary)
+        :global(.vtex-product-price-1-x-currencyContainer--summar){
+          font-size: 12px !important;
+  }
+
+
+:global(.vtex-store-components-3-x-searchBarInnerContainer)
+  :global(.vtex-input-prefix__group){
+    border-radius: 10px !important;
+  }
+
+:global(.vtex-flex-layout-0-x-flexColChild--colinfocard){
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 
 }
+
+
 
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--pow){
   padding-bottom: 15px !important;
@@ -192,6 +232,10 @@
   color: #3f3f40;
   font-weight: bold;
   font-size: 30px;
+}
+
+:global(.vtex-store-components-3-x-imageElementLink--bannerprinc){
+  text-align: center;
 }
 
 
@@ -660,6 +704,7 @@
     :global(.vtex-input__suffix){
     max-width: 550px;
     background-color: transparent;
+    padding-right: 5px !important;
 }
 
 
@@ -728,6 +773,41 @@
 }
 
 @media (max-width: 1024px){
+  :global(.vtex-store-components-3-x-searchBarInnerContainer) 
+    :global(.vtex-input-prefix__group) 
+      :global(.vtex-styleguide-9-x-input){
+      max-width: 100%;
+    }
+
+  :global(.vtex-store-components-3-x-container ){
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  :global(.vtex-store-components-3-x-inputGroup--news)
+    :global(.vtex-input-prefix__group),
+  :global(.vtex-store-components-3-x-inputGroup--news)
+    :global(.vtex-input-prefix__group)
+      :global(.vtex-styleguide-9-x-input){
+      height: 30px !important;
+    }
+
+  :global(.vtex-store-components-3-x-buttonContainer--news)
+    :global(.vtex-button){
+      min-height: 30px !important;
+    }
+
+  :global(.vtex-store-components-3-x-form--news){
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--slibann){
+    padding-top: 15px !important;
+    padding-right: 0% !important;
+    padding-left: 0% !important;
+
+  }
 
   :global(.vtex-flex-layout-0-x-flexColChild--cart){
     padding-top: 5px;
@@ -883,6 +963,15 @@
   font-size: 30px;
 }
 
+:global(.vtex-rich-text-0-x-headingLevel1--tituloinst){
+  font-size: 30px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--contenidoinst){
+  padding-right: 0% !important;
+  padding-left: 0% !important;
+}
+
   
 }
 
@@ -997,12 +1086,11 @@
   padding: 5px;
 }
 
-
+:global(.vtex-rich-text-0-x-headingLevel1--tituloinst),
 :global(.vtex-store-components-3-x-caretIcon){
   color: #194681;
 }
 
-:global(.vtex-product-summary-2-x-productNameContainer),
 :global(.vtex-product-summary-2-x-description){
   text-align: justify;
 }
@@ -1256,4 +1344,22 @@
 :global(.vtex-store-components-3-x-backToTopButtonContainer){
   margin-bottom: 4rem;
   right: 1.5rem !important;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--contenidoinst){
+  text-align: justify !important;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+:global(.vtex-store-components-3-x-searchIcon){
+  width: 0;
+}
+
+:global(.vtex-store-components-3-x-searchBarIcon)::before{
+  content: url(assets/srchicon.png);
+}
+
+:global(.vtex-store-components-3-x-searchBarIcon--srchdraw){
+  padding-top: 4px;
 }

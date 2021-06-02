@@ -451,7 +451,8 @@
 
   "vtex.menu@2.x:menu#footer-mobile": {
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass":"contmenmob"
     },
     "children": [
       "menu-item#Atencion-mobil",

@@ -2,6 +2,7 @@
     "store.storelocator": {
       "blocks": ["flex-layout.row#title", "flex-layout.row#container"]
     },
+
     "flex-layout.row#title": {
       "children": ["flex-layout.col#title"]
     },

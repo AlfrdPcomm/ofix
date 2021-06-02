@@ -64,7 +64,8 @@
     "vtex.category-menu": "2.x",
     "vtex.search-graphql": "0.x",
     "vtex.search": "2.x",
-    "vtex.responsive-layout": "0.x"
+    "vtex.responsive-layout": "0.x",
+    "vtex.sandbox": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x",

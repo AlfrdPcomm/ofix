@@ -402,7 +402,8 @@
       "vtex.menu@2.x:menu#footer-mobile"
     ],"props":{
       "paddingLeft":5,
-      "paddingRight": 5
+      "paddingRight": 5,
+      "blockClass":"colmenmob"
     }
   }
 }

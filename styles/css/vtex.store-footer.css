@@ -58,3 +58,8 @@
 :global(.vtex-slider-layout-0-x-slideChildrenContainer--pow){
   margin-top: 15px;
 }
+
+:global(.vtex-flex-layout-0-x-flexColChild--colmenmob){
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 15px;
+}

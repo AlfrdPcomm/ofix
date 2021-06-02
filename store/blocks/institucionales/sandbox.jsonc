@@ -1,0 +1,71 @@
+{
+    "store.custom#sandbox": {
+        "blocks":[
+            "flex-layout.row#titsandbox",
+            "flex-layout.row#bannerdand",
+            "flex-layout.row#sandbox"
+        ]
+      },
+
+      "flex-layout.row#titsandbox":{
+          "title":"Row Título de página",
+          "children":[
+              "flex-layout.col#titsandbox"
+          ],"props":{
+              "horizontalAlign":"center"
+          }
+      },
+
+      "flex-layout.col#titsandbox":{          
+          "children":[
+              "rich-text#titsandbox"
+          ],"props":{
+              "horizontalAlign":"center"
+          }
+      },
+      "rich-text#titsandbox":{
+        "title":"Título Editable",
+          "props":{
+              "text": "# Título",
+              "blockClass":"tituloinst"
+          }
+      },
+
+      "flex-layout.row#bannerdand":{
+          "title":"Row banner de página",
+          "children":[
+              "flex-layout.col#imagesandbox"
+          ]
+      },"flex-layout.col#imagesandbox":{
+          "children":[
+              "image#bannersa"
+          ],"props":{
+              "horizontalAlign":"center"
+          }
+      },"image#bannersa":{
+          "props":{
+              "src":""
+          }
+      },
+
+
+      "flex-layout.row#sandbox":{
+        "children":[
+            "sandbox#iframe"
+        ],"props":{
+            "horizontalAlign":"center"
+        }
+      },
+
+      "sandbox#iframe":{
+          "props":{
+            "initialContent": "<iframe src='https://api.clubdeoficinas.mx/cfdi' width='100%' height='900' frameborder='0' marginwidth='0' marginheight='0'>Cargando…</iframe>"
+          }
+      }
+
+
+
+
+
+    
+}

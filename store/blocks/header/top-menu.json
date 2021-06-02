@@ -88,26 +88,52 @@
 
   "flex-layout.row#catsdesk1":{
     "children":[
-      "flex-layout.col#1",
       "flex-layout.col#2",
       "flex-layout.col#3",
-      "flex-layout.col#4"
+      "flex-layout.col#4",
+      "flex-layout.col#8",
+      "flex-layout.col#5"
+          
+      
       
     ],"props":{
       "colGap": 2,
       "blockClass":"rowmen1",
-      "horizontalAlign":"center"
+      "horizontalAlign":"center",
+      "colSizing":"equal"
+    }
+  },
+
+  "flex-layout.col#0":{
+    "children":[
+      "menu-item#cattit0",
+      "menu-item#subcat12"
+    ],"props":{
+      "preventVerticalStretch":true,
+      "paddingLeft":9
+    }
+  },"menu-item#cattit0":{
+    "props":{
+      "text":"Aires Acondicionados",
+      "blockClass":"titcatmen"
+    }
+  },"menu-item#subcat12":{
+    "props":{
+      "type":"category",
+      "categoryId": 12,
+      "text":"Minisplit",
+      "blockClass":"catprinmen"
     }
   },
 
   "flex-layout.col#1":{
     "children":[
       "menu-item#cattit1",
-      "menu-item#subcat292",
-      "menu-item#subcat287",
-      "menu-item#subcat273",
-      "menu-item#subcat274",
-      "menu-item#subcat277"
+      "menu-item#subcat17",
+      "menu-item#subcat18",      
+      "menu-item#subcat20",
+      "menu-item#subcat19",
+      "menu-item#subcat16"
     ],"props":{
       "preventVerticalStretch":true,
       "paddingLeft":9
@@ -118,42 +144,42 @@
       "text":"Arte",
       "blockClass":"titcatmen"
     }
-  },"menu-item#subcat292":{
+  },"menu-item#subcat16":{
     "props":{
       "type":"category",
-      "categoryId": 292,
+      "categoryId": 16,
       "text":"Dibujo Técnico",
       "blockClass":"catprinmen"
     }
   },
-  "menu-item#subcat287":{
+  "menu-item#subcat17":{
     "props":{
       "type":"category",
-      "categoryId": 287,
+      "categoryId": 17,
       "text":"Lettering",
       "blockClass":"catprinmen"
     }
   },
-  "menu-item#subcat273":{
+  "menu-item#subcat18":{
     "props":{
       "type":"category",
-      "categoryId": 273,
+      "categoryId": 18,
       "text":"Manualidades y Arte",
       "blockClass":"catprinmen"
     }
   },
-  "menu-item#subcat274":{
+  "menu-item#subcat19":{
     "props":{
       "type":"category",
-      "categoryId": 274,
+      "categoryId": 19,
       "text":"Papel Bastidores y Accesorios",
       "blockClass":"catprinmen"
     }
   },
-  "menu-item#subcat277":{
+  "menu-item#subcat20":{
     "props":{
       "type":"category",
-      "categoryId": 277,
+      "categoryId": 20,
       "text":"Pinturas, Pigmentos y Pinceles Profesionales",
       "blockClass":"catprinmen"
     }
@@ -162,13 +188,13 @@
   "flex-layout.col#2":{
     "children":[
       "menu-item#cattit2",
-      "menu-item#subcat36",
-      "menu-item#subcat179",
-      "menu-item#subcat155",
-      "menu-item#subcat107",
-      "menu-item#subcat72",
-      "menu-item#subcat207",
-      "menu-item#subcat38"
+      "menu-item#subcat21",
+      "menu-item#subcat22",
+      "menu-item#subcat23",
+      "menu-item#subcat24",
+      "menu-item#subcat25",
+      "menu-item#subcat26",
+      "menu-item#subcat27"
     ],"props":{
       "preventVerticalStretch":true,
       "paddingLeft":9
@@ -181,58 +207,58 @@
     }
   },
 
-  "menu-item#subcat36":{
+  "menu-item#subcat21":{
     "props":{
       "type":"category",
-      "categoryId": 274,
+      "categoryId": 21,
       "text":"Accesorios de Cómputo",
       "blockClass":"catprinmen"
     }
   },
-  "menu-item#subcat179":{
+  "menu-item#subcat22":{
     "props":{
       "type":"category",
-      "categoryId": 179,
+      "categoryId": 22,
       "text":"Almacenamiento",
       "blockClass":"catprinmen"
     }
   },
-  "menu-item#subcat155":{
+  "menu-item#subcat23":{
     "props":{
       "type":"category",
-      "categoryId": 155,
+      "categoryId": 23,
       "text":"Computadoras",
       "blockClass":"catprinmen"
     }
   },
-  "menu-item#subcat107":{
+  "menu-item#subcat24":{
     "props":{
       "type":"category",
-      "categoryId": 107,
+      "categoryId": 24,
       "text":"Consumibles para Impresión",
       "blockClass":"catprinmen"
     }
   },
-  "menu-item#subcat72":{
+  "menu-item#subcat25":{
     "props":{
       "type":"category",
-      "categoryId": 72,
+      "categoryId": 25,
       "text":"Gaming",
       "blockClass":"catprinmen"
     }
   },
-  "menu-item#subcat207":{
+  "menu-item#subcat26":{
     "props":{
       "type":"category",
-      "categoryId": 207,
+      "categoryId": 26,
       "text":"Impresión y Scanner",
       "blockClass":"catprinmen"
     }
   },
-  "menu-item#subcat38":{
+  "menu-item#subcat27":{
     "props":{
       "type":"category",
-      "categoryId": 38,
+      "categoryId": 27,
       "text":"Periféricos",
       "blockClass":"catprinmen"
     }
@@ -242,13 +268,13 @@
   "flex-layout.col#3":{
     "children":[
       "menu-item#cattit3",
-      "menu-item#subcat133",
-      "menu-item#subcat239",
-      "menu-item#subcat117",
-      "menu-item#subcat51",
-      "menu-item#subcat67",
-      "menu-item#subcat403",
-      "menu-item#subcat83"
+      "menu-item#subcat29",
+      "menu-item#subcat28",
+      "menu-item#subcat30",
+      "menu-item#subcat31",
+      "menu-item#subcat32",
+      "menu-item#subcat33"
+      
     ],"props":{
       "preventVerticalStretch":true,
       "paddingLeft":9
@@ -259,73 +285,67 @@
       "text":"Electrónica",
       "blockClass":"titcatmen"
     }
-  }, "menu-item#subcat133":{
+  }, "menu-item#subcat29":{
     "props":{
       "type":"category",
-      "categoryId": 133,
-      "text":"Accesorios Eléctricos",
+      "categoryId": 29,
+      "text":"Accesorios para Electrónica",
       "blockClass":"catprinmen"
     }
   },   
   
-  "menu-item#subcat239":{
+  "menu-item#subcat28":{
     "props":{
       "type":"category",
-      "categoryId": 239,
+      "categoryId": 28,
       "text":"Accesorios Eléctricos",
       "blockClass":"catprinmen"
     }
-  },
-  "menu-item#subcat117":{
+  },     
+  "menu-item#subcat30":{
     "props":{
       "type":"category",
-      "categoryId": 117,
-      "text":"Accesorios para Electrónica",
-      "blockClass":"catprinmen"
-    }
-  },      
-  "menu-item#subcat51":{
-    "props":{
-      "type":"category",
-      "categoryId": 51,
+      "categoryId": 30,
       "text":"Audio",
       "blockClass":"catprinmen"
     }
   },
-  "menu-item#subcat67":{
+  "menu-item#subcat31":{
     "props":{
       "type":"category",
-      "categoryId": 67,
+      "categoryId": 31,
       "text":"Equipos Electrónicos",
       "blockClass":"catprinmen"
     }
   },
-  "menu-item#subcat403":{
+  "menu-item#subcat32":{
     "props":{
       "type":"category",
-      "categoryId": 403,
+      "categoryId": 32,
       "text":"Servicios Electrónicos",
       "blockClass":"catprinmen"
     }
   },
-  "menu-item#subcat83":{
+  "menu-item#subcat33":{
     "props":{
       "type":"category",
-      "categoryId": 83,
+      "categoryId": 33,
       "text":"Telefonía",
       "blockClass":"catprinmen"
     }
   },
 
   "flex-layout.col#4":{
+    "title":"Col menu 4",
     "children":[
       "menu-item#cattit4",
-      "menu-item#subcat65",
-      "menu-item#subcat149",
-      "menu-item#subcat79",
-      "menu-item#subcat102",
-      "menu-item#subcat123",
-      "menu-item#subcat112"
+      "menu-item#subcat34",
+      "menu-item#subcat35",
+      "menu-item#subcat36",
+      "menu-item#subcat37",
+      "menu-item#subcat39",
+      "menu-item#subcat38"
+      
     ],"props":{
       "preventVerticalStretch":true,
       "paddingLeft":9
@@ -338,50 +358,50 @@
     }
   },
 
-  "menu-item#subcat65":{
+  "menu-item#subcat34":{
     "props":{
       "type":"category",
-      "categoryId": 65,
+      "categoryId": 34,
       "text":"Artículos para Engargolar",
       "blockClass":"catprinmen"
     }
   },
-"menu-item#subcat149":{
+"menu-item#subcat35":{
   "props":{
     "type":"category",
-    "categoryId": 149,
+    "categoryId": 35,
     "text":"Equipos para Oficina",
     "blockClass":"catprinmen"
   } 
 },
-"menu-item#subcat79":{
+"menu-item#subcat36":{
   "props":{
     "type":"category",
-    "categoryId": 79,
+    "categoryId": 36,
     "text":"Línea Blanca",
     "blockClass":"catprinmen"
   }
 },
-"menu-item#subcat102":{
+"menu-item#subcat37":{
   "props":{
     "type":"category",
-    "categoryId": 102,
+    "categoryId": 37,
     "text":"Presentaciones",
     "blockClass":"catprinmen"
   }
 },
-"menu-item#subcat123":{
+"menu-item#subcat38":{
   "props":{
     "type":"category",
-    "categoryId": 123,
+    "categoryId": 38,
     "text":"Puntos de Venta",
     "blockClass":"catprinmen"
   }
 },
-"menu-item#subcat112":{
+"menu-item#subcat39":{
   "props":{
     "type":"category",
-    "categoryId": 112,
+    "categoryId": 39,
     "text":"Seguridad",
     "blockClass":"catprinmen"
   }
@@ -390,10 +410,9 @@
   "flex-layout.col#5":{
     "children": [
       "menu-item#cattit5",
-      "menu-item#subcat27",
-      "menu-item#subcat97",
-      "menu-item#subcat48",
-      "menu-item#subcat25"
+      "menu-item#subcat41",
+      "menu-item#subcat40",      
+      "menu-item#subcat42"
     ],"props":{
       "preventVerticalStretch":true,
       "paddingLeft":9
@@ -406,35 +425,27 @@
       "blockClass":"titcatmen"
     }
   },
-"menu-item#subcat27":{
-  "props":{
-    "type":"category",
-    "categoryId": 27,
-    "text":"Artículos de Arte",
-    "blockClass":"catprinmen"
-  }
-},
 
-"menu-item#subcat97":{
+"menu-item#subcat40":{
   "props":{
     "type":"category",
-    "categoryId": 97,
+    "categoryId": 40,
     "text":"Artículos de Escritura",
     "blockClass":"catprinmen"
   }
 },
-"menu-item#subcat48":{
+"menu-item#subcat41":{
   "props":{
     "type":"category",
-    "categoryId": 48,
+    "categoryId": 41,
     "text":"Artículos Escolares",
     "blockClass":"catprinmen"
   }
 },
-"menu-item#subcat25":{
+"menu-item#subcat42":{
   "props":{
     "type":"category",
-    "categoryId": 25,
+    "categoryId": 42,
     "text":"Artículos Preescolares",
     "blockClass":"catprinmen"
   }
@@ -442,10 +453,11 @@
 
   "flex-layout.row#catsdesk2":{
     "children":[
-      "flex-layout.col#5",
-      "flex-layout.col#6",
       "flex-layout.col#7",
-      "flex-layout.col#8"
+      "flex-layout.col#1",
+      "flex-layout.col#0",
+      "flex-layout.col#6",      
+      "flex-layout.col#9"
     ],"props":{
       "colGap": 2,
       "marginTop":5,
@@ -453,15 +465,25 @@
       "blockClass":"rowmen2"
     }
   },
+  "flex-layout.col#9":{
+    "children":[
+
+    ],"props":{
+      "preventVerticalStretch":true,
+      "paddingLeft":9
+    }
+  },
+  
 
   "flex-layout.col#6":{
     "children":[
       "menu-item#cattit6",
-      "menu-item#subcat74",
-      "menu-item#subcat30",
+      "menu-item#subcat47",
+      "menu-item#subcat43",      
+      "menu-item#subcat44",      
       "menu-item#subcat45",
-      "menu-item#subcat141",
-      "menu-item#subcat131"
+      "menu-item#subcat46"
+      
     ],"props":{
       "preventVerticalStretch":true,
       "paddingLeft":9
@@ -475,18 +497,18 @@
     }
   },
 
-  "menu-item#subcat74":{
+  "menu-item#subcat43":{
     "props":{
       "type":"category",
-      "categoryId": 74,
+      "categoryId": 43,
       "text":"Alimentos",
       "blockClass":"catprinmen"
     }
   },
-"menu-item#subcat30":{
+"menu-item#subcat44":{
   "props":{
     "type":"category",
-    "categoryId": 30,
+    "categoryId": 44,
     "text":"Artículos de Limpieza",
     "blockClass":"catprinmen"
   }
@@ -499,19 +521,27 @@
     "blockClass":"catprinmen"
   }
 },
-"menu-item#subcat141":{
+"menu-item#subcat46":{
   "props":{
     "type":"category",
-    "categoryId": 141,
+    "categoryId": 46,
     "text":"Desechables",
     "blockClass":"catprinmen"
   }
 },
-"menu-item#subcat131":{
+"menu-item#subcat47":{
   "props":{
     "type":"category",
-    "categoryId": 131,
+    "categoryId": 47,
     "text":"Higiene",
+    "blockClass":"catprinmen"
+  }
+},
+"menu-item#subcat48":{
+  "props":{
+    "type":"category",
+    "categoryId": 48,
+    "text":"Almacenamiento y Organización",
     "blockClass":"catprinmen"
   }
 },
@@ -519,9 +549,10 @@
   "flex-layout.col#7":{
     "children":[
       "menu-item#cattit7",
-      "menu-item#subcat58",
-      "menu-item#subcat312",
-      "menu-item#subcat395"
+      "menu-item#subcat50",
+      "menu-item#subcat48",      
+      "menu-item#subcat49",
+      "menu-item#subcat52"
     ],"props":{
       "preventVerticalStretch":true,
       "paddingLeft":9
@@ -535,27 +566,35 @@
     }
   },
 
-  "menu-item#subcat58":{
+  "menu-item#subca48":{
     "props":{
       "type":"category",
-      "categoryId": 58,
+      "categoryId": 48,
       "text":"Almacenamiento y Organización",
       "blockClass":"catprinmen"
     }
   },
 
-"menu-item#subcat312":{
+"menu-item#subcat50":{
   "props":{
     "type":"category",
-    "categoryId": 312,
+    "categoryId": 50,
     "text":"Mobiliario de Oficina",
     "blockClass":"catprinmen"
   }
 },
-"menu-item#subcat395":{
+"menu-item#subcat49":{
   "props":{
     "type":"category",
-    "categoryId": 395,
+    "categoryId": 49,
+    "text":"Mobiliario Escolar y Restaurante",
+    "blockClass":"catprinmen"
+  }
+},
+"menu-item#subcat52":{
+  "props":{
+    "type":"category",
+    "categoryId": 52,
     "text":"Sillas y Sillones",
     "blockClass":"catprinmen"
   }
@@ -564,13 +603,14 @@
   "flex-layout.col#8":{
     "children":[
       "menu-item#cattit8",
-      "menu-item#subcat43",
-      "menu-item#subcat55",
-      "menu-item#subcat41",
+      "menu-item#subcat58",
       "menu-item#subcat62",
-      "menu-item#subcat99",
-      "menu-item#subcat88",
-      "menu-item#subcat93"
+      "menu-item#subcat60",
+      "menu-item#subcat56",
+      "menu-item#subcat55",      
+      "menu-item#subcat57",     
+      "menu-item#subcat59"
+      
     ],"props":{
       "preventVerticalStretch":true,
       "paddingLeft":9
@@ -584,26 +624,26 @@
     }
   },
 
-"menu-item#subcat43":{
-  "props":{
-    "type":"category",
-    "categoryId": 43,
-    "text":"Agendas y Directorios",
-    "blockClass":"catprinmen"
-  }
-},
 "menu-item#subcat55":{
   "props":{
     "type":"category",
     "categoryId": 55,
+    "text":"Agendas y Directorios",
+    "blockClass":"catprinmen"
+  }
+},
+"menu-item#subcat56":{
+  "props":{
+    "type":"category",
+    "categoryId": 56,
     "text":"Archivo y Organización",
     "blockClass":"catprinmen"
   }
 },
-"menu-item#subcat41":{
+"menu-item#subcat57":{
   "props":{
     "type":"category",
-    "categoryId": 41,
+    "categoryId": 57,
     "text":"Artículos Adhesivos",
     "blockClass":"catprinmen"
   }
@@ -616,26 +656,26 @@
     "blockClass":"catprinmen"
   }
 },
-"menu-item#subcat99":{
+"menu-item#subcat58":{
   "props":{
     "type":"category",
-    "categoryId": 99,
+    "categoryId": 58,
     "text":"Artículos de Papelería",
     "blockClass":"catprinmen"
   }
 },
-"menu-item#subcat88":{
+"menu-item#subcat59":{
   "props":{
     "type":"category",
-    "categoryId": 88,
+    "categoryId": 59,
     "text":"Blocks y Formas Impresas",
     "blockClass":"catprinmen"
   }
 },
-"menu-item#subcat93":{
+"menu-item#subcat60":{
   "props":{
     "type":"category",
-    "categoryId": 93,
+    "categoryId": 60,
     "text":"Papeles",
     "blockClass":"catprinmen"
   }
@@ -666,16 +706,51 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#categorias1",
       "menu-item#categorias2",
       "menu-item#categorias3",
       "menu-item#categorias4",
+      "menu-item#categorias8",
       "menu-item#categorias5",
-      "menu-item#categorias6",
       "menu-item#categorias7",
-      "menu-item#categorias8"
+      "menu-item#categorias1",      
+      "menu-item#categorias9",
+      "menu-item#categorias6"
+      
+      
       ]
   },
+
+  "menu-item#categorias9": {
+    "props": {
+      "id": "menu-item-cats9",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "tagTitle": "Aires Acondicionados",
+        "text": "Aires Acondicionados"
+      },
+      "blockClass":"itemcatgsdraw"
+    },"blocks": ["vtex.menu@2.x:submenu.accordion#categorias9"]
+  },
+  "vtex.menu@2.x:submenu.accordion#categorias9": {
+    "children": ["vtex.menu@2.x:menu#categorias9"]
+  },
+
+  "vtex.menu@2.x:menu#categorias9": {
+    "props": {
+      "orientation": "vertical"
+    },"children":[
+      "menu-item#subcat12"
+  ]
+},
+
+
+
+
+
+
 
   "menu-item#categorias1": {
     "props": {
@@ -699,11 +774,11 @@
     "props": {
       "orientation": "vertical"
     },"children":[
-    "menu-item#subcat292",
-    "menu-item#subcat287",
-    "menu-item#subcat273",
-    "menu-item#subcat274",
-    "menu-item#subcat277"
+      "menu-item#subcat17",
+      "menu-item#subcat18",      
+      "menu-item#subcat20",
+      "menu-item#subcat19",
+      "menu-item#subcat16"
   ]
 },
 
@@ -729,13 +804,13 @@
   "props": {
     "orientation": "vertical"
   },"children":[
-  "menu-item#subcat36",
-  "menu-item#subcat179",
-  "menu-item#subcat155",
-  "menu-item#subcat107",
-  "menu-item#subcat72",
-  "menu-item#subcat207",
-  "menu-item#subcat38"
+    "menu-item#subcat21",
+    "menu-item#subcat22",
+    "menu-item#subcat23",
+    "menu-item#subcat24",
+    "menu-item#subcat25",
+    "menu-item#subcat26",
+    "menu-item#subcat27"
 ]
 },
 
@@ -761,13 +836,12 @@
   "props": {
     "orientation": "vertical"
   },"children":[
-  "menu-item#subcat133",
-  "menu-item#subcat239",
-  "menu-item#subcat117",
-  "menu-item#subcat51",
-  "menu-item#subcat67",
-  "menu-item#subcat403",
-  "menu-item#subcat83"
+    "menu-item#subcat29",
+    "menu-item#subcat28",
+    "menu-item#subcat30",
+    "menu-item#subcat31",
+    "menu-item#subcat32",
+    "menu-item#subcat33"
 ]
 },
 
@@ -793,12 +867,12 @@
   "props": {
     "orientation": "vertical"
   },"children":[
-  "menu-item#subcat65",
-  "menu-item#subcat149",
-  "menu-item#subcat79",
-  "menu-item#subcat102",
-  "menu-item#subcat123",
-  "menu-item#subcat112"
+    "menu-item#subcat34",
+    "menu-item#subcat35",
+    "menu-item#subcat36",
+    "menu-item#subcat37",
+    "menu-item#subcat39",
+    "menu-item#subcat38"
 ]
 },
 
@@ -825,10 +899,9 @@
   "props": {
     "orientation": "vertical"
   },"children":[
-  "menu-item#subcat27",
-  "menu-item#subcat97",
-  "menu-item#subcat48",
-  "menu-item#subcat25"
+    "menu-item#subcat41",
+    "menu-item#subcat40",      
+    "menu-item#subcat42"
 ]
 },
 
@@ -854,11 +927,11 @@
   "props": {
     "orientation": "vertical"
   },"children":[
-  "menu-item#subcat74",
-  "menu-item#subcat30",
-  "menu-item#subcat45",
-  "menu-item#subcat141",
-  "menu-item#subcat131"
+    "menu-item#subcat47",
+    "menu-item#subcat43",      
+    "menu-item#subcat44",      
+    "menu-item#subcat45",
+    "menu-item#subcat46"
 ]
 },
 
@@ -870,8 +943,8 @@
     "highlight": false,
     "itemProps": {
       "type": "internal",
-      "tagTitle": "Almacenamiento y Organización",
-      "text": "Almacenamiento y Organización"
+      "tagTitle": "Muebles",
+      "text": "Muebles"
     },
     "blockClass":"itemcatgsdraw"
   },"blocks": ["vtex.menu@2.x:submenu.accordion#categorias7"]
@@ -884,9 +957,10 @@
   "props": {
     "orientation": "vertical"
   },"children":[
-  "menu-item#subcat58",
-  "menu-item#subcat312",
-  "menu-item#subcat395"
+    "menu-item#subcat50",
+    "menu-item#subcat48",      
+    "menu-item#subcat49",
+    "menu-item#subcat52"
 ]
 },
 
@@ -912,13 +986,13 @@
   "props": {
     "orientation": "vertical"
   },"children":[
-  "menu-item#subcat43",
-  "menu-item#subcat55",
-  "menu-item#subcat41",
-  "menu-item#subcat62",
-  "menu-item#subcat99",
-  "menu-item#subcat88",
-  "menu-item#subcat93"
+    "menu-item#subcat58",
+    "menu-item#subcat62",
+    "menu-item#subcat60",
+    "menu-item#subcat56",
+    "menu-item#subcat55",      
+    "menu-item#subcat57",     
+    "menu-item#subcat59"
 ]
 },
 

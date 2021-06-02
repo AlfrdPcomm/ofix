@@ -10,6 +10,15 @@
   },
   "store.storelocator":{
     "path": "/stores"
+  },
+  "store.custom#institucionaltxt": {
+    "path": "/institucionaltxt"
+  },
+  "store.custom#landing": {
+    "path": "/landing"
+  },
+  "store.custom#sandbox": {
+    "path": "/sandbox"
   }
 }
 

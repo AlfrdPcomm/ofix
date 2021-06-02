@@ -1,0 +1,286 @@
+{
+    "store.custom#landing":{
+        "blocks":[
+            "flex-layout.row#tituloland",
+            "flex-layout.row#bannerprinlanding",
+            "flex-layout.row#bannerprinlanding2",
+            "flex-layout.row#texto",
+            "flex-layout.row#bosacontent",
+            "flex-layout.row#rowimagenes1",
+            "flex-layout.row#rowimagenes2",
+            "flex-layout.row#rowimagenes3",
+            "flex-layout.row#rowimagenes4"
+        ]
+    },
+
+    "flex-layout.row#tituloland":{
+        "title":"Row Título Landing",
+        "children":[
+            "rich-text#titlanding"
+        ],"props":{
+            "horizontalAling":"center",
+            "blockClass":"rowtitlanding"
+        }
+    },
+    "rich-text#titlanding":{
+        "props":{
+            "text":"# Título Landing",
+            "textPosition":"CENTER",
+            "textAlignment": "CENTER",
+            "blockClass":"tituloinst"
+        }
+    },
+    "flex-layout.row#texto":{
+        "title":"Row Texto Landing",
+        "children":[
+            "rich-text#txtlanding"
+        ],"props":{
+            "horizontalAling":"center",
+            "blockClass":"rowtitlanding"
+        }
+    },
+    "rich-text#txtlanding":{
+        "props":{
+            "text":"# Texto Landing",
+            "textPosition":"CENTER",
+            "textAlignment": "CENTER",
+            "blockClass":"tituloinst"
+        }
+    },
+
+    "flex-layout.row#bannerprinlanding":{
+        "title": "Row Banner principal",
+        "children":[
+            "flex-layout.col#bannerprin"            
+        ],"props":{
+            "blockClass":"bannerprinlanding",
+            "horizontalAlign":"center"
+        }
+    },"flex-layout.col#bannerprin":{
+        "children":[
+            "image#bannerprinlanding"
+        ],"props":{
+            "horizontalAlign":"center"
+        }
+    },
+
+    "image#bannerprinlanding":{
+        "title":"Banner Principal Landing",
+        "props":{
+            "src":"",
+            "blockClass":"bannerprinc"
+        }
+    },
+    "flex-layout.row#bannerprinlanding2":{
+        "title": "Row Banner principal2",
+        "children":[
+            "flex-layout.col#bannerprin2"            
+        ],"props":{
+            "blockClass":"bannerprinlanding",
+            "horizontalAlign":"center"
+        }
+    },"flex-layout.col#bannerprin2":{
+        "children":[
+            "image#bannerprinlanding2"
+        ],"props":{
+            "horizontalAlign":"center"
+        }
+    },
+
+    "image#bannerprinlanding2":{
+        "title":"Banner Principal Landing2",
+        "props":{
+            "src":""
+        }
+    },
+
+    "flex-layout.row#rowimagenes1":{
+        "title":"Row 1 Contendio Landing",
+        "children":[
+            "flex-layout.col#colimgizq1",
+            "flex-layout.col#colimgder1"
+        ],"props":{
+            "horizontalAlign":"center"
+        }
+    },"flex-layout.col#colimgizq1":{
+        "title":"Col 1 izq",
+        "children":[
+            "image#izq1"
+        ],"props":{
+            "horizontalAlign":"center"
+        }
+    },"image#izq1":{
+        "title":"Imagen izq 1",
+        "props":{
+            "src":"",
+            "link":{
+                "url": ""
+            }
+        }
+    },"flex-layout.col#colimgder1":{
+        "title": "Col 1 der",
+        "children":[
+            "image#der1"
+        ],"props":{
+            "horizontalAlign":"center"
+        }
+    },"image#der1":{
+        "title":"Imagen der 1",
+        "props":{
+            "src":"",
+            "link":{
+                "url":""
+            }
+        }
+    },
+
+    "flex-layout.row#rowimagenes2":{
+        "title":"Row 2 Contendio Landing",
+        "children":[
+            "flex-layout.col#colimgizq2",
+            "flex-layout.col#colimgder2"
+        ],"props":{
+            "horizontalAlign":"center"
+        }
+    },"flex-layout.col#colimgizq2":{
+        "title":"Col 2 izq",
+        "children":[
+            "image#izq2"
+        ],"props":{
+            "horizontalAlign":"center"
+        }
+    },"image#izq2":{
+        "title":"Imagen izq 2",
+        "props":{
+            "src":"",
+            "link":{
+                "url": ""
+            }
+        }
+    },"flex-layout.col#colimgder2":{
+        "title": "Col 2 der",
+        "children":[
+            "image#der2"
+        ],"props":{
+            "horizontalAlign":"center"
+        }
+    },"image#der2":{
+        "title":"Imagen der 2",
+        "props":{
+            "src":"",
+            "link":{
+                "url":""
+            }
+        }
+    },
+
+
+   "flex-layout.row#rowimagenes3":{
+        "title":"Row 3 Contendio Landing",
+        "children":[
+            "flex-layout.col#colimgizq3",
+            "flex-layout.col#colimgder3"
+        ],"props":{
+            "horizontalAlign":"center"
+        }
+    },"flex-layout.col#colimgizq3":{
+        "title":"Col 3 izq",
+        "children":[
+            "image#izq3"
+        ],"props":{
+            "horizontalAlign":"center"
+        }
+    },"image#izq3":{
+        "title":"Imagen izq 3",
+        "props":{
+            "src":"",
+            "link":{
+                "url": ""
+            }
+        }
+    },"flex-layout.col#colimgder3":{
+        "title": "Col 3 der",
+        "children":[
+            "image#der3"
+        ],"props":{
+            "horizontalAlign":"center"
+        }
+    },"image#der3":{
+        "title":"Imagen der 3",
+        "props":{
+            "src":"",
+            "link":{
+                "url":""
+            }
+        }
+    },
+    "flex-layout.row#rowimagenes4":{
+        "title":"Row 4 Contendio Landing",
+        "children":[
+            "flex-layout.col#colimgizq4",
+            "flex-layout.col#colimgder4"
+        ],"props":{
+            "horizontalAlign":"center"
+        }
+    },"flex-layout.col#colimgizq4":{
+        "title":"Col 4 izq",
+        "children":[
+            "image#izq4"
+        ],"props":{
+            "horizontalAlign":"center"
+        }
+    },"image#izq4":{
+        "title":"Imagen izq 4",
+        "props":{
+            "src":"",
+            "link":{
+                "url": ""
+            }
+        }
+    },"flex-layout.col#colimgder4":{
+        "title": "Col 4 der",
+        "children":[
+            "image#der4"
+        ],"props":{
+            "horizontalAlign":"center"
+        }
+    },"image#der4":{
+        "title":"Imagen der 4",
+        "props":{
+            "src":"",
+            "link":{
+                "url":""
+            }
+        }
+    },
+
+    "flex-layout.row#bosacontent":{
+        "title":"Row imagenes a 2 columnas",
+        "children":[
+            "flex-layout.col#bolsaimg",
+            "flex-layout.col#bolsaimg2"
+        ],"props":{
+            "horizontalAlign":"center"
+        }
+    },"flex-layout.col#bolsaimg":{
+        "children":[
+            "image#izq"
+        ],"props":{
+            "horizontalAlign":"center"
+        }
+    },"image#izq":{
+        "props":{
+            
+        }
+    },"flex-layout.col#bolsaimg2":{
+        "children":[
+            "image#izq"
+        ],"props":{
+            "horizontalAlign":"center"
+        }
+    },"image#der":{
+        "props":{
+            
+        }
+    }
+}

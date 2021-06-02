@@ -12,6 +12,7 @@
       "flex-layout.row#bannerprin-tab",
       "flex-layout.row#banner-cats",
       "flex-layout.row#banner-shelf",
+      "flex-layout.row#promocionales",
       "flex-layout.row#infoizq",
       "flex-layout.row#infoder",
       "flex-layout.row#carouseltitle",
@@ -77,8 +78,8 @@
     "flex-layout.row#banners",
     "__fold__.experimentalLazyAssets",
     "flex-layout.row#categorias",      
-    "flex-layout.row#banner-shelf", 
-    "flex-layout.row#infocards",
+    "flex-layout.row#banner-shelf",
+    "flex-layout.row#promocionales",
     "flex-layout.row#carouseltitle",
     "flex-layout.row#carousel",
     "flex-layout.row#trusty",
@@ -94,8 +95,8 @@
       "flex-layout.row#banners",
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#categorias",   
-      "flex-layout.row#banner-shelf",     
-      "flex-layout.row#infocards",
+      "flex-layout.row#banner-shelf", 
+      "flex-layout.row#promocionales",
       "flex-layout.row#carousel",
       "flex-layout.row#trustytablet",
       "flex-layout.row#newsletter",
@@ -129,6 +130,7 @@
       },
       "infinite":true,      
       "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "desktopOnly",
       "autoplay":{
         "timeout": 4000,
         "stopOnHover": true
@@ -190,15 +192,17 @@
   
   
   "flex-layout.row#banners":{
+    "title": "Slider-Banner",
     "children":[
       "flex-layout.col#slider",
       "flex-layout.col#banner"
     ], "props":{
       "fullWidth": true,
-      "blockClass":"slibann",
-      "title": "Slider-Banner"
+      "blockClass":"slibann"
+      
     }
   },"flex-layout.col#slider":{
+    "title": "Banner Principal",
     "children":[
       "list-context.image-list#demo"
     ],
@@ -207,6 +211,7 @@
       "verticalAlign":"middle"
     }    
   },"flex-layout.col#banner":{
+    "title":"Banner Secundario",
     "children":[
       "list-context.image-list#banner"
     ],
@@ -227,7 +232,7 @@
       "images": [
         {
           "image": "https://ofixmx.vteximg.com.br/arquivos/banner.png",
-          "mobileImage": "https://ofixmx.vteximg.com.br/arquivos/banner.png"
+          "mobileImage": "assets/bannermob.png"
         }
       ]
     }
@@ -254,11 +259,11 @@
       "images": [
         {
           "image": "https://ofixmx.vteximg.com.br/arquivos/slider.png",
-          "mobileImage": "https://ofixmx.vteximg.com.br/arquivos/slider.png"
+          "mobileImage": "assets/sldmob.png"
         },
         {
           "image": "https://ofixmx.vteximg.com.br/arquivos/slider.png",
-          "mobileImage": "https://ofixmx.vteximg.com.br/arquivos/slider.png"
+          "mobileImage": "assets/sldmob.png"
         }
       ]
     }
@@ -272,13 +277,19 @@
       },
       "infinite": true,
       "blockClass": "carousel",
-      "showNavigationArrows": "desktopOnly"
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "desktopOnly",
+      "autoplay":{
+        "timeout":4000,
+        "stopOnHover":true
+      }
     }
   },
 
   
 
   "flex-layout.row#categorias": {
+    "title": "Carrusel Categorías",
     "children": [
       "list-context.image-list#cats"
     ]
@@ -322,30 +333,42 @@
         "tablet": 3,
         "phone": 2
       },
+      "fullWidth":true,
       "infinite": true,
       "blockClass": "categorias",
-      "showNavigationArrows": "desktopOnly"
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "desktopOnly",
+      "autoplay":{
+        "timeout":3000,
+        "stopOnHover":true
+      }
     }
   },
 
   "flex-layout.row#banner-shelf":{
+    "title":"Row Banner Shelf",
     "children":[
       "flex-layout.col#imagenarte",
       "flex-layout.col#shelf-arte"
     ],"props":{
-      "blockClass": "bann-shelf"
+      "blockClass": "bann-shelf",
+      "horizontalAlign":"center"
     }
   },"flex-layout.col#imagenarte":{
+    "title":"Banner Arte",
     "children":[
       "image#arte"
     ],"props":{
-      "verticalAlign":"middle"
+      "verticalAlign":"middle",
+      "horizontalAlign":"center"
     }
   },"image#arte":{
+    "title":"Banner Arte",
     "props":{
       "src":"https://ofixmx.vteximg.com.br/arquivos/arte.PNG"
     }  
   },"flex-layout.col#shelf-arte":{
+    "title": "Shelf Principal 1",
     "children":[
       "list-context.product-list#demo1"
     ]
@@ -353,20 +376,25 @@
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "collection": "140"
     }
   },
   "slider-layout#demo-products": {
+    "title":"Shelf Principal 1",
     "props": {
+      "autoplay":{
+        "timeout":4000,
+        "stopOnHover":true
+      },
       "itemsPerPage": {
         "desktop": 2,
         "tablet": 1,
-        "phone": 1
+        "phone":2
       },
       "infinite": true,
       "fullWidth": true,
       "blockClass": "shelf",      
-      "showNavigationArrows": "desktopOnly"
+      "showNavigationArrows": "desktopOnly"      
     }
   },
 
@@ -374,6 +402,7 @@
  
 
   "flex-layout.row#infocards":{
+    "title": "Row Infocards",
     "children":[
       "flex-layout.col#infocdizquierda",
       "flex-layout.col#infocderecha"
@@ -381,6 +410,7 @@
       "blockClass":"rowic"
     }
   },"flex-layout.col#infocdizquierda":{
+    "title": "Infocard Izq",
     "children":[
       "info-card#izquierda"
     ],"props":{
@@ -402,6 +432,7 @@
     },
     
     "flex-layout.col#infocderecha":{
+      "title":"Infocard Der",
       "children":[
         "info-card#derecha"
       ],"props":{
@@ -575,10 +606,12 @@
       "fullWidth":false
     }
   },"list-context.product-list#hoffice": {
+    "title": "Shelf principal 2",
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#sld-office"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByTopSaleDESC",
+      "collection":"141"
     }
   },
   "slider-layout#sld-office": {
@@ -586,7 +619,7 @@
       "itemsPerPage": {
         "desktop": 5,
         "tablet": 2,
-        "phone": 1
+        "phone": 2
       },
       "infinite": true,
       "fullWidth": true,
@@ -645,6 +678,104 @@
     }
   },
 
+  "flex-layout.row#promocionales":{
+    "title":"Row Img Promocionales",
+    "children":[
+      "flex-layout.col#contendiopromos"
+    ],"props":{
+      "marginTop": 8,
+      "horizontalAlign":"center"
+    }
+  },
+  "flex-layout.col#contendiopromos":{
+    "children":[
+      "flex-layout.row#imgspromos1",
+      "flex-layout.row#imgspromos2"
+    ]
+  },"flex-layout.row#imgspromos1":{
+    "title":"Content Promos 1",
+    "children":[
+      "flex-layout.col#imagepromoizq1",
+      "flex-layout.col#imagepromoder1"
+    ]
+  },
+  "flex-layout.col#imagepromoizq1":{
+    "title":"Imagen promo izq 1",
+    "children":[
+      "image#promoizq1"
+    ],"props":{
+      "horizontalAlign":"center",
+      "blockClass":"colinfocard"
+    }
+  },"image#promoizq1":{
+    "title": "Imagen promo izquierda 1",
+    "props":{
+      "src":"assets/icenvio.png",
+      "link":{
+        "url": ""
+      }
+    }    
+  },
+  "flex-layout.col#imagepromoder1":{
+    "title":"Col imagen promo der 1",
+    "children":[
+      "image#promoder1"
+    ],"props":{
+      "horizontalAlign":"center",
+      "blockClass":"colinfocard"
+    }
+  },"image#promoder1":{
+    "title": "Imagen promo derecha 1",
+    "props":{
+      "src":"assets/meses.png",
+      "link":{
+        "url": ""
+      }
+    }   
+  },
+
+  "flex-layout.row#imgspromos2":{
+    "title":"Content Promos 2",
+    "children":[
+      "flex-layout.col#imagepromoizq2",
+      "flex-layout.col#imagepromoder2"
+    ]
+  },
+  "flex-layout.col#imagepromoizq2":{
+    "title":"Imagen promo izq 2",
+    "children":[
+      "image#promoizq2"
+    ],"props":{
+      "horizontalAlign":"center",
+      "blockClass":"colinfocard"
+    }
+  },"image#promoizq2":{
+    "title": "Imagen promo izquierda 2",
+    "props":{
+      "src":"",
+      "link":{
+        "url": ""
+      }
+    }
+    
+  },
+  "flex-layout.col#imagepromoder2":{
+    "title":"Col imagen promo der 2",
+    "children":[
+      "image#promoizq2"
+    ],"props":{
+      "horizontalAlign":"center",
+      "blockClass":"colinfocard"
+    }
+  },"image#promoder2":{
+    "title": "Imagen promo derecha 2",
+    "props":{
+      "src":"",
+      "link":{
+        "url": ""
+      }
+    }    
+  },
 
   "back-to-top-button":{
     "props":{
