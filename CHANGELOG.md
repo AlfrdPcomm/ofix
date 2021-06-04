@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.0] - 2021-06-04
+
 ## [4.0.0] - 2020-10-30
 ### Added
 - Example of [vtex.product-specifications](https://github.com/vtex-apps/product-specifications) usage.
