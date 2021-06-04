@@ -18,9 +18,9 @@
       "flex-layout.row#menuprops",
       "flex-layout.row#beneficios",
       "flex-layout.row#carouseltitle1",
-      "flex-layout.row#carousel",
+      "flex-layout.row#carouselp1",
       "flex-layout.row#carouseltitle2",
-      "flex-layout.row#carousel"
+      "flex-layout.row#carouselp2"
     ]
   },
   "flex-layout.row#menuprops":{
@@ -197,9 +197,9 @@
       "flex-layout.row#product-main-tablet",
       "tab-layout#producto",
       "flex-layout.row#carouseltitle1",
-      "flex-layout.row#carousel",
+      "flex-layout.row#carouselp1",
       "flex-layout.row#carouseltitle2",
-      "flex-layout.row#carousel"
+      "flex-layout.row#carouselp2"
     ]
     
   },"flex-layout.row#product-main-tablet": {
@@ -340,7 +340,7 @@
       "shipping-simulator"
       ]
   },
-/*  ------------------------ INICO TABLET ----------------------------------- */
+/*  ------------------------ Fin TABLET ----------------------------------- */
 
 
 
@@ -351,9 +351,9 @@
       //"flex-layout.row#description",
       "tab-layout#producto",
       "flex-layout.row#carouseltitle1",
-      "flex-layout.row#carousel",
+      "flex-layout.row#carouselp1",
       "flex-layout.row#carouseltitle2",
-      "flex-layout.row#carousel"      
+      "flex-layout.row#carouselp2"    
       //"flex-layout.row#specifications-title",
       //"product-specification-group#table",
       //"shelf.relatedProducts",
@@ -812,5 +812,22 @@
       "textPosition": "CENTER",
       "blockClass": "necesario"
     }
+  },
+  "flex-layout.row#carouselp1":{
+    "children":[
+      "shelf.relatedProducts"
+    ]
+  },"flex-layout.row#carouselp2":{
+    "children":[
+      "shelf.relatedProducts#2"
+    ]
+  },"shelf.relatedProducts#2":{
+    "props":{
+      "recomendation":"viewandBought",
+      "showTitle":false
+    },
+    "blocks":[
+      "product-summary.shelf"
+    ]
   }
 }

@@ -179,10 +179,9 @@
       "iconId": null,
       "highlight": false,
       "tagTitle": "Atencion",
-      "text": "Atención a Clientes",
+      "text": "Ofix",
       "itemProps": {
         "type": "internal",
-        "href": "#",
         "noFollow": false        
       },
       "blockClass":"titfoo"
@@ -198,8 +197,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "BlackFriday",
-        "text": "Av. Washington No. 321"
+        "tagTitle": "Dirección",
+        "text": "Av. Urano 585"
       }
     }
   },
@@ -213,8 +212,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Sale",
-        "text": "Col. Jardines, Gdl, México"
+        "tagTitle": "Colonia",
+        "text": "Boca del Rio, Veracrúz"
       }
     }
   },
@@ -228,8 +227,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Personalization",
-        "text": "CP 54321"
+        "tagTitle": "Código Postal",
+        "text": "C.P. 94298"
       }
     }
   },
@@ -257,7 +256,6 @@
       "blockClass":"titfoo",
       "itemProps": {
         "type": "internal",
-        "href": "/decoration/smartphones",
         "noFollow": true        
       }
     }
@@ -271,9 +269,9 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/decoration/videogames",
+        "href": "/nosotros",
         "noFollow": true,
-        "tagTitle": "Videogames",
+        "tagTitle": "Nosotros",
         "text": "Nosotros"
       }
     }
@@ -287,9 +285,9 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/decoration/tvs",
+        "href": "/noticias",
         "noFollow": true,
-        "tagTitle": "TVs",
+        "tagTitle": "Noticias",
         "text": "Noticias"
       }
     }
@@ -312,12 +310,11 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "tagTitle": "Bags",
-      "text": "Preguntas frecuentes",
+      "tagTitle": "Servicios",
+      "text": "Servicios",
       "blockClass":"titfoo",
       "itemProps": {
         "type": "internal",
-        "href": "/bags/d",
         "noFollow": true        
       }
     }
@@ -331,10 +328,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/bags/backpacks",
+        "href": "/bolsa-de-trabajo",
         "noFollow": true,
-        "tagTitle": "Backpacks",
-        "text": "¿Cómo rastreo mi pedido?"
+        "tagTitle": "Bolsa de Trabajo",
+        "text": "Bolsa de Trabajo"
       }
     }
   },
@@ -347,10 +344,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/bags/necessaire",
+        "href": "/facturacion",
         "noFollow": true,
-        "tagTitle": "Necessaire",
-        "text": "¿Cuánto tarda en llegar un pedido?"
+        "tagTitle": "Factura Electrónica",
+        "text": "Factura electrónica"
       }
     }
   },
@@ -392,10 +389,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/shorts",
+        "href": "aviso-de-privacidad",
         "noFollow": false,
-        "tagTitle": "Shorts",
-        "text": "Políticas de Privacidad"
+        "tagTitle": "Aviso de Privacidad",
+        "text": "Aviso de Privacidad"
       }
     }
   },
@@ -408,9 +405,9 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/tank-tops",
+        "href": "/terminos-y-condiciones",
         "noFollow": false,
-        "tagTitle": "Tank tops",
+        "tagTitle": "Términos y Condiciones",
         "text": "Términos y Condiciones"
       }
     }
@@ -424,10 +421,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/shirts",
+        "href": "#",
         "noFollow": false,
-        "tagTitle": "Shirts",
-        "text": "Legales"
+        "tagTitle": "",
+        "text": ""
       }
     }
   },
@@ -440,10 +437,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/bolsa-de-trabajo",
+        "href": "/",
         "noFollow": false,
-        "tagTitle": "Bolsa de Trabajo",
-        "text": "Bolsa de Trabajo"
+        "tagTitle": "",
+        "text": ""
       }
     }
   },

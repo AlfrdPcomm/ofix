@@ -1,7 +1,7 @@
 {
-  "vendor": "vtex",
-  "name": "store-theme",
-  "version": "4.0.0",
+  "vendor": "ofixmx",
+  "name": "ofix-store",
+  "version": "0.0.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -65,7 +65,8 @@
     "vtex.search-graphql": "0.x",
     "vtex.search": "2.x",
     "vtex.responsive-layout": "0.x",
-    "vtex.sandbox": "0.x"
+    "vtex.sandbox": "0.x",
+    "ofixmx.contactapp": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x",

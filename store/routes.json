@@ -19,6 +19,10 @@
   },
   "store.custom#sandbox": {
     "path": "/sandbox"
+  },
+  "store.custom#facturacion": {
+    "path": "/facturacion"
   }
+
 }
 
