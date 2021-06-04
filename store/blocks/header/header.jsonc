@@ -242,7 +242,6 @@
       //"category-menu#mobile",
       "drawer",
       "flex-layout.col#ubcmob",
-      "flex-layout.col#spacer",
       //"flex-layout.col#spacer",
       "flex-layout.col#logomob",      
       //"flex-layout.col#spacer",
@@ -276,7 +275,8 @@
     "children":[
       "logo#mobile"
     ],"props":{
-      "blockClass":"cologo"
+      "blockClass":"cologo",
+      "width":"grow"
     }
   },
   "drawer": {

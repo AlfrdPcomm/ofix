@@ -972,6 +972,14 @@
   padding-left: 0% !important;
 }
 
+
+:global(.vtex-store-components-3-x-imageElement--imgwish){
+  height: 20px !important;
+  padding-left: 0% !important;
+  padding-right: 6px !important;
+  padding-top: 9px !important;
+}
+
   
 }
 
