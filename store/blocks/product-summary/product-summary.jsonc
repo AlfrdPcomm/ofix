@@ -36,7 +36,7 @@
   },"add-to-cart-button#rap":{
     "props":{
       "isOneClickBuy":"true",
-      "text": "Compar Ahora"
+      "text": "Comprar Ahora"
     }
   },"flex-layout.col#addcart":{
     "children":[
