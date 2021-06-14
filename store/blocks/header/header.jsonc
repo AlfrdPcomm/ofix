@@ -14,10 +14,8 @@
   },
 
   "flex-layout.row#1-desktop": {
-    "children": ["telemarketing"],
-    "props": {
-      "fullWidth": true
-    }
+    "children": ["telemarketing"]
+    
   },
 
   "flex-layout.row#2-desktop": {
@@ -26,7 +24,7 @@
       "flex-layout.col#phone"
       ],
     "props": {
-      "fullWidth": "true",
+      "fullWidth":true,
       "blockClass": "notphone"
     }
   },"flex-layout.col#notification":{
@@ -79,12 +77,12 @@
   },
   "flex-layout.row#4-desktop": {
     "props": {
+      "fullWidth":true,
       "blockClass": "main-header",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
+      "preventVerticalStretch": true
     },
     "children": [
       "flex-layout.col#logo-desktop",

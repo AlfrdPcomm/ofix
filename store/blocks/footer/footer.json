@@ -20,7 +20,6 @@
       "flex-layout.col#sigue"      
     ],
     "props": {
-      "fullWidth":true,
       "blockClass": "menu-row",
       "paddingTop": 6,
       "paddingBottom": 3,
@@ -61,8 +60,7 @@
       "flex-layout.col#metodos",
       "flex-layout.col#powered"
     ],"props": {
-      "blockClass": "smcontent",
-      "fullWidth":true     
+      "blockClass": "smcontent"
     }
   },
   

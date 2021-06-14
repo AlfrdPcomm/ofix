@@ -1,11 +1,15 @@
 .containerImg {
-  background-color: #F0F0F0;
+  background-color: #Ffffff;
 }
 
 .containerImg .img {
-  max-width: 100%;
+  max-width: auto;
 }
 
 :global(.vtex-store-components-3-x-imageElementLink--carousel){
-  width: 100%;
+  width: auto;
+}
+
+:global(.vtex-slider-layout-0-x-imageElement--carousel){
+  width: auto!important;
 }

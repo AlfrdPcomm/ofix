@@ -167,6 +167,7 @@
   :global(.vtex-product-summary-2-x-brandName),
   :global(.vtex-add-to-cart-button-0-x-buttonText){
     font-size: 12px !important;
+    color:#444444;
   }
 
   
@@ -283,8 +284,6 @@
 :global(.vtex-flex-layout-0-x-flexRow--slibann){
   padding-top: 36px;
   padding-bottom: 15px;
-  padding-left: 5%;
-  padding-right: 5%;
 
 }
 
@@ -418,7 +417,7 @@
 }
 
 :global(.vtex-store-components-3-x-notificationBarInner--notifbar),
-:global(.vtex-flex-layout-0-x-flexRowContent--notphone ){
+:global(.vtex-flex-layout-0-x-flexRow--notphone){
   padding-bottom:5px;
   background: /* gradient can be an image */
     linear-gradient(
@@ -1105,6 +1104,7 @@
 
 :global(.vtex-product-summary-2-x-brandName){
   font-size: 16px;
+  color: #444444;
 }
 
 :global(.vtex-product-summary-2-x-description){
@@ -1370,4 +1370,8 @@
 
 :global(.vtex-store-components-3-x-searchBarIcon--srchdraw){
   padding-top: 4px;
+}
+
+:global(.vtex-store-components-3-x-imageElement--imgtintasmob){
+  margin-top: 15px;
 }

@@ -13,8 +13,6 @@
       "flex-layout.row#banner-cats",
       "flex-layout.row#banner-shelf",
       "flex-layout.row#promocionales",
-      "flex-layout.row#infoizq",
-      "flex-layout.row#infoder",
       "flex-layout.row#carouseltitle",
       "flex-layout.row#carousel",
       "flex-layout.row#trustytablet",
@@ -33,14 +31,50 @@
       "flex-layout.col#infocderecha"
     ]
   },
-  
+ // ----------------  Banner principal tablet -----------
   "flex-layout.row#bannerprin-tab":{
     "children":[
-      "list-context.image-list#demo"
+      "list-context.image-list#bannertab"
     ],"props":{
-      "fullWidth":true
+      "marginTop":5
     }
   },
+
+  "list-context.image-list#bannertab": {
+    "children": ["slider-layout#imagestab"],
+    "props": {
+      "height": 505,
+      "images": [
+        {
+          "image": "https://ofixmx.vteximg.com.br/arquivos/slider.png",
+          "mobileImage": "https://ofixmx.vteximg.com.br/arquivos/slider.png"
+        },
+        {
+          "image": "https://ofixmx.vteximg.com.br/arquivos/slider.png",
+          "mobileImage": "assets/prueba.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#imagestab": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "carousel",
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "desktopOnly",
+      "autoplay":{
+        "timeout":4000,
+        "stopOnHover":true
+      }
+    }
+  },
+
+  //--------------- Banner principal tablet ------------
 
   "flex-layout.row#banner-cats":{
     "children":[
@@ -92,7 +126,7 @@
 
   "responsive-layout.phone#home":{
     "children":[
-      "flex-layout.row#banners",
+      "flex-layout.row#bannersmob",
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#categorias",   
       "flex-layout.row#banner-shelf", 
@@ -125,7 +159,7 @@
     "props": {
         "itemsPerPage": {
         "desktop": 1,
-        "tablet": 1,
+        "tablet": 3,
         "phone": 1        
       },
       "infinite":true,      
@@ -179,14 +213,31 @@
     }
   },
 
- 
+  "flex-layout.row#bannersmob":{
+    "title": "Slider-Banner-mob",
+    "children":[
+     "flex-layout.col#slider",
+      "flex-layout.col#bannermob"
+    ], "props":{
+      "blockClass":"slibann"
+      
+    }
+  },"flex-layout.col#bannermob":{
+    "children":[
+      "image#mobile"
+    ]
+  },"image#mobile":{
+    "props":{
+      "src":"assets/bannermob.png",
+      "blockClass":"imgtintasmob"
+    }
+  },
 
 
 
 /*--------------------------------Fin PHONE ---------------------------------- */
 
-  
-  
+ 
   
   
   
@@ -194,10 +245,9 @@
   "flex-layout.row#banners":{
     "title": "Slider-Banner",
     "children":[
-      "flex-layout.col#slider",
+     "flex-layout.col#slider",
       "flex-layout.col#banner"
     ], "props":{
-      "fullWidth": true,
       "blockClass":"slibann"
       
     }
@@ -213,7 +263,7 @@
   },"flex-layout.col#banner":{
     "title":"Banner Secundario",
     "children":[
-      "list-context.image-list#banner"
+      "image#banner"
     ],
     "props":{
       "horizontalAlign": "center",
@@ -223,12 +273,17 @@
     }
   },
 
-
+"image#banner":{
+  "props":{
+    "maxHeight":"100%",
+    "src":"https://ofixmx.vteximg.com.br/arquivos/banner.png"
+  }
+},
 
   "list-context.image-list#banner": {
     "children": ["slider-layout#bannerder"],
     "props": {
-      "height": 505,
+      "height":505,
       "images": [
         {
           "image": "https://ofixmx.vteximg.com.br/arquivos/banner.png",
@@ -285,6 +340,7 @@
       }
     }
   },
+
 
   
 
@@ -376,7 +432,7 @@
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
-      "collection": "140"
+      "collection": "146"
     }
   },
   "slider-layout#demo-products": {
@@ -392,7 +448,6 @@
         "phone":2
       },
       "infinite": true,
-      "fullWidth": true,
       "blockClass": "shelf",      
       "showNavigationArrows": "desktopOnly"      
     }
@@ -611,7 +666,7 @@
     "children": ["slider-layout#sld-office"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
-      "collection":"141"
+      "collection":"147"
     }
   },
   "slider-layout#sld-office": {
@@ -622,7 +677,6 @@
         "phone": 2
       },
       "infinite": true,
-      "fullWidth": true,
       "blockClass": "shelf",
       "showNavigationArrows": "desktopOnly"
     }
