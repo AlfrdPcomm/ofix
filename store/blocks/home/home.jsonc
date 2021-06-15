@@ -275,6 +275,7 @@
 
 "image#banner":{
   "props":{
+    "height":"auto",
     "maxHeight":505,
     "src":"https://ofixmx.vteximg.com.br/arquivos/banner.png"
   }
