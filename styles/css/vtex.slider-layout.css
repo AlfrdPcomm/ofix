@@ -1,7 +1,8 @@
 .sliderLayoutContainer {
   justify-content: center;
 }
-.sliderLayoutContainer--carousel {
+.sliderLayoutContainer--carousel,
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--carousel){
   background-color: #ffffff;
 }
 
