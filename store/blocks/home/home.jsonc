@@ -224,9 +224,9 @@
     }
   },"flex-layout.col#bannermob":{
     "children":[
-      "image#mobile"
+      "image#banmobile"
     ]
-  },"image#mobile":{
+  },"image#banmobile":{
     "props":{
       "src":"assets/bannermob.png",
       "blockClass":"imgtintasmob"
@@ -275,7 +275,7 @@
 
 "image#banner":{
   "props":{
-    "maxHeight":"100%",
+    "maxHeight":505,
     "src":"https://ofixmx.vteximg.com.br/arquivos/banner.png"
   }
 },
