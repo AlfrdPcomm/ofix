@@ -651,7 +651,7 @@
 "menu-item#subcat62":{
   "props":{
     "type":"category",
-    "categoryId": 62,
+    "categoryId": 58,
     "text":"Artículos de Escritorio",
     "blockClass":"catprinmen"
   }
@@ -659,7 +659,7 @@
 "menu-item#subcat58":{
   "props":{
     "type":"category",
-    "categoryId": 58,
+    "categoryId": 59,
     "text":"Artículos de Papelería",
     "blockClass":"catprinmen"
   }
@@ -667,7 +667,7 @@
 "menu-item#subcat59":{
   "props":{
     "type":"category",
-    "categoryId": 59,
+    "categoryId": 60,
     "text":"Blocks y Formas Impresas",
     "blockClass":"catprinmen"
   }
@@ -675,7 +675,7 @@
 "menu-item#subcat60":{
   "props":{
     "type":"category",
-    "categoryId": 60,
+    "categoryId": 61,
     "text":"Papeles",
     "blockClass":"catprinmen"
   }

@@ -139,7 +139,7 @@
       ]
   },"flex-layout.row#fichamob":{
     "children":[
-      "product-description"
+      "product-specifications"
     ],"props":{
       "blockClass":"descriphone"
     }
@@ -561,7 +561,11 @@
     },
     "children": ["vtex.store-components:product-name"]
   },
-
+  "vtex.store-components:product-name":{
+    "props":{
+      "showSku": true
+    }
+  },
   "sku-selector": {
     "props": {
       "variationsSpacing": 3,
