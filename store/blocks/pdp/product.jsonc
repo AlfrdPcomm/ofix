@@ -819,7 +819,7 @@
   },
   "flex-layout.row#carouselp1":{
     "children":[
-      "shelf.relatedProducts"
+      "shelf.relatedProducts#uno"
     ]
   },"flex-layout.row#carouselp2":{
     "children":[
@@ -831,6 +831,14 @@
       "showTitle":false
     },
     "blocks":[
+      "product-summary.shelf"
+    ]
+  },
+  "shelf.relatedProducts#uno":{
+    "props":{
+      "recomendation":"similars",
+      "showTitle":false
+    },"blocks":[
       "product-summary.shelf"
     ]
   }
