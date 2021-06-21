@@ -837,7 +837,10 @@
   "shelf.relatedProducts#uno":{
     "props":{
       "recomendation":"similars",
-      "showTitle":false
+      "showTitle":false,
+      "productList":{
+        "gap": "ph5"
+      }
     },"blocks":[
       "product-summary.shelf"
     ]

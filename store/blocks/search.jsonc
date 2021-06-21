@@ -15,7 +15,6 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
-        "orderByField": "OrderByNameASC",
         "maxItemsPerPage": 12,
         "hideUnavailableItems": true,
         "skusFilter": "ALL",
@@ -28,7 +27,6 @@
     "blocks": ["search-result-layout"],
     "props": {      
       "context": {
-        "orderByField": "OrderByNameASC",
         "maxItemsPerPage": 12,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
@@ -40,7 +38,6 @@
     "blocks": ["search-result-layout"],
     "props": {      
       "context": {
-        "orderByField": "OrderByNameASC",
         "maxItemsPerPage": 12,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
@@ -52,7 +49,6 @@
     "blocks": ["search-result-layout"],
     "props": {      
       "context": {
-        "orderByField": "OrderByNameASC",
         "maxItemsPerPage": 12,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"

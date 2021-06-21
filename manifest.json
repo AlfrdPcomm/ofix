@@ -66,7 +66,8 @@
     "vtex.search": "2.x",
     "vtex.responsive-layout": "0.x",
     "vtex.sandbox": "0.x",
-    "ofixmx.contactapp": "0.x"
+    "ofixmx.contactapp": "0.x",
+    "vtex.overlay-layout": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x",

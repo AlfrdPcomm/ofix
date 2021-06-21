@@ -372,3 +372,68 @@
   background-color: #ffffff;
   min-height: 2.5rem !important;
 }
+
+
+
+/*-------------------------------- Menu 3 niveles ----------------------------------*/
+:global(.vtex-menu-2-x-submenuWrapper--isOpen){
+  height: 443px;
+  width: 60%;
+  margin-left: 5%;
+  background-color: #f0f0f0;
+  border-left: 3px solid #e1e1e1;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--colcontlista){
+  border-right: 2px solid #e1e1e1;
+}
+
+:global(.vtex-overlay-layout-0-x-container--contenedorsubs){
+  background-color: #f0f0f0;
+}
+
+
+:global(.vtex-overlay-layout-0-x-trigger--trigersubmenu),
+:global(.vtex-overlay-layout-0-x-trigger--trigermenu){
+  width: 100%;
+}
+
+
+:global(.vtex-rich-text-0-x-paragraph--submenuniv2),
+:global(.vtex-rich-text-0-x-paragraph--menucategoria){
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--subcatniv3),
+:global(.vtex-rich-text-0-x-paragraph--submenuniv2),
+:global(.vtex-rich-text-0-x-paragraph--menucategoria){
+  font-family: 'Inter Medium';
+  font-size: 14px;
+  color: #7c7c7c;
+}
+
+
+:global(.vtex-menu-2-x-styledLinkContent--subcatniv3):hover,
+:global(.vtex-rich-text-0-x-paragraph--submenuniv2):hover,
+:global(.vtex-rich-text-0-x-paragraph--menucategoria):hover{
+  color:#1B5DB5;
+}
+
+:global(.vtex-overlay-layout-0-x-arrow){
+  color: #1B5DB5 !important;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--submenuniv2){
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+:global(.vtex-overlay-layout-0-x-container--contenedorsubs){
+  width: 100%;
+  height: 443px;
+  border-radius: 0%;
+  border-color: #ffffff;
+  border-left: 3px solid #1B5DB5;
+}
+
