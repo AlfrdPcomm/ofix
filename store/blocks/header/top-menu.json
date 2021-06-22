@@ -720,6 +720,7 @@
       ]
   },
 
+
   "menu-item#categorias9": {
     "props": {
       "id": "menu-item-cats9",
@@ -742,7 +743,7 @@
     "props": {
       "orientation": "vertical"
     },"children":[
-      "menu-item#subcat12"
+      "drawer#category81"
   ]
 },
 
@@ -774,11 +775,11 @@
     "props": {
       "orientation": "vertical"
     },"children":[
-      "menu-item#subcat17",
-      "menu-item#subcat18",      
-      "menu-item#subcat20",
-      "menu-item#subcat19",
-      "menu-item#subcat16"
+      "drawer#category71",
+      "drawer#category72",
+      "drawer#category73",
+      "drawer#category74",
+      "drawer#category75"
   ]
 },
 
@@ -804,13 +805,13 @@
   "props": {
     "orientation": "vertical"
   },"children":[
-    "menu-item#subcat21",
-    "menu-item#subcat22",
-    "menu-item#subcat23",
-    "menu-item#subcat24",
-    "menu-item#subcat25",
-    "menu-item#subcat26",
-    "menu-item#subcat27"
+    "drawer#category11",
+    "drawer#category12",
+    "drawer#category13",
+    "drawer#category14",
+    "drawer#category15",
+    "drawer#category16",
+    "drawer#category17"
 ]
 },
 
@@ -836,12 +837,12 @@
   "props": {
     "orientation": "vertical"
   },"children":[
-    "menu-item#subcat29",
-    "menu-item#subcat28",
-    "menu-item#subcat30",
-    "menu-item#subcat31",
-    "menu-item#subcat32",
-    "menu-item#subcat33"
+    "drawer#category22",
+    "drawer#category21",    
+    "drawer#category23",
+    "drawer#category24",
+    "drawer#category25",
+    "drawer#category26"
 ]
 },
 
@@ -867,12 +868,12 @@
   "props": {
     "orientation": "vertical"
   },"children":[
-    "menu-item#subcat34",
-    "menu-item#subcat35",
-    "menu-item#subcat36",
-    "menu-item#subcat37",
-    "menu-item#subcat39",
-    "menu-item#subcat38"
+    "drawer#category31",
+    "drawer#category32",
+    "drawer#category33",
+    "drawer#category34",
+    "drawer#category35",
+    "drawer#category36"
 ]
 },
 
@@ -892,16 +893,16 @@
   },"blocks": ["vtex.menu@2.x:submenu.accordion#categorias5"]
 },
 "vtex.menu@2.x:submenu.accordion#categorias5": {
-  "children": ["vtex.menu@2.x:menu#categorias2"]
+  "children": ["vtex.menu@2.x:menu#categorias5"]
 },
 
 "vtex.menu@2.x:menu#categorias5": {
   "props": {
     "orientation": "vertical"
   },"children":[
-    "menu-item#subcat41",
-    "menu-item#subcat40",      
-    "menu-item#subcat42"
+    "drawer#category51",
+    "drawer#category52",
+    "drawer#category53"
 ]
 },
 
@@ -927,11 +928,11 @@
   "props": {
     "orientation": "vertical"
   },"children":[
-    "menu-item#subcat47",
-    "menu-item#subcat43",      
-    "menu-item#subcat44",      
-    "menu-item#subcat45",
-    "menu-item#subcat46"
+    "drawer#category91",
+    "drawer#category92",
+    "drawer#category93",
+    "drawer#category94",
+    "drawer#category95"
 ]
 },
 
@@ -957,10 +958,10 @@
   "props": {
     "orientation": "vertical"
   },"children":[
-    "menu-item#subcat50",
-    "menu-item#subcat48",      
-    "menu-item#subcat49",
-    "menu-item#subcat52"
+    "drawer#category61",
+    "drawer#category62",
+    "drawer#category63",
+    "drawer#category64"
 ]
 },
 
@@ -986,13 +987,13 @@
   "props": {
     "orientation": "vertical"
   },"children":[
-    "menu-item#subcat58",
-    "menu-item#subcat62",
-    "menu-item#subcat60",
-    "menu-item#subcat56",
-    "menu-item#subcat55",      
-    "menu-item#subcat57",     
-    "menu-item#subcat59"
+    "drawer#category41",
+    "drawer#category42",
+    "drawer#category43",
+    "drawer#category44",
+    "drawer#category45",
+    "drawer#category46",
+    "drawer#category47"
 ]
 },
 

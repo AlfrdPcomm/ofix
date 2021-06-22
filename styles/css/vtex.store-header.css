@@ -437,3 +437,17 @@
   border-left: 3px solid #1B5DB5;
 }
 
+/* ----------------------------- 3er Nivle mobile ----------------------- */
+
+:global(.vtex-store-drawer-0-x-openIconContainer){
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--titmendrawer){
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 13px;
+  color:#7c7c7c;
+  padding-left: 10px;
+}
