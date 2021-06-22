@@ -1070,7 +1070,9 @@
     "children":[
       "flex-layout.col#menulista",
       "flex-layout.col#espacio"
-    ]
+    ],"props":{
+      "blockClass":"rowlistaprincipal"
+    }
   }, "flex-layout.col#espacio":{
     "children":[
       "image#sombra"
