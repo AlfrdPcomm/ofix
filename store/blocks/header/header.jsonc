@@ -139,7 +139,9 @@
   "search-bar#intelligent":{
     "props":{
       "placeholder":"¿Qué estás buscando?",
-      "openAutocompleteOnFocus": true
+      "openAutocompleteOnFocus": true,
+      "autocompleteAlignment":"left",
+      "autocompleteWidth":"60%"
     },
     "blocks":[
       "autocomplete-result-list.v2"

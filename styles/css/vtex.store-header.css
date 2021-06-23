@@ -453,3 +453,9 @@
   color:#7c7c7c;
   padding-left: 10px;
 }
+
+
+:global(.vtex-search-2-x-tileListItem)
+:global(.vtex-product-summary-2-x-containerNormal){
+  padding: 5px;
+}

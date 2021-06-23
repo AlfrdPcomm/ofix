@@ -774,7 +774,7 @@
     }
 },"overlay-layout#categoria42":{
     "children":[
-        "vtex.menu@2.x:menu#thirlevel12"
+        "vtex.menu@2.x:menu#thirlevel42"
     ],"props":{
         "placement":"right",
         "showArrow":true,
@@ -806,7 +806,7 @@
     }
 },"overlay-layout#categoria43":{
     "children":[
-        "vtex.menu@2.x:menu#thirlevel13"
+        "vtex.menu@2.x:menu#thirlevel43"
         
     ],"props":{
         "placement":"right",
